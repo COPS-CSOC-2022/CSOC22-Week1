@@ -1,7 +1,6 @@
-// Initialise references
+// Initialize references
 
 const letterContainer = document.getElementById("letterContainer");
-const levelsContainer = document.getElementById("LevelsContainer");
 const userInput = document.getElementById("userInput");
 const newGameContainer = document.getElementById("newGameContainer");
 const newGameButton = document.getElementById("newGameButton");
@@ -9,59 +8,101 @@ const canvas = document.getElementById("canvas");
 const resultText = document.getElementById("resultText");
 
 // Count Variables
+let level = "";
+let looseCount = 0;
+let maxLooseCount = 0;
 let winCount = 0;
-let count = 0;
 let chosenWord = "";
-
-//Display Level Selector
-const displayLevels = () => {
-
-  levelsContainer.innerHTML += `<h3>Please Select A Level to Play!!</h3>`;
-  let buttonCon = document.createElement("div");
-  for (let level in levels) {
-    buttonCon.innerHTML += `<button class="levels" onclick="generateWord('${level}')">${level}</button>`;
-  }
-  optionsContainer.appendChild(buttonCon);
-
-};
 
 // Block all the buttons
 const blocker = () => {
-  
-  let levelButtons = document.querySelectorAll(".levels");
   let letterButtons = document.querySelectorAll(".letters");
-  
-  levelButtons.forEach((button) => {
-    button.disabled = true;
-  });
-  
   letterButtons.forEach((button) => {
     button.disabled.true;
   });
   newGameContainer.classList.remove("hide");
-
 };
 
 
-// Random Word Generator from the givwn options
-const generateWord = (optionValue) => {
-    let optionsButtons = document.querySelectorAll(".options");
-    //If optionValur matches the button innerText then highlight the button
-    optionsButtons.forEach((button) => {
-      if (button.innerText.toLowerCase() === optionValue) {
-        button.classList.add("active");
+// Random Word Generator from the given options
+const generateWord = (levelInp) => {
+  // console.log(levels["Easy"]);
+  level = levelInp;
+
+  letterContainer.classList.remove("hide");
+  userInput.innerText = "";
+  let wordArray = levels[level]["words"];
+  maxLooseCount = levels[level]["attempts"];
+
+  // console.log(wordArray);
+  // console.log(maxLooseCount);
+
+  chosenWord = wordArray[Math.floor(Math.random() * wordArray.length)];
+  chosenWord = chosenWord.toUpperCase();
+  let displayItem = chosenWord.replace(/./g, '<span class="dashes">_</span>');
+  userInput.innerHTML = displayItem;
+
+};
+
+// Game Engine
+const initializer = () => {
+  winCount = 0;
+  looseCount = 0;
+
+  userInput.innerHTML = "";
+  letterContainer.classList.add("hide");
+  newGameContainer.classList.add("hide");
+  letterContainer.innerHTML = "";
+
+  //For creating letter buttons
+  for (let i = 65; i < 91; i++) {
+    let button = document.createElement("button");
+    button.classList.add("letters");
+    button.innerText = String.fromCharCode(i);
+    button.setAttribute('id', 'letter' + i);
+    button.addEventListener("click", () => {
+      let charArray = chosenWord.split("");
+      let dashes = document.getElementsByClassName("dashes");
+      if (charArray.includes(button.innerText)) {
+        charArray.forEach((char, index) => {
+          if (char === button.innerText) {
+            dashes[index].innerText = char;
+            winCount += 1;
+            if (winCount == charArray.length) {
+              resultText.innerHTML = `<h2 class='winMsg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+              blocker();
+            }
+          }
+        });
+      } else {
+        looseCount += 1;
+        drawMan(looseCount);
+        if (looseCount == maxLooseCount) {
+          resultText.innerHTML = `<h2 class='loseMsg'>You Lose!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+          blocker();
+        }
       }
       button.disabled = true;
     });
-    //initially hide letters, clear previous word
-    letterContainer.classList.remove("hide");
-    userInputSection.innerText = "";
-    let optionArray = options[optionValue];
-    //choose random word
-    chosenWord = optionArray[Math.floor(Math.random() * optionArray.length)];
-    chosenWord = chosenWord.toUpperCase();
-    //replace every letter with span containing dash
-    let displayItem = chosenWord.replace(/./g, '<span class="dashes">_</span>');
-    //Display each element as span
-    userInputSection.innerHTML = displayItem;
-  };
+    letterContainer.append(button);
+  }
+  let { initialDrawing } = canvasCreator();
+  initialDrawing();
+  window.addEventListener('keydown', handleInput, false);
+};
+
+
+newGameButton.addEventListener("click", initializer);
+window.onload = initializer;
+
+function handleInput(key) {
+  var name =key.key;
+  var id  = name.charCodeAt(0) - 32;
+  console.log(name);
+  console.log(id);
+  if (id >= 65 && id < 91){
+    var button = document.getElementById('letter' + id);
+    button.click();
+    console.log("Clicked");
+  }
+}

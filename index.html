@@ -20,14 +20,42 @@
     <div class="gameContainer">
         <div id="LevelsContainer"></div>
         <div id="letterContainer" class="letterContainer hide"></div>
-        
+
         <div id="userInput"></div>
         <canvas id="canvas"></canvas>
-        
+
         <div id="newGameContainer" class="newGamePopup hide">
             <div id="resultText"></div>
             <button id="newGameButton">Start a New Game</button>
         </div>
+    </div>
+
+    <div class="accordion menuContainer" id="menuContainer">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    Levels
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="levelSelector">
+                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked onclick='generateWord("Easy")'>
+                        <label class="btn btn-outline-primary" for="btnradio1">Easy</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onclick='generateWord("Medium")'>
+                        <label class="btn btn-outline-primary" for="btnradio2">Medium</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" onclick='generateWord("Hard")'>
+                        <label class="btn btn-outline-primary" for="btnradio3">Hard</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Bootstrap JS-->
@@ -37,6 +65,7 @@
 
     <!-- Including Custom JS Functionalities-->
     <script src="./js_files/wordlist.js"></script>
+    <script src="./js_files/canvasHandler.js"></script>
     <script src="./js_files/main.js"></script>
 </body>
 
