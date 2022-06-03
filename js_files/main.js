@@ -13,8 +13,26 @@ let maxLooseCount = 0;
 let winCount = 0;
 let chosenWord = "";
 
+
+// Timer Counter Variables
+let minute = 00;
+let second = 00;
+let millisecond = 00;
+let interval;
+
+// Scorecard Variables
+let score = 0;
+let timeTaken;
+let winContinous = 0;
+
+// Timer ELements  
+let minuteElement = document.querySelector(".minute");
+let secondElement = document.querySelector(".second");
+let millisecondElement = document.querySelector(".milliSecond");
+
 // Game Engine
 function initializer(){
+  stopDisplayingTimer();
   winCount = 0;
   looseCount = 0;
 
@@ -24,7 +42,7 @@ function initializer(){
   letterContainer.innerHTML = "";
 
   createLetterButtons();
-  initiliazeTimer();
+  startDisplayingTimer();
 
   let { initialDrawing } = canvasCreator();
   initialDrawing();

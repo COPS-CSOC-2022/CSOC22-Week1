@@ -42,19 +42,13 @@ function createLetterButtons() {
                     if (char === button.innerText) {
                         dashes[index].innerText = char;
                         winCount += 1;
-                        if (winCount == charArray.length) {
-                            resultText.innerHTML = `<h2 class='winMsg'>You Win!!</h2><p>The word was <span>${chosenWord}</span></p>`;
-                            blocker();
-                        }
+                        if (winCount == charArray.length) winHandler();
                     }
                 });
             } else {
                 looseCount += 1;
                 drawMan(looseCount);
-                if (looseCount == maxLooseCount) {
-                    resultText.innerHTML = `<h2 class='loseMsg'>You Lose!!</h2><p>The word was <span>${chosenWord}</span></p>`;
-                    blocker();
-                }
+                if (looseCount == maxLooseCount) loseHandler();
             }
             button.disabled = true;
         });
