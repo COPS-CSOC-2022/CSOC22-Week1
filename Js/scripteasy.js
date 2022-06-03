@@ -16,7 +16,7 @@ var lives;
 var found_correct_word;
 var Hard = 0;
 var Easy = 1;
-var time = 300;
+var time = 240;
 var easy_btn = document.querySelector('#easy_btn');
 var hard_btn = document.querySelector('#hard_btn');
 
@@ -94,6 +94,7 @@ fetch(url_for_word).then(function (response) {
                     })
                     found_correct_word -= index_array.length;
                     if (found_correct_word === 0) {
+                        clearInterval(timer);
                         page.classList.add('loose_win')
                         restart_game.classList.remove('loose_win')
                         restart_game.classList.add('click_able')
@@ -107,6 +108,7 @@ fetch(url_for_word).then(function (response) {
                     lives_number.textContent = lives_number.textContent - 1;
                     lives--;
                     if (lives === 0) {
+                        clearInterval(timer);
                         page.classList.add('loose_win')
                         restart_game.classList.remove('loose_win')
                         restart_game.classList.add('click_able')
