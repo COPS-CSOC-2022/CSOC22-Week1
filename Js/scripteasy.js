@@ -10,11 +10,13 @@ const url_for_word = 'https://random-words-api.vercel.app/word';
 const page = document.getElementById('container')
 const streck_place = document.querySelector('#streck-place')
 const restart_game = document.querySelector('#restart_button')
+const timer_place = document.querySelector('#timer-place')
 var streck_count = 0;
 var lives;
 var found_correct_word;
 var Hard = 0;
 var Easy = 1;
+var time = 300;
 var easy_btn = document.querySelector('#easy_btn');
 var hard_btn = document.querySelector('#hard_btn');
 
@@ -26,6 +28,16 @@ fetch(url_for_word).then(function (response) {
     return response.json();
 }).then(function (Data) {
     console.log(Data[0]);
+    var timer = setInterval(() => {
+        time -= 1;
+        timer_place.innerHTML = time + "s";
+        if (time == 0) {
+            clearInterval(timer);
+            page.classList.add('loose_win')
+            alert('Time is up! You loose')
+            location.reload();
+        }
+    }, 1000);
     if (Data[0].word.length <= 5 && Easy === 1) {
         hint_button.addEventListener('click', () => {
             hint_text.textContent = Data[0].definition;
