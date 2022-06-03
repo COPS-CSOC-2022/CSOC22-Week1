@@ -17,6 +17,21 @@
 </head>
 
 <body>
+    <div class="watch">
+        <div class="minuteDiv">
+            <h3 class="minute">30</h3>
+            <p class="minuteTitle">Min</p>
+        </div>
+        <div class="secondDiv">
+            <h3 class="second">01</h3>
+            <p class="secondTitle">Sec</p>
+        </div>
+        <div class="milliSecondDiv">
+            <h3 class="milliSecond">99</h3>
+            <p class="milliSecondTitle">Millis</p>
+        </div>
+    </div>
+
     <div class="gameContainer">
         <div id="LevelsContainer"></div>
         <div id="letterContainer" class="letterContainer hide"></div>
@@ -30,32 +45,45 @@
         </div>
     </div>
 
-    <div class="accordion menuContainer" id="menuContainer">
 
-        <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    Levels
-                </button>
-            </h2>
-            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                data-bs-parent="#accordionExample">
-                <div class="levelSelector">
-                    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked onclick='generateWord("Easy")'>
-                        <label class="btn btn-outline-primary" for="btnradio1">Easy</label>
+    <div>
+        <div class="accordion menuContainer">
 
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" onclick='generateWord("Medium")'>
-                        <label class="btn btn-outline-primary" for="btnradio2">Medium</label>
+            <div class="gameTitle">
+                <h1>Hangman</h1>
+            </div>
 
-                        <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" onclick='generateWord("Hard")'>
-                        <label class="btn btn-outline-primary" for="btnradio3">Hard</label>
+            <div id="points" class="points">0 </div>
+            <div id="addition" class="addition"></div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Levels
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="levelSelector">
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off"
+                                checked onclick='generateWord("Easy")'>
+                            <label class="btn btn-outline-primary" for="btnradio1">Easy</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off"
+                                onclick='generateWord("Medium")'>
+                            <label class="btn btn-outline-primary" for="btnradio2">Medium</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off"
+                                onclick='generateWord("Hard")'>
+                            <label class="btn btn-outline-primary" for="btnradio3">Hard</label>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
 
     <!-- Bootstrap JS-->
@@ -66,6 +94,7 @@
     <!-- Including Custom JS Functionalities-->
     <script src="./js_files/wordlist.js"></script>
     <script src="./js_files/helper.js"></script>
+    <script src="./js_files/timer.js"></script>
     <script src="./js_files/canvasHandler.js"></script>
     <script src="./js_files/main.js"></script>
 </body>

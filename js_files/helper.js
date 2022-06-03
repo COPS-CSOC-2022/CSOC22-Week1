@@ -10,7 +10,7 @@ function blocker() {
 
 // Random Word Generator from the given options
 function generateWord(levelInp) {
-    // console.log(levels["Easy"]);
+    initializer();
     level = levelInp;
 
     letterContainer.classList.remove("hide");

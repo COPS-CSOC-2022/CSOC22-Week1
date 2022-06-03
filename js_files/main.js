@@ -24,6 +24,7 @@ function initializer(){
   letterContainer.innerHTML = "";
 
   createLetterButtons();
+  initiliazeTimer();
 
   let { initialDrawing } = canvasCreator();
   initialDrawing();
