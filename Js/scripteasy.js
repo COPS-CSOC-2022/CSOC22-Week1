@@ -8,7 +8,9 @@ const hint_button = document.querySelector('#hint-button')
 const hint_text = document.querySelector('#hint-statement')
 const url_for_word = 'https://random-words-api.vercel.app/word';
 const page = document.getElementById('container')
+const streck_place = document.querySelector('#streck-place')
 const restart_game = document.querySelector('#restart_button')
+var streck_count = 0;
 var lives;
 var found_correct_word;
 var Hard = 0;
@@ -31,7 +33,7 @@ fetch(url_for_word).then(function (response) {
         })
 
         word.innerHTML = Data[0].word;
-        lives = 3;
+        lives = 5;
         lives_number.textContent = lives;
         const capital_word = Data[0].word.toUpperCase();
         const word_alphabet_array = capital_word.split('');
@@ -69,6 +71,8 @@ fetch(url_for_word).then(function (response) {
                     index = -1;
                     console.log(index_array);
                     console.log(char_array);
+                    streck_count += index_array.length;
+                    streck_place.textContent = streck_count;
                     index_array.forEach(number => {
                         char_array[number] = clicked_alphbet;
                     });
@@ -85,6 +89,8 @@ fetch(url_for_word).then(function (response) {
                     }
                 } else {
                     // display in incorrect 
+                    streck_count = 0;
+                    streck_place.textContent = streck_count;
                     incorrect.textContent = incorrect.textContent + " " + clicked_alphbet;
                     lives_number.textContent = lives_number.textContent - 1;
                     lives--;
