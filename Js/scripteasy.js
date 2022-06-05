@@ -11,6 +11,10 @@ const page = document.getElementById('container')
 const streck_place = document.querySelector('#streck-place')
 const restart_game = document.querySelector('#restart_button')
 const timer_place = document.querySelector('#timer-place')
+const people_name = localStorage.key(0);
+let player_score = localStorage.getItem(people_name);
+console.log(player_score);
+console.log(people_name);
 var streck_count = 0;
 var lives;
 var found_correct_word;
@@ -34,7 +38,7 @@ fetch(url_for_word).then(function (response) {
         if (time == 0) {
             clearInterval(timer);
             page.classList.add('loose_win')
-            alert('Time is up! You loose')
+            alert('Time is up! You lose')
             location.reload();
         }
     }, 1000);
@@ -66,6 +70,8 @@ fetch(url_for_word).then(function (response) {
         // nodelist to array
         all_alphabet.forEach(function (alphabet) {
             alphabet.addEventListener('click', function () {
+                alphabet.classList.remove('btn-outline-primary');
+                alphabet.classList.add('btn-primary');
                 alphabet.classList.add('disabled');
                 const clicked_alphbet = alphabet.textContent;
                 // find alphabet exist in word at which place
@@ -76,6 +82,9 @@ fetch(url_for_word).then(function (response) {
                     word_alphabet_array.forEach(alphabets => {
                         index++;
                         if (alphabets == alphabet.textContent) {
+                            localStorage.setItem("score", time);
+                            console.log(localStorage);
+                            console.log("hi");
                             console.log(index);
                             index_array.push(index);
                         }
@@ -99,6 +108,10 @@ fetch(url_for_word).then(function (response) {
                         restart_game.classList.remove('loose_win')
                         restart_game.classList.add('click_able')
                         heading.textContent = "You Win";
+                        // string to int convertion
+                        var score = parseInt(player_score);
+                        score += 1;
+                        localStorage.setItem(people_name, score);
                     }
                 } else {
                     // display in incorrect 
@@ -112,7 +125,8 @@ fetch(url_for_word).then(function (response) {
                         page.classList.add('loose_win')
                         restart_game.classList.remove('loose_win')
                         restart_game.classList.add('click_able')
-                        heading.textContent = "You Loose";
+                        heading.textContent = "You Lose";
+
                     }
                 }
             })

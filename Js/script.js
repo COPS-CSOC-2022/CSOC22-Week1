@@ -12,6 +12,10 @@ const streck_place = document.querySelector('#streck-place')
 const restart_game = document.querySelector('#restart_button')
 const timer_place = document.querySelector('#timer-place')
 var streck_count = 0;
+const people_name = localStorage.key(0);
+let player_score = localStorage.getItem(people_name);
+console.log(player_score);
+console.log(people_name);
 var lives;
 var found_correct_word;
 var Hard = 1;
@@ -24,6 +28,7 @@ restart_game.addEventListener('click', () => {
     location.reload();
 })
 
+
 fetch(url_for_word).then(function (response) {
     return response.json();
 }).then(function (Data) {
@@ -34,7 +39,7 @@ fetch(url_for_word).then(function (response) {
         if (time == 0) {
             clearInterval(timer);
             page.classList.add('loose_win')
-            alert('Time is up! You loose')
+            alert('Time is up! You lose')
             location.reload();
         }
     }, 1000);
@@ -60,12 +65,14 @@ fetch(url_for_word).then(function (response) {
         }
         // display all aplhabets
         for (let index = 0; index < 26; index++) {
-            aplhabets_place.innerHTML = aplhabets_place.innerHTML + '<button class="btn btn-primary" id="alphabet">' + String.fromCharCode(65 + index) + '</button>';
+            aplhabets_place.innerHTML = aplhabets_place.innerHTML + '<button class="btn btn-outline-primary" id="alphabet">' + String.fromCharCode(65 + index) + '</button>';
         }
         const all_alphabet = document.querySelectorAll('#alphabet');
         // nodelist to array
         all_alphabet.forEach(function (alphabet) {
             alphabet.addEventListener('click', function () {
+                alphabet.classList.remove('btn-outline-primary');
+                alphabet.classList.add('btn-primary');
                 alphabet.classList.add('disabled');
                 const clicked_alphbet = alphabet.textContent;
                 // find alphabet exist in word at which place
@@ -76,6 +83,9 @@ fetch(url_for_word).then(function (response) {
                     word_alphabet_array.forEach(alphabets => {
                         index++;
                         if (alphabets == alphabet.textContent) {
+                            localStorage.setItem("score", time);
+                            console.log(localStorage);
+                            console.log("hi");
                             console.log(index);
                             index_array.push(index);
                         }
@@ -99,6 +109,10 @@ fetch(url_for_word).then(function (response) {
                         restart_game.classList.remove('loose_win')
                         restart_game.classList.add('click_able')
                         heading.textContent = "You Win";
+                        // string to int convertion
+                        var score = parseInt(player_score);
+                        score += 3;
+                        localStorage.setItem(people_name, score);
                     }
                 } else {
                     // display in incorrect 
@@ -112,7 +126,7 @@ fetch(url_for_word).then(function (response) {
                         page.classList.add('loose_win')
                         restart_game.classList.remove('loose_win')
                         restart_game.classList.add('click_able')
-                        heading.textContent = "You Loose";
+                        heading.textContent = "You Lose";
                     }
                 }
             })
