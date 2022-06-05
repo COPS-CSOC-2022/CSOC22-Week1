@@ -7,6 +7,10 @@ function initiliazeTimer(){
     minute = 0;
 }
 
+function getTime(){
+    return minuteElement.innerHTML + ":" + secondElement.innerHTML + ":" + millisecondElement.innerHTML;
+}
+
 function startDisplayingTimer(){
     clearInterval(interval); 
     interval = setInterval(startTimer, 10); 

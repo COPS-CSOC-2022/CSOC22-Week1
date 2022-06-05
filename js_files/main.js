@@ -1,3 +1,5 @@
+var displayNullScores = true;
+
 // Initialize references
 const letterContainer = document.getElementById("letterContainer");
 const userInput = document.getElementById("userInput");
@@ -57,6 +59,7 @@ function initializer(){
 newGameButton.addEventListener("click", newGame);
 window.onload = () => {
   initializer();
+  updateScoreboard();
   easyButton = document.getElementById("btnradio1");
   easyButton.click();
 }

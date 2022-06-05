@@ -6,10 +6,12 @@ function winHandler() {
     incrementScore(pointsIncrement);
     pointsIncrement += 50;
     timeTaken = minuteElement.innerText + ":" + secondElement.innerText + ":" + millisecondElement.innerText;
+    updateScoreboard();
 }
 
 function loseHandler() {
     resultText.innerHTML = `<h2 class='loseMsg'>You Lose!!</h2><p>The word was <span>${chosenWord}</span></p>`;
+    addEntry(score, getTime());
     blocker();
     pauseDisplayingTimer();
     score = 0;
@@ -17,6 +19,7 @@ function loseHandler() {
     var points = document.getElementById("points");
     points.innerHTML = "0";
     wonLast = false;
+    updateScoreboard();
 }
 
 
