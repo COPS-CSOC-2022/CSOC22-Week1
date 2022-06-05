@@ -183,7 +183,7 @@ canvas {
 }
 
 #addition.animating {
-    animation: additionFade 0.7s;
+    animation: additionFade 2s;
 }
 
 

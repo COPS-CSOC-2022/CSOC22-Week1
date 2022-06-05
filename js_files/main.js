@@ -6,6 +6,9 @@ const newGameButton = document.getElementById("newGameButton");
 const canvas = document.getElementById("canvas");
 const resultText = document.getElementById("resultText");
 
+var pointsSpeed = 5;
+var wonLast = false;
+
 // Count Variables
 let level = "";
 let looseCount = 0;
@@ -22,8 +25,7 @@ let interval;
 
 // Scorecard Variables
 let score = 0;
-let timeTaken;
-let winContinous = 0;
+let pointsIncrement = 100;
 
 // Timer ELements  
 let minuteElement = document.querySelector(".minute");
@@ -32,7 +34,8 @@ let millisecondElement = document.querySelector(".milliSecond");
 
 // Game Engine
 function initializer(){
-  stopDisplayingTimer();
+  // console.log(wonLast);
+  if (!wonLast) stopDisplayingTimer();
   winCount = 0;
   looseCount = 0;
 
@@ -40,7 +43,8 @@ function initializer(){
   letterContainer.classList.add("hide");
   newGameContainer.classList.add("hide");
   letterContainer.innerHTML = "";
-
+  
+  // setLevelWord();
   createLetterButtons();
   startDisplayingTimer();
 
@@ -50,10 +54,14 @@ function initializer(){
 };
 
 
-newGameButton.addEventListener("click", initializer);
+newGameButton.addEventListener("click", newGame);
 window.onload = () => {
   initializer();
   easyButton = document.getElementById("btnradio1");
   easyButton.click();
 }
 
+function newGame(){
+  // stopDisplayingTimer();
+  setLevelWord();
+}

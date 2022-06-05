@@ -2,9 +2,12 @@ function initiliazeTimer(){
     minuteElement.innerText = "00";
     secondElement.innerText = "00";
     millisecondElement.innerText = "00";
+    second = 0;
+    millisecond = 0;
+    minute = 0;
 }
 
-function startDisplayingTimer() {
+function startDisplayingTimer(){
     clearInterval(interval); 
     interval = setInterval(startTimer, 10); 
 };

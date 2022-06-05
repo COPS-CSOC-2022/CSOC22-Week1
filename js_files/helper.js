@@ -22,6 +22,7 @@ function generateWord(levelInp) {
     // console.log(maxLooseCount);
 
     chosenWord = wordArray[Math.floor(Math.random() * wordArray.length)];
+    console.log(chosenWord);
     chosenWord = chosenWord.toUpperCase();
     let displayItem = chosenWord.replace(/./g, '<span class="dashes">_</span>');
     userInput.innerHTML = displayItem;
@@ -40,6 +41,8 @@ function createLetterButtons() {
             if (charArray.includes(button.innerText)) {
                 charArray.forEach((char, index) => {
                     if (char === button.innerText) {
+                    // Dummy condition for testing
+                    // if (1 === 1) {
                         dashes[index].innerText = char;
                         winCount += 1;
                         if (winCount == charArray.length) winHandler();
@@ -57,13 +60,20 @@ function createLetterButtons() {
 }
 
 function handleInput(key) {
-    var name =key.key;
-    var id  = name.charCodeAt(0) - 32;
-    console.log(name);
-    console.log(id);
-    if (id >= 65 && id < 91){
-      var button = document.getElementById('letter' + id);
-      button.click();
-      console.log("Clicked");
+    var name = key.key;
+    var id = name.charCodeAt(0) - 32;
+    // console.log(name);
+    // console.log(id);
+    if (id >= 65 && id < 91) {
+        var button = document.getElementById('letter' + id);
+        button.click();
+        // console.log("Clicked");
     }
-  }
+}
+
+function setLevelWord() {
+    const radioButtons = document.getElementsByClassName("btn-check");
+    for (const radioButton of radioButtons) {
+        if (radioButton.checked) radioButton.click();
+    }
+}
