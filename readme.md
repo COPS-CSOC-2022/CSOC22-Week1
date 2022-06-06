@@ -3,7 +3,7 @@
 For this week's assignment, I have developed the Hangman game in accordance to the given tasks.
 
 ## Deployment
-The site is deployed on Github pages at [Hangman]().
+The site is deployed on Github pages at [Hangman](https://eshaanagg.github.io/CSOC22-Week1/).
 
 ## Features and Task Details
 
