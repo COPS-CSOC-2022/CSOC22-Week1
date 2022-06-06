@@ -1,4 +1,5 @@
 var displayNullScores = true;
+var playGameMusic = true;
 
 // Initialize references
 const letterContainer = document.getElementById("letterContainer");

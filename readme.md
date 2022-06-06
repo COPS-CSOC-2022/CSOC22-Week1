@@ -5,10 +5,12 @@ For this week's assignment, I have developed the Hangman game in accordance to t
 ## Deployment
 The site is deployed on Github pages at [Hangman]().
 
-## Features
+## Features and Task Details
 
--  **Task 1**: Implement a hangman game. Create a word generator and generate random words in every game.
--  **Task 2**: Add a high score page to view the previous scores.
--  **Task 3**: Giving hints to users, by showing a few letters when the user needs them. Also, you could give signs when the entered letters are wrong.
--  **Task 4:** Make hard and easy mode with say, 5 lives in easy and 3 in hard mode. Also, word length and difficulty could be changed with respective levels. Easy words could have till 5 letters while difficult ones with longer words.
--  **Extras:** Adding a timer for making it more interactive and competitive.
+-  **1.** Implemented Hangman game. Used a random word generator to get new words in each game (from a predefined list of words).
+-  **2.** Made multiple levels of the game. Each level has different lives for each user, and even the length of the word they have to guess changes to make it more challenging.
+-  **3.** Added a timer so that users can keep track of how fast they can solve the challenges.
+-  **4.** Implemented a high score page to view the previous scores. All the high scores are logged in which the cummlative score (i.e. the total score of the longest streak you had) and the time taken to achieve the said streak.
+-  **5.** Implemented hints for users, by showing a few letters when the user needs them. A buzzer sound is also played (which can be toggled on and off).
+-  **6.** A shake-type feedback when selected a wrong letter for players. 
+-  **7.** Option to include or exclude zero scores in the leaderboard. 

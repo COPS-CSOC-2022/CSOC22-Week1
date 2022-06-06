@@ -1,3 +1,5 @@
+const buzzer = new Audio("./assets/sounds/buzzer.mp3");
+
 // Block all the buttons
 function blocker() {
     let letterButtons = document.querySelectorAll(".letters");
@@ -49,6 +51,11 @@ function createLetterButtons() {
             } else {
                 looseCount += 1;
                 drawMan(looseCount);
+                if (playGameMusic) buzzer.play();
+                button.classList.add("apply-shake");
+                button.addEventListener("animationend", () => {
+                    button.classList.remove("apply-shake");
+                });
                 if (looseCount == maxLooseCount) loseHandler();
             }
             button.disabled = true;
@@ -73,5 +80,34 @@ function setLevelWord() {
     const radioButtons = document.getElementsByClassName("btn-check");
     for (const radioButton of radioButtons) {
         if (radioButton.checked) radioButton.click();
+    }
+}
+
+function changeScoreboardSettings() {
+    var eles = document.getElementsByName("nullInScoreboard");
+    for (var i = 0; i < eles.length; i++) {
+        if (eles[i].checked) {
+            if (i == 0) {
+                displayNullScores = true;
+            }
+            else if (i == 1) {
+                displayNullScores = false;
+            }
+        }
+    }
+    updateScoreboard();
+}
+
+function changeMusicSettings() {
+    var eles = document.getElementsByName("gameMusic");
+    for (var i = 0; i < eles.length; i++) {
+        if (eles[i].checked) {
+            if (i == 0) {
+                playGameMusic = true;
+            }
+            else if (i == 1) {
+                playGameMusic = false;
+            }
+        }
     }
 }
