@@ -21,6 +21,13 @@ body {
 
 }
 
+hr {
+    border: none;
+    border-top: 9px dotted silver;
+    width: 10%;
+    margin: 20px auto
+}
+
 /* .easyhardfont{
      font-family: 'Tourney', cursive;
      font-weight: bold;
@@ -163,4 +170,8 @@ body {
     transform: rotate(-30deg);
     /*transform-origin:;*/
 
+}
+
+.display {
+    display: none;
 }

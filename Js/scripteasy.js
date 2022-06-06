@@ -10,9 +10,12 @@ const url_for_word = 'https://random-word-api.herokuapp.com/word';
 const page = document.getElementById('container')
 const streck_place = document.querySelector('#streck-place')
 const restart_game = document.querySelector('#restart_button')
+const firstthing = document.querySelector('.head')
+const secondthing = document.querySelector('.body')
+const thirdthing = document.querySelectorAll('.thirdthing')
+const fourththing = document.querySelector('.leg1');
+const fifththing = document.querySelector('.leg2');
 const timer_place = document.querySelector('#timer-place')
-const people_name = localStorage.key(0);
-let player_score = localStorage.getItem(people_name);
 let streck_count = 0;
 let lives;
 let found_correct_word;
@@ -21,13 +24,24 @@ let Easy = 0;
 let time = 240;
 let hint_arr = [];
 
+console.log(localStorage);
+for (var i = 1; i <= localStorage.length; i++) {
+
+    var the_playing_player = localStorage.key(i);
+    if (the_playing_player === "name") {
+        var index_of_the_player = i;
+    }
+}
+const names = localStorage.key(index_of_the_player);
+const the_player = localStorage.getItem(names);
+const the_score = localStorage.getItem(the_player);
+
+
 let easy_btn = document.querySelector('#easy_btn');
 let hard_btn = document.querySelector('#hard_btn');
 
 
 
-console.log(player_score);
-console.log(people_name);
 
 
 
@@ -157,9 +171,10 @@ fetch(url_for_word).then(function (response) {
                         restart_game.classList.add('click_able')
                         heading.textContent = "You Win";
                         // string to int convertion
-                        var score = parseInt(player_score);
-                        score += 3;
-                        localStorage.setItem(people_name, score);
+                        var score = parseInt(the_score);
+                        score += 2;
+                        location.reload();
+                        localStorage.setItem(the_player, score);
                     }
                 } else {
                     // display in incorrect 
@@ -175,7 +190,21 @@ fetch(url_for_word).then(function (response) {
 
                     lives_number.textContent = lives_number.textContent - 1;
                     lives--;
+                    if (lives === 4) {
+                        firstthing.classList.remove('display');
+                    } else { }
+                    if (lives === 3) {
+                        secondthing.classList.remove('display');
+                    }
+                    if (lives === 2) {
+                        thirdthing.forEach(e => {
+                            e.classList.remove('display');
+                        })
+                    } if (lives === 1) {
+                        fourththing.classList.remove('display');
+                    }
                     if (lives === 0) {
+                        fifththing.classList.remove('display');
                         clearInterval(timer);
                         word_place.textContent = "";
                         word_alphabet_array.forEach(alpha => {
