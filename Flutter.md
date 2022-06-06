@@ -59,7 +59,7 @@ The evaluation would be done mainly on the following basis:
 3. Completion of mentioned tasks
 4. Bonus Points for implementing extra features depending on your creativity😉
 
-Remember, the deadline for this week's task is **June 7th, 2022, 23:59**.
+Remember, the deadline for this week's task is **June 10th, 2022, 23:59**.
 
 ## Submission Guidelines :
 

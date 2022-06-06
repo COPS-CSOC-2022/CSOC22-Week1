@@ -1,0 +1,166 @@
+.loose_win {
+    pointer-events: none;
+}
+
+.click_able {
+    pointer-events: all;
+}
+
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#heading {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 4rem;
+    line-height: 1.5;
+    font-weight: 900;
+    margin: 70px auto 10px;
+
+}
+
+/* .easyhardfont{
+     font-family: 'Tourney', cursive;
+     font-weight: bold;
+  }  */
+
+#alphabets-place {
+    margin: 50px;
+}
+
+.rule-list {
+    color: silver;
+}
+
+#easy_btn {
+    margin-right: 100px;
+}
+
+#hard_btn {
+    margin-right: 100px;
+}
+
+#word {
+    margin: 1% auto 1%;
+    font-family: 'Montserrat-bold', sans-serif;
+    font-weight: 300;
+}
+
+#hint-button {
+    margin-bottom: 1%;
+}
+
+#alphabet {
+    height: 55px;
+    width: 55px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: all 1s ease;
+    background-image: linear-gradient(90deg, #fd5581, #fd8b55);
+    box-shadow: 0 2px 18px 0 rgba(248, 94, 122, 0.39), 0 1px 2px 0 rgba(248, 91, 124, 0.33);
+}
+
+.recth {
+    /* background-color:silver; */
+    background-image: url("rope.jpg");
+
+    width: 200px;
+    height: 15px;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+
+.rectv {
+    /* background-color:silver; */
+    background-image: url("rope.jpg");
+
+    width: 15px;
+    height: 190px;
+    position: absolute;
+    top: 100px;
+    right: 100px;
+
+}
+
+.rope {
+    /* background-color:silver; */
+    background-image: url("rope.jpg");
+
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    top: 100px;
+    right: 200px;
+
+}
+
+.head {
+    background-color: silver;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    top: 120px;
+    right: 180px;
+}
+
+.body {
+    background-color: silver;
+    width: 10px;
+    height: 110px;
+    position: absolute;
+    top: 130px;
+    right: 200px;
+
+}
+
+.arms1 {
+    background-color: silver;
+    width: 10px;
+    height: 40px;
+    position: absolute;
+    top: 160px;
+    right: 208px;
+    transform: rotate(30deg);
+
+}
+
+.arms2 {
+    background-color: silver;
+    width: 10px;
+    height: 40px;
+    position: absolute;
+    top: 160px;
+    right: 192px;
+    transform: rotate(-30deg);
+
+
+}
+
+.leg1 {
+    background-color: silver;
+    width: 10px;
+    height: 40px;
+    position: absolute;
+    top: 230px;
+    right: 208px;
+    transform: rotate(30deg);
+
+}
+
+.leg2 {
+    background-color: silver;
+    width: 10px;
+    height: 40px;
+    position: absolute;
+    top: 230px;
+    right: 192px;
+    transform: rotate(-30deg);
+    /*transform-origin:;*/
+
+}

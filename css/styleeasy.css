@@ -1,0 +1,7 @@
+.loose_win {
+    pointer-events: none;
+}
+
+.click_able {
+    pointer-events: all;
+}
