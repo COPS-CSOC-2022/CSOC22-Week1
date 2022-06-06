@@ -46,7 +46,7 @@ function updateScoreboard(){
         <th scope="col"><center>#</center></th>
         <th scope="col"><center>Score</center></th>
         <th scope="col"><center>Time Taken</center></th>
-        <th scope="col"><center>@</center></th>
+        <th scope="col"><center>Logged Score at</center></th>
         </tr>
     </thead>
     <tbody>`

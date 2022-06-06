@@ -17,7 +17,7 @@ let looseCount = 0;
 let maxLooseCount = 0;
 let winCount = 0;
 let chosenWord = "";
-
+var hintCost = 25;
 
 // Timer Counter Variables
 let minute = 00;

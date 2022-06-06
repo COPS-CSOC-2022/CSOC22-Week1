@@ -41,8 +41,6 @@ function createLetterButtons() {
             if (charArray.includes(button.innerText)) {
                 charArray.forEach((char, index) => {
                     if (char === button.innerText) {
-                    // Dummy condition for testing
-                    // if (1 === 1) {
                         dashes[index].innerText = char;
                         winCount += 1;
                         if (winCount == charArray.length) winHandler();

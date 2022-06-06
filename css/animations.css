@@ -1,0 +1,71 @@
+.points {
+    font-size: 62px;
+    margin: 44px 0 0 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.addition {
+    font-size: 40px;
+    opacity: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(91, 228, 91);
+}
+
+@keyframes additionFade {
+    0% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0px, -60px);
+    }
+}
+
+#addition.animating {
+    animation: additionFade 2s;
+}
+
+
+.subtraction {
+    font-size: 40px;
+    opacity: 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 0, 0);
+}
+
+@keyframes subtractionFade {
+    0% {
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate(0px, -60px);
+    }
+}
+
+#subtraction.animating {
+    animation: subtractionFade 2s;
+}
+
+.elementToFadeInAndOut {
+    color: #f1d65f;
+    -webkit-animation: fadeinout 1s linear forwards;
+    animation: fadeinout 1s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+  0%,100% { opacity: 0; }
+  50% { opacity: 1; }
+}
