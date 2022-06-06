@@ -1,0 +1,36 @@
+
+.watch {
+    padding-left: 220px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+    display: flex;
+    background-color: var(--bgColor);
+}
+
+.minuteDiv, 
+.secondDiv, 
+.milliSecondDiv {
+    width: 12%;
+    padding : 5px;
+    padding-top: 9px;
+    border-radius: 5px;
+}
+
+.minute, 
+.second, 
+.milliSecond {
+    padding: 3px;
+    background-color: var(--mainColor1);
+    border-radius: 10px;
+}
+
+.minuteTitle, 
+.secondTitle, 
+.milliSecondTitle {
+    background-color: var(--mainColor2);
+    font-size: 1.2rem;
+    padding: 3px;
+    font-weight: bold;
+    border-radius:10px;
+}
