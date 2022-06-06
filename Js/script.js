@@ -6,7 +6,7 @@ const aplhabets_place = document.querySelector('#alphabets-place');
 const lives_number = document.querySelector('#lives_number');
 const hint_button = document.querySelector('#hint-button')
 const hint_text = document.querySelector('#hint-statement')
-const url_for_word = 'https://random-words-api.vercel.app/word';
+const url_for_word = 'https://random-word-api.herokuapp.com/word';
 const page = document.getElementById('container')
 const streck_place = document.querySelector('#streck-place')
 const restart_game = document.querySelector('#restart_button')
@@ -45,23 +45,17 @@ fetch(url_for_word).then(function (response) {
 
 
 
-    if (Data[0].word.length > 5 && Hard === 1) {
+    if (Data[0].length > 5 && Hard === 1) {
 
-
-
-
-
-
-
-        word.innerHTML = Data[0].word;
+        word.innerHTML = Data[0];
         lives = 3;
         lives_number.textContent = lives;
 
 
 
-        const capital_word = Data[0].word.toUpperCase();
+        const capital_word = Data[0].toUpperCase();
         const word_alphabet_array = capital_word.split('');
-        const word_length = Data[0].word.length;
+        const word_length = Data[0].length;
         found_correct_word = word_length;
 
 
@@ -195,7 +189,6 @@ fetch(url_for_word).then(function (response) {
                 }
             })
             hint_button.addEventListener('click', () => {
-                hint_text.textContent = Data[0].definition;
                 hint_button.classList.add('disabled');
                 for (let k = 0; k < word_length; k++) {
                     if (char_array[k] == '_') {

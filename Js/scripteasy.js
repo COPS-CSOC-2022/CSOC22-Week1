@@ -6,7 +6,7 @@ const aplhabets_place = document.querySelector('#alphabets-place');
 const lives_number = document.querySelector('#lives_number');
 const hint_button = document.querySelector('#hint-button')
 const hint_text = document.querySelector('#hint-statement')
-const url_for_word = 'https://random-words-api.vercel.app/word';
+const url_for_word = 'https://random-word-api.herokuapp.com/word';
 const page = document.getElementById('container')
 const streck_place = document.querySelector('#streck-place')
 const restart_game = document.querySelector('#restart_button')
@@ -16,10 +16,11 @@ let player_score = localStorage.getItem(people_name);
 let streck_count = 0;
 let lives;
 let found_correct_word;
-let Hard = 0;
-let Easy = 1;
+let Hard = 1;
+let Easy = 0;
 let time = 240;
 let hint_arr = [];
+
 let easy_btn = document.querySelector('#easy_btn');
 let hard_btn = document.querySelector('#hard_btn');
 
@@ -30,11 +31,10 @@ console.log(people_name);
 
 
 
+
 restart_game.addEventListener('click', () => {
     window.location.href = '../html/form.html';
 })
-
-
 
 
 
@@ -44,24 +44,21 @@ fetch(url_for_word).then(function (response) {
     console.log(Data[0]);
 
 
-    if (Data[0].word.length <= 5 && Easy === 1) {
 
+    if (Data[0].length <= 5 && Hard === 1) {
 
-
-
-
-        word.innerHTML = Data[0].word;
+        word.innerHTML = Data[0];
         lives = 5;
         lives_number.textContent = lives;
 
 
 
-        const capital_word = Data[0].word.toUpperCase();
+        const capital_word = Data[0].toUpperCase();
         const word_alphabet_array = capital_word.split('');
-        console.log(word_alphabet_array);
-        const word_length = Data[0].word.length;
+        const word_length = Data[0].length;
         found_correct_word = word_length;
-        console.log(word_length);
+
+
 
 
         var char_array = [];
@@ -94,6 +91,7 @@ fetch(url_for_word).then(function (response) {
 
 
 
+
         // display all aplhabets
         for (let index = 0; index < 26; index++) {
             aplhabets_place.innerHTML = aplhabets_place.innerHTML + '<button class="btn btn-outline-primary" id="alphabet">' + String.fromCharCode(65 + index) + '</button>';
@@ -105,8 +103,6 @@ fetch(url_for_word).then(function (response) {
         // nodelist to array
         all_alphabet.forEach(function (alphabet) {
             alphabet.addEventListener('click', function () {
-
-
                 alphabet.classList.remove('btn-outline-primary');
                 alphabet.classList.add('btn-primary');
                 alphabet.classList.add('disabled');
@@ -114,9 +110,9 @@ fetch(url_for_word).then(function (response) {
 
                 // find alphabet exist in word at which place
                 const alphabet_exist = word_alphabet_array.indexOf(alphabet.textContent);
-
                 var index = -1;
                 var index_array = [];
+
 
                 if (alphabet_exist > -1) {
                     all_alphabet.forEach(e => {
@@ -128,16 +124,14 @@ fetch(url_for_word).then(function (response) {
                     word_alphabet_array.forEach(alphabets => {
                         index++;
                         if (alphabets == alphabet.textContent) {
-                            console.log(index);
                             index_array.push(index);
                         }
                     });
                     index = -1;
-                    console.log(index_array);
+
 
                     streck_count += index_array.length;
                     streck_place.textContent = streck_count;
-
 
 
                     index_array.forEach(number => {
@@ -147,16 +141,12 @@ fetch(url_for_word).then(function (response) {
 
                     word_place.innerHTML = "";
 
-                    console.log(char_array);
                     char_array.forEach(char => {
                         word_place.textContent = word_place.textContent + " " + char + " ";
                     })
 
+
                     found_correct_word -= index_array.length;
-
-
-
-
 
 
 
@@ -168,10 +158,9 @@ fetch(url_for_word).then(function (response) {
                         heading.textContent = "You Win";
                         // string to int convertion
                         var score = parseInt(player_score);
-                        score += 1;
+                        score += 3;
                         localStorage.setItem(people_name, score);
                     }
-
                 } else {
                     // display in incorrect 
                     streck_count = 0;
@@ -196,30 +185,27 @@ fetch(url_for_word).then(function (response) {
                         restart_game.classList.remove('loose_win')
                         restart_game.classList.add('click_able')
                         heading.textContent = "You Lose";
-
                     }
                 }
             })
+            hint_button.addEventListener('click', () => {
+                hint_button.classList.add('disabled');
+                for (let k = 0; k < word_length; k++) {
+                    if (char_array[k] == '_') {
+                        hint_arr.push(k);
+                    }
+                }
+                // random number between 0 and hint_arr.length
+                all_alphabet.forEach(e => {
+                    if (e.textContent == word_alphabet_array[hint_arr[0]]) {
+                        e.classList.add('btn-success');
+                        e.classList.remove('btn-outline-primary');
+                    }
+                });
+            }
+            )
         })
 
-        hint_button.addEventListener('click', () => {
-            hint_text.textContent = Data[0].definition;
-            hint_button.classList.add('disabled');
-            for (let k = 0; k < word_length; k++) {
-                if (char_array[k] == '_') {
-                    hint_arr.push(k);
-                }
-            }
-            console.log(hint_arr);
-            // random number between 0 and hint_arr.length
-            all_alphabet.forEach(e => {
-                if (e.textContent == word_alphabet_array[hint_arr[0]]) {
-                    e.classList.add('btn-success');
-                    e.classList.remove('btn-outline-primary');
-                }
-            });
-        }
-        )
     }
     else {
         location.reload();
