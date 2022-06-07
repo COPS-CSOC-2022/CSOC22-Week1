@@ -1,4 +1,11 @@
 const enter_btn = document.querySelector('#enter-btn')
+const highscore_btn = document.querySelector('#highscore-btn')
+
+highscore_btn.addEventListener('click', function () {
+    window.location.href = '../html/Highscore.html';
+}
+);
+
 const names = document.querySelector('#InputName')
 let player_name;
 enter_btn.addEventListener('click', (e) => {
@@ -12,5 +19,6 @@ enter_btn.addEventListener('click', (e) => {
     else {
         localStorage.setItem("name", player_name);
         localStorage.setItem(player_name, '0');
+        window.location.href = '../html/hard.html';
     }
 })

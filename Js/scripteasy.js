@@ -47,7 +47,7 @@ let hard_btn = document.querySelector('#hard_btn');
 
 
 restart_game.addEventListener('click', () => {
-    window.location.href = '../html/form.html';
+    window.location.href = '../html/index.html';
 })
 
 
@@ -61,7 +61,6 @@ fetch(url_for_word).then(function (response) {
 
     if (Data[0].length <= 5 && Hard === 1) {
 
-        word.innerHTML = Data[0];
         lives = 5;
         lives_number.textContent = lives;
 
@@ -173,8 +172,11 @@ fetch(url_for_word).then(function (response) {
                         // string to int convertion
                         var score = parseInt(the_score);
                         score += 2;
-                        location.reload();
                         localStorage.setItem(the_player, score);
+                        setTimeout(() => {
+                            window.location.reload();
+                        }
+                            , 5000);
                     }
                 } else {
                     // display in incorrect 
@@ -192,7 +194,7 @@ fetch(url_for_word).then(function (response) {
                     lives--;
                     if (lives === 4) {
                         firstthing.classList.remove('display');
-                    } else { }
+                    }
                     if (lives === 3) {
                         secondthing.classList.remove('display');
                     }
@@ -200,7 +202,8 @@ fetch(url_for_word).then(function (response) {
                         thirdthing.forEach(e => {
                             e.classList.remove('display');
                         })
-                    } if (lives === 1) {
+                    }
+                    if (lives === 1) {
                         fourththing.classList.remove('display');
                     }
                     if (lives === 0) {
@@ -224,7 +227,6 @@ fetch(url_for_word).then(function (response) {
                         hint_arr.push(k);
                     }
                 }
-                // random number between 0 and hint_arr.length
                 all_alphabet.forEach(e => {
                     if (e.textContent == word_alphabet_array[hint_arr[0]]) {
                         e.classList.add('btn-success');

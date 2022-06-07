@@ -48,7 +48,7 @@ console.log(the_score);
 
 
 restart_game.addEventListener('click', () => {
-    window.location.href = '../html/form.html';
+    window.location.href = '../html/index.html';
 })
 
 
@@ -62,7 +62,6 @@ fetch(url_for_word).then(function (response) {
 
     if (Data[0].length > 5 && Hard === 1) {
 
-        word.innerHTML = Data[0];
         lives = 3;
         lives_number.textContent = lives;
 
@@ -109,14 +108,17 @@ fetch(url_for_word).then(function (response) {
 
         // display all aplhabets
         for (let index = 0; index < 26; index++) {
-            aplhabets_place.innerHTML = aplhabets_place.innerHTML + '<button class="btn btn-outline-primary" id="alphabet">' + String.fromCharCode(65 + index) + '</button>';
+            aplhabets_place.innerHTML = aplhabets_place.innerHTML + '<button class="btn btn-outline-primary alphabet" id="alphabet">' + String.fromCharCode(65 + index) + '</button>';
         }
+
+
 
 
 
         const all_alphabet = document.querySelectorAll('#alphabet');
         // nodelist to array
         all_alphabet.forEach(function (alphabet) {
+
             alphabet.addEventListener('click', function () {
                 alphabet.classList.remove('btn-outline-primary');
                 alphabet.classList.add('btn-primary');
@@ -174,8 +176,13 @@ fetch(url_for_word).then(function (response) {
                         // string to int convertion
                         var score = parseInt(the_score);
                         score += 3;
-                        location.reload();
                         localStorage.setItem(the_player, score);
+                        // location reload after 5 seconds
+                        setTimeout(() => {
+                            window.location.reload();
+                        }
+                            , 5000);
+
                     }
                 } else {
                     // display in incorrect 
@@ -223,10 +230,10 @@ fetch(url_for_word).then(function (response) {
                         hint_arr.push(k);
                     }
                 }
-                // random number between 0 and hint_arr.length
                 all_alphabet.forEach(e => {
                     if (e.textContent == word_alphabet_array[hint_arr[0]]) {
-                        e.classList.add('btn-success');
+                        e.classList.remove('alphabet');
+                        e.classList.add('alphabet-hint');
                         e.classList.remove('btn-outline-primary');
                     }
                 });

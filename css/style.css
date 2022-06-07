@@ -59,7 +59,19 @@ hr {
     margin-bottom: 1%;
 }
 
-#alphabet {
+.alphabet-hint {
+    height: 55px;
+    width: 55px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: all 1s ease;
+    background-image: linear-gradient(90deg, #ffbbbb, #ffe4c0);
+    box-shadow: 0 2px 18px 0 rgba(248, 94, 122, 0.39), 0 1px 2px 0 rgba(248, 91, 124, 0.33);
+}
+
+.alphabet {
     height: 55px;
     width: 55px;
     border-radius: 5px;
@@ -68,7 +80,7 @@ hr {
     margin: 10px;
     transition: all 1s ease;
     background-image: linear-gradient(90deg, #fd5581, #fd8b55);
-    box-shadow: 0 2px 18px 0 rgba(248, 94, 122, 0.39), 0 1px 2px 0 rgba(248, 91, 124, 0.33);
+    box-shadow: 0 2px 18px 0 rgba(129, 245, 255, 0.39), 0 1px 2px 0 rgba(248, 91, 124, 0.33);
 }
 
 .recth {
@@ -107,7 +119,7 @@ hr {
 }
 
 .head {
-    background-color: silver;
+    background-color: white;
     width: 50px;
     height: 50px;
     border-radius: 100%;
@@ -117,7 +129,7 @@ hr {
 }
 
 .body {
-    background-color: silver;
+    background-color: white;
     width: 10px;
     height: 110px;
     position: absolute;
@@ -127,7 +139,7 @@ hr {
 }
 
 .arms1 {
-    background-color: silver;
+    background-color: white;
     width: 10px;
     height: 40px;
     position: absolute;
@@ -138,7 +150,7 @@ hr {
 }
 
 .arms2 {
-    background-color: silver;
+    background-color: white;
     width: 10px;
     height: 40px;
     position: absolute;
@@ -150,7 +162,7 @@ hr {
 }
 
 .leg1 {
-    background-color: silver;
+    background-color: white;
     width: 10px;
     height: 40px;
     position: absolute;
@@ -161,7 +173,7 @@ hr {
 }
 
 .leg2 {
-    background-color: silver;
+    background-color: white;
     width: 10px;
     height: 40px;
     position: absolute;
@@ -174,4 +186,19 @@ hr {
 
 .display {
     display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .hangman {
+        display: none;
+    }
+
+    /* hide it elsewhere */
+}
+
+
+.lives {
+    position: absolute;
+    top: 20px;
+    right: 45px;
 }
