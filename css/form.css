@@ -14,9 +14,7 @@ body {
     font-weight: 500;
 }
 
-/* .container{
-    padding:0;
-  } */
+
 
 .btn {
     margin: 10px;
@@ -27,7 +25,11 @@ body {
 
 }
 
-a {
-    text-decoration: none;
-    color: white;
+#heading {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 4rem;
+    line-height: 1.5;
+    font-weight: 900;
+    margin: 70px auto 10px;
+
 }

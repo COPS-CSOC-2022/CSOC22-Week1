@@ -16,6 +16,7 @@ const thirdthing = document.querySelectorAll('.thirdthing')
 const fourththing = document.querySelector('.leg1');
 const fifththing = document.querySelector('.leg2');
 const timer_place = document.querySelector('#timer-place')
+const sound = new Audio("../sound/sound.mp3");
 let streck_count = 0;
 let lives;
 let found_correct_word;
@@ -107,7 +108,7 @@ fetch(url_for_word).then(function (response) {
 
         // display all aplhabets
         for (let index = 0; index < 26; index++) {
-            aplhabets_place.innerHTML = aplhabets_place.innerHTML + '<button class="btn btn-outline-primary" id="alphabet">' + String.fromCharCode(65 + index) + '</button>';
+            aplhabets_place.innerHTML = aplhabets_place.innerHTML + '<button class="btn btn-outline-primary alphabet" id="alphabet">' + String.fromCharCode(65 + index) + '</button>';
         }
 
 
@@ -116,6 +117,7 @@ fetch(url_for_word).then(function (response) {
         // nodelist to array
         all_alphabet.forEach(function (alphabet) {
             alphabet.addEventListener('click', function () {
+                sound.play();
                 alphabet.classList.remove('btn-outline-primary');
                 alphabet.classList.add('btn-primary');
                 alphabet.classList.add('disabled');
@@ -176,7 +178,7 @@ fetch(url_for_word).then(function (response) {
                         setTimeout(() => {
                             window.location.reload();
                         }
-                            , 5000);
+                            , 3000);
                     }
                 } else {
                     // display in incorrect 
@@ -229,7 +231,8 @@ fetch(url_for_word).then(function (response) {
                 }
                 all_alphabet.forEach(e => {
                     if (e.textContent == word_alphabet_array[hint_arr[0]]) {
-                        e.classList.add('btn-success');
+                        e.classList.remove('alphabet');
+                        e.classList.add('alphabet-hint');
                         e.classList.remove('btn-outline-primary');
                     }
                 });

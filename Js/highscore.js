@@ -9,25 +9,25 @@ btn.addEventListener("click", function () {
 
 
 // convert localStorage to array
-var highscore = Object.values(localStorage);
+var high_score = Object.values(localStorage);
 
 
 // get all key names from localStorage
 var keys = Object.keys(localStorage);
-console.log(highscore);
+console.log(high_score);
 console.log(keys);
-var index = highscore.indexOf(localStorage.name);
+var index = high_score.indexOf(localStorage.name);
 console.log(index);
 
 
-for (let j = 0; j < highscore.length; j++) {
+for (let j = 0; j < high_score.length; j++) {
 
-    for (let k = 0; k < highscore.length; k++) {
+    for (let k = 0; k < high_score.length; k++) {
         if (k != index && j != index) {
-            if (highscore[j] > highscore[k]) {
-                var temp = highscore[j];
-                highscore[j] = highscore[k];
-                highscore[k] = temp;
+            if (parseInt(high_score[j]) > parseInt(high_score[k])) {
+                var temp = high_score[j];
+                high_score[j] = high_score[k];
+                high_score[k] = temp;
                 var temp2 = keys[j];
                 keys[j] = keys[k];
                 keys[k] = temp2;
@@ -41,26 +41,14 @@ for (let j = 0; j < highscore.length; j++) {
 
 
 
-console.log(highscore);
+console.log(high_score);
 console.log(keys);
 
 // find  INDEX of the name key in localStorage
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// display highscore
-for (var i = 0; i < highscore.length && i < 11; i++) {
+// display high_score
+for (var i = 0; i < high_score.length && i < 11; i++) {
 
     if (i != index) {
         // display keys and values
@@ -72,7 +60,7 @@ for (var i = 0; i < highscore.length && i < 11; i++) {
 
         th.textContent = i;
         td1.textContent = keys[i];
-        td2.textContent = highscore[i];
+        td2.textContent = high_score[i];
         tr.appendChild(th);
         tr.appendChild(td1);
         tr.appendChild(td2);

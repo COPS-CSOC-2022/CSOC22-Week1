@@ -14,6 +14,7 @@ const timer_place = document.querySelector('#timer-place')
 const firstthing = document.querySelector('.head')
 const secondthing = document.querySelectorAll('.secondthing')
 const thirdthing = document.querySelectorAll('.thirdthing')
+const sound = new Audio("../sound/sound.mp3");
 let streck_count = 0;
 let lives;
 let found_correct_word;
@@ -120,6 +121,7 @@ fetch(url_for_word).then(function (response) {
         all_alphabet.forEach(function (alphabet) {
 
             alphabet.addEventListener('click', function () {
+                sound.play();
                 alphabet.classList.remove('btn-outline-primary');
                 alphabet.classList.add('btn-primary');
                 alphabet.classList.add('disabled');
@@ -181,7 +183,7 @@ fetch(url_for_word).then(function (response) {
                         setTimeout(() => {
                             window.location.reload();
                         }
-                            , 5000);
+                            , 3000);
 
                     }
                 } else {
