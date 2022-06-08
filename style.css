@@ -112,6 +112,7 @@ body{
     min-width: 500px;
     text-align: center;
     font-size: 25px;
+    animation: fade-out 0.4s ease;
 }
 
 #darkmode-icon {
@@ -122,3 +123,8 @@ body{
     justify-self: left;
     margin-right: 0%;
   }
+
+.new-element{
+    font-size: 50px;
+    animation: fade-in 0.4s ease;
+}

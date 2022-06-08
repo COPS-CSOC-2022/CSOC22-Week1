@@ -134,6 +134,18 @@ function addToHistory(value) {
     el.setAttribute("id", `Div${i}`);
     hist[0].appendChild(el);
     
+ 
+    if (i<1) {
+        let newElement= document.getElementById(`Div${i}`);
+        newElement.classList.add("new-element");
+    }
+    else {
+        let newElement= document.getElementById(`Div${i}`);
+        newElement.classList.add("new-element");
+        let oldElement= document.getElementById(`Div${i-1}`);
+        oldElement.classList.remove("new-element"); 
+    }
+    
 
 
     history += value;
@@ -149,7 +161,7 @@ function addToHistory(value) {
     {
         document.getElementById(`Div${i}`).innerHTML = history;
     }
-    
+   
 
 
 }
