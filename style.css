@@ -1,0 +1,110 @@
+.container{
+    max-width: 400px;
+    margin: 10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+    border-radius: 10%;
+}
+
+#display {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+    background-color: rgb(132, 184, 214);
+    border: 1px solid rgb(13, 38, 66);
+    border-radius: 10%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.buttons > div {
+    border-top: 1px solid #999;
+    border-right: 1px solid#999;
+    border-bottom: 1px solid#999;
+}
+
+.button {
+    border: 0.5px;
+    border-radius: 10%;
+    line-height: 70px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#equal {
+    background-color: rgb(132, 184, 214);
+    color: white;
+}
+
+.button:hover {
+    background-color: #323330;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.toggle{
+    position: relative;
+}
+
+.toggle input{
+    position:absolute;
+    opacity: 0;
+}
+
+.toggle .scientific{
+    text-align: center;
+    display: block;
+}
+
+.slider{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background-color: black;
+    transition: 0.4s;
+    width: 90px;
+    height: 50px;
+    top:10px;
+    left: 5px;
+    right: 5px;
+}
+
+.slider:before{
+    content:'';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: rgb(212, 198, 198);
+    transition: 0.4s;
+    top:10px;
+    left:5px;
+}
+
+input:checked + .slider{
+    background-color: rgb(67, 99, 201);
+}
+
+input:checked+ .slider::before{
+    transform: translateX(50px);
+}
+
+.slider.round{
+    border-radius:15px;
+}
+
+.slider.round::before{
+    border-radius: 10px;
+}
+
+
+
+/* case 'x!':
+                let result = 1;
+                for(let i = 1; i<=display.innerText; i++){
+                    result = result * i;
+                } */
