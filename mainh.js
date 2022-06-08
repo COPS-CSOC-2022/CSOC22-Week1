@@ -122,7 +122,7 @@ function wordDisplay(){
     }
     if (failCounter==0){
         var imgDisplayed=document.createElement('img');
-        imgDisplayed.src="./images/hard lvl 1.jpg";
+        imgDisplayed.src="hard lvl 1.jpg";
         document.getElementById('imgdis').innerHTML='';
         document.getElementById('imgdis').appendChild(imgDisplayed);
         document.getElementById('textspan').innerHTML="3 lives left";
@@ -210,28 +210,28 @@ function keyupFunc(){
         failCounter=failCounter+1;
         if (failCounter==0){
             var imgDisplayed=document.createElement('img');
-            imgDisplayed.src="./images/hard lvl 1.jpg";
+            imgDisplayed.src="hard lvl 1.jpg";
             document.getElementById('imgdis').innerHTML='';
             document.getElementById('imgdis').appendChild(imgDisplayed);
             document.getElementById('textspan').innerHTML="3 lives left";
         }
         else if (failCounter==1){
             var imgDisplayed=document.createElement('img');
-            imgDisplayed.src="./images/hard lvl 2.jpg";
+            imgDisplayed.src="hard lvl 2.jpg";
             document.getElementById('imgdis').innerHTML='';
             document.getElementById('imgdis').appendChild(imgDisplayed);
             document.getElementById('textspan').innerHTML="2 lives left";
         }
         else if (failCounter==2){
             var imgDisplayed=document.createElement('img');
-            imgDisplayed.src="./images/hard lvl 3.jpg";
+            imgDisplayed.src="hard lvl 3.jpg";
             document.getElementById('imgdis').innerHTML='';
             document.getElementById('imgdis').appendChild(imgDisplayed);
             document.getElementById('textspan').innerHTML="1 life left";
         }
         else if (failCounter==3){
             var imgDisplayed=document.createElement('img');
-            imgDisplayed.src="./images/hard lvl 4.jpg";
+            imgDisplayed.src="hard lvl 4.jpg";
             document.getElementById('imgdis').innerHTML='';
             document.getElementById('imgdis').appendChild(imgDisplayed);
             document.getElementById('textspan').style.color='#FF0000';
