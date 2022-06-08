@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleh.css">    
+</head>
+<body>
+    <div id="header">
+        <h1 id="heading">Hangman</h1>
+    </div>
+
+    <div id="navbar">
+        <a href="index.html">
+            <h2 id="btn-left">Easy Mode</h2>
+        </a>
+        <a href="hard.html">
+            <h2 id="btn-center">Hard Mode</h2>
+        </a>
+        <a href="hard.html">
+            <h2 id="btn-right">New Word</h2>
+        </a>
+    </div>
+
+    <div id="container">
+        <div id="anime">
+            <div id="imgdis">
+                <!-- <img id="displayImg" src="./images/hard lvl 1.jpg" alt="HangMan"> -->
+            </div>
+            <div id="textDisplay">
+                <span id="textspan"></span>
+            </div>
+        </div>
+    
+        <div id="gameplay">
+            <div id="word">
+                <!-- <div class="box">
+                    h
+                </div>
+                <div class="box">
+                    e
+                </div>
+                <div class="box">
+                    l
+                </div>
+                <div class="box">
+                    l
+                </div>
+                <div class="box">
+                    o
+                </div> -->
+            </div>
+            <div id="btn-container">
+                <div id="letter">
+                    <input type="text" pattern="[A-Za-z]{1}" onkeyup="keyupFunc()" placeholder="Enter the letter" id="inpletter">
+                </div>
+                <!-- <div id="submit">
+                    <button id="submit-btn">Submit</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <script src="mainh.js"></script>
+</body>
+</html>

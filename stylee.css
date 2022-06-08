@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+    color: white;
+    min-height: 250px;
+}
+
+#heading{
+    font-size: 7.5rem;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(197, 252, 252);
+    min-height: 100px;
+}
+
+#navbar a{
+    text-decoration: none;
+}
+
+#navbar a #btn-left{
+    position: absolute;
+    left: 15ch;
+    top: 285px;
+    color: blue;
+}
+
+#navbar a #btn-right{
+    position: absolute;
+    right: 15ch;
+    top: 285px;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#anime{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    background-color: aliceblue;
+    min-height: 600px;
+}
+
+#gameplay{
+    width: 60%;
+    background-color: antiquewhite;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+#word{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 98%;
+    background-color:rgb(200, 255, 237);
+    /* margin: 80px 10px; */
+    margin: 140px 15px 50px 15px;
+    min-height: 300px;
+}
+
+#submit{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* width: 20%; */
+    background-color: blue;
+    margin: 5px 10px;
+    /* min-height: 40px; */
+}
+
+#submit-btn{
+    color: white;
+    text-decoration: none;
+    background-color: aqua;
+}
+
+.box{
+    background-color: #f0f8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    min-height: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* #letter{
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    margin: 5px 10px;
+} */
+
+#btn-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#textDisplay{
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+#inpletter{
+    height: 30px;
+}
