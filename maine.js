@@ -122,7 +122,7 @@ function wordDisplay(){
     }
     if (failCounter==0){
         var imgDisplayed=document.createElement('img');
-        imgDisplayed.src="./images/hard lvl 1.jpg";
+        imgDisplayed.src="hard lvl 1.jpg";
         document.getElementById('imgdis').innerHTML='';
         document.getElementById('imgdis').appendChild(imgDisplayed);
         document.getElementById('textspan').innerHTML="5 lives left";
@@ -223,42 +223,42 @@ function keyupFunc(){
         failCounter=failCounter+1;
         if (failCounter==0){
             var imgDisplayed=document.createElement('img');
-            imgDisplayed.src="./images/easy lvl 1.jpg";
+            imgDisplayed.src="easy lvl 1.jpg";
             document.getElementById('imgdis').innerHTML='';
             document.getElementById('imgdis').appendChild(imgDisplayed);
             document.getElementById('textspan').innerHTML="5 lives left";
         }
         else if (failCounter==1){
             var imgDisplayed=document.createElement('img');
-            imgDisplayed.src="./images/easy lvl 2.jpg";
+            imgDisplayed.src="easy lvl 2.jpg";
             document.getElementById('imgdis').innerHTML='';
             document.getElementById('imgdis').appendChild(imgDisplayed);
             document.getElementById('textspan').innerHTML="4 lives left";
         }
         else if (failCounter==2){
             var imgDisplayed=document.createElement('img');
-            imgDisplayed.src="./images/easy lvl 3.jpg";
+            imgDisplayed.src="easy lvl 3.jpg";
             document.getElementById('imgdis').innerHTML='';
             document.getElementById('imgdis').appendChild(imgDisplayed);
             document.getElementById('textspan').innerHTML="3 lives left";
         }
         else if (failCounter==3){
             var imgDisplayed=document.createElement('img');
-            imgDisplayed.src="./images/easy lvl 4.jpg";
+            imgDisplayed.src="easy lvl 4.jpg";
             document.getElementById('imgdis').innerHTML='';
             document.getElementById('imgdis').appendChild(imgDisplayed);
             document.getElementById('textspan').innerHTML="2 lives left";
         }
         else if (failCounter==4){
             var imgDisplayed=document.createElement('img');
-            imgDisplayed.src="./images/easy lvl 5.jpg";
+            imgDisplayed.src="easy lvl 5.jpg";
             document.getElementById('imgdis').innerHTML='';
             document.getElementById('imgdis').appendChild(imgDisplayed);
             document.getElementById('textspan').innerHTML="1 life left";
         }
         else if (failCounter==5){
             var imgDisplayed=document.createElement('img');
-            imgDisplayed.src="./images/easy lvl 6.jpg";
+            imgDisplayed.src="easy lvl 6.jpg";
             document.getElementById('imgdis').innerHTML='';
             document.getElementById('imgdis').appendChild(imgDisplayed);
             document.getElementById('textspan').style.color='#FF0000';
