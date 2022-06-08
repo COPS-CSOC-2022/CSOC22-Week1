@@ -1,0 +1,124 @@
+:root{
+    --primaary-colour: #323330;
+    --secondary-colour: aliceblue;
+}
+.light-mode{
+    --primaary-colour:aliceblue;
+    --secondary-colour:#323330;
+}
+
+.sci{
+    animation: fade-in 0.4s ease;
+}
+
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fade-out {
+	100% {
+		opacity: 0;
+	}
+	0% {
+		opacity: 1;
+	}
+}
+
+body{
+    background: var(--primaary-colour);
+    color: var(--secondary-colour);
+    transition: background 0.5s linear;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.invisible{
+    opacity: 0;
+    animation: fade-out 0.4s ease;
+}
+
+
+#display-input {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+}
+
+.buttons {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+.button {
+    line-height: 100px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+#equal {
+    background-color:var(--primaary-colour);
+    color:var(var(--secondary-colour));
+}
+#equal:hover{
+    background-color:rgb(67, 255, 158);
+    color: var(--primaary-colour);
+}
+
+
+#scientific {
+    background-color: var(--primaary-colour);
+    color: var(--secondary-colour);
+    transition: 0.25s ease-in-out;
+}
+#scientific:hover{
+    background-color:rgb(139, 67, 255);
+    color: var(--primaary-colour);
+    transition: 0.25s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--secondary-colour);
+    color: var(--primaary-colour);
+    transition: 0.25s ease-in-out;
+    font-size: 35px;
+}
+
+
+.sci:hover{
+    background-color:rgb(139, 67, 255);
+    color: var(--primaary-colour);
+    transition: 0.25s ease-in-out;
+   
+}
+
+.right-panel{
+    display: flex;
+}
+.history{
+    min-width: 500px;
+    text-align: center;
+    font-size: 25px;
+}
+
+#darkmode-icon {
+    height: 30px;
+    min-width: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    justify-self: left;
+    margin-right: 0%;
+  }
