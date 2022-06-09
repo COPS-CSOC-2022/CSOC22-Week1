@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 5px;
+  /* background-color: pink; */
+}
+
+body 
+{
+  /* background-color: #2E2E2E; */
+  color: #121212;
+  /* background-color: #371B58; */
+  /* background: linear-gradient(-45deg, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%); */
+  background-color: #090947;
+  background-image: linear-gradient(315deg, #090947 0%, #5a585a 74%);
+  
+
+  align-items: center;
+}
+
+#btn-equal
+{
+  color: white;
+  background-color:rgb(16, 154, 16);
+  font-size: 19px;
+  border-radius: 7px;
+  text-align: unset;
+  /* border: 2px solid grey; */
+}
+#btn-clear
+{
+  color: rgb(241, 115, 20);
+  /* background-color:rgb(16, 154, 16); */
+  background-color: black;
+  font-size: 19px;
+  border-radius: 7px;
+  text-align: unset;
+  /* border: 2px solid grey; */
+}
+.scii
+{
+  /* border: 10px solid blue; */
+  margin-top: 50px;
+  /* align-items: center; */
+}
+
+#container 
+{
+  /* width: 800px; */
+  /* background-color: #2E2E2E; */
+  height: 100%;
+  
+  /* border: 20px solid red; */
+  /* border-radius: 10px; */
+  /* margin-top: 20px; */
+}
+
+#calc-history 
+{
+  color: white;
+  font-size: 20px;
+  float: right;
+  width: 300px;
+  height: 420px;
+  /* background-color: #636363; */
+  background-color: 6c757d;
+  border-radius: 5px;
+  margin-top: 6px;
+  margin: 1% 10%;
+  padding: 10px;
+  position: sticky;
+  box-shadow: 0px 5px 10px #444444 inset;
+  /* border: 15px solid pink; */
+}
+
+#calc-history-box 
+{
+  width: 180px !important;
+  height: 220px !important;
+  resize: none;
+  overflow: hidden;
+  /* border: 22px solid greenyellow; */
+}
+
+#calc-history hr 
+{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+.calculator 
+{
+  text-align: center;
+  width: 350px;
+  margin:2% 10%;
+  height: 450px;
+  /* background-color: #c0c0c0; */
+  /* background-color: FAD9E6; */
+  background-color: 6c757d;
+  /* box-shadow: 0px 0px 0px 10px #666; */
+  border: 2px solid rgb(0, 0, 1);
+  border-radius: 10px;
+
+}
+.calculator-light
+{
+  background-color: #E4E7E8;
+}
+#display 
+{
+  width: 320px;
+  height: 40px;
+  text-align: right;
+  background-color: black;
+  border: 3px solid white;
+  font-size: 18px;
+  left: 2px;
+  top: 2px;
+  color: #7fff00;
+}
+
+.btnTop
+{
+  color: white;
+  /* background-color: #6f6f6f; */
+  background-color: black;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+  height: 25px;
+}
+.btnNum 
+{
+  color: white;
+  background-color: black;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+  height: 25px;
+}
+.btnMath 
+{
+  color:#2eff0e;
+  /* background-color: #ff4561; */
+  background-color: black;
+  border-radius: 7px;
+  font-size: 16px;
+  margin: auto;
+  width: 50px;
+  height: 25px;
+}
+
+.btnOpps {
+  color: white;
+  /* background-color: #ff9933; */
+  background-color: black;
+  font-size: 14px;
+  margin: auto;
+  width: 50px;
+  height: 25px;
+}
+
+.hide
+{
+  display: none;
+  border: 5px solid red;
+  color: green;
+}
+
+.toun
+{
+  color: black;
+  background-color: white;
+}
+
+
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  /* padding: 15px 32px; */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
