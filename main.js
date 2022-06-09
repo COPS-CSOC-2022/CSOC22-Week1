@@ -1,48 +1,47 @@
 let display = document.getElementById('display');
 const toggle = document.querySelector('.toggle input')
 
-// toggle.addEventListener('click', ()=>{
-//     const scientific = toggle.parentNode.querySelector('.scientific')
-
-//     scientific.textContent = toggle.checked ? 'Scientific' : 'Regular'
-// })
 let buttons = Array.from(document.getElementsByClassName('button'));
 
-// function themeSwitch(){
-//     let element = document.body;
-//     element.classList.toggle("dark-mode");
-
-// }
-
 let changeTheme = document.getElementById("change-theme");
-    if(sessionStorage.getItem("mode")=="dark"){
+const container = document.querySelector(".container");
+console.log(container);
+
+if (!localStorage.getItem("suhaniCalc")) {
+    localStorage.setItem("suhaniCalc", "0");
+}
+
+if(sessionStorage.getItem("mode")=="dark"){
+    darkmode();
+}
+else{
+    lightmode();
+}
+
+changeTheme.addEventListener("change", function(){
+    if (changeTheme.checked){
         darkmode();
     }
     else{
         lightmode();
     }
+});
 
-    changeTheme.addEventListener("change", function(){
-        if (changeTheme.checked){
-            darkmode();
-        }
-        else{
-            lightmode();
-        }
-    });
+function darkmode(){
+    document.body.classList.add("dark-mode");
+    container.style.backgroundColor = "#696969";
+    container.style.color = "black";
+    changeTheme.checked = true;
+    sessionStorage.setItem("mode", "dark");
+}
 
-    function darkmode(){
-        document.body.classList.add("dark-mode");
-        changeTheme.checked = true;
-        sessionStorage.setItem("mode", "dark");
-    }
-
-    function lightmode(){
-        document.body.classList.remove("dark-mode"); 
-        changeTheme.checked = false;
-        sessionStorage.setItem("mode", "light");
-    }
-
+function lightmode(){
+    container.style.backgroundColor = "#abb3b6";
+    container.style.color = "black";
+    document.body.classList.remove("dark-mode"); 
+    changeTheme.checked = false;
+    sessionStorage.setItem("mode", "light");
+}
 
 
 buttons.map(button=> {
@@ -58,19 +57,19 @@ buttons.map(button=> {
                 break;
             case '=':
                 try{
-                    display.innerText = eval(display.innerText);
+                    const res = eval(display.innerText);
+                    display.innerText = res;
+                    localStorage.setItem("suhaniCalc", localStorage.getItem("suhaniCalc") + "," + res.toString());
+                    console.log(localStorage);
                 } catch{
                     display.innerText = 'Error!';
                     // alert("Nooo");
                 }
                 break;
-            case 'Deg':
                 case 'sin':
                     let x = eval(display.innerText);
                     x = x*Math.PI/180; //in degrees
                     display.innerText = Math.sin(x);
-                    
-                    // alert("Woooo");
                     break;
                 case 'cos':
                     let y = eval(display.innerText);
@@ -100,12 +99,6 @@ buttons.map(button=> {
                 π = 3.14159265
                 display.innerText = π;
                 break;
-            // case '(':
-            //     display.innerText = '(';
-            //     break;
-            // case ')':
-            //     display.innerText = ')';
-            //     break;
             case 'e':
                 e = 2.71828183
                 display.innerText = e;
@@ -126,14 +119,13 @@ buttons.map(button=> {
                 let h = eval(display.innerText);
                 display.innerText = Math.pow(h, 1/2);
                 break;
-            // case '1/x':
-            //     let i = eval(display.innerText);
-            //     display.innerText = ;
-            //     break;
-            
-
+            case 'History':
+                localStorage.getItem("suhaniCalc").split(",").forEach((value) => {
+                    console.log(value);
+                    display.innerText += value.toString() + ',';
+                });
+                break;
             default:
-                // alert("something");
                 display.innerText += e.target.innerText;
         }
     });
@@ -141,3 +133,26 @@ buttons.map(button=> {
 
 
 
+// toggle.addEventListener('click', ()=>{
+//     const scientific = toggle.parentNode.querySelector('.scientific')
+
+//     scientific.textContent = toggle.checked ? 'Scientific' : 'Regular'
+// })
+
+            // case '1/x':
+            //     let i = eval(display.innerText);
+            //     display.innerText = ;
+            //     break;
+
+                        // case '(':
+            //     display.innerText = '(';
+            //     break;
+            // case ')':
+            //     display.innerText = ')';
+            //     break;
+
+            // function themeSwitch(){
+//     let element = document.body;
+//     element.classList.toggle("dark-mode");
+
+// }
