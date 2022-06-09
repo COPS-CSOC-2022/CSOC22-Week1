@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/styleeasy.css">
+    <link rel="stylesheet"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:wght@700&family=Cinzel+Decorative:wght@700&family=Federo&family=Londrina+Outline&family=Londrina+Shadow&family=Montserrat:wght@100;400;900&family=Tourney:wght@100&family=Ubuntu&display=swap" rel="stylesheet">
+    <title>Hangman Game</title>
+</head>
+
+
+
+<body>
+    <!-- the hangman photo -->
+    <div class="hangman">
+        <div class="recth">
+        </div>
+        <div class="rectv">
+        </div>
+        <div class="rope">
+        </div>
+        <div class="head display">
+        </div>
+        <div class="body  display">
+        </div>
+        <div class="arms1 thirdthing display">
+        </div>
+        <div class="arms2 thirdthing display">
+        </div>
+        <div class="leg1  display">
+        </div>
+        <div class="leg2  display">
+        </div>
+    </div>
+    <div class="m-0 p-0" id="container">
+        <div>
+            <h1 id="heading">Hangman</h1>
+            <!-- lives place -->
+            <div class="m-2 p-2"> Lives remaining: <span id="lives_number"></span>/5</div>
+
+            <!-- travel between pages -->
+            <div class="box">
+
+            <a href="./easy.html"><button class="btn btn-success m-2 p-2" id="easy_btn">Easy</button></a>
+            <a href="./hard.html"><button class="btn btn-outline-danger m-2 p-2" id="hard_btn">Hard</button></a>
+
+        <!-- the word place -->
+        <div id="word"></div>
+        <!-- hint button -->
+        <div><button class="btn btn-outline-info" id="hint-button">Hint</button>
+
+
+            <div id="word-place"></div>
+
+
+            <div id="hint-statement"></div>
+
+
+            <div>Your streak: <span id="streck-place">0</span></div>
+          </div>
+        </div>
+
+
+            <!-- timer -->
+            <div class="timer-place">Time Left:<span id="timer-place">240s</span></div>
+
+
+            <!-- place to show incorrect word -->
+
+            <div>
+                <h3>Incorrect Words:</h3>
+                <h4>
+                    <div id="incorrect"></div>
+                </h4>
+            </div>
+
+            <!-- all alphabet to be shown -->
+            <div id="alphabets-place"></div>
+
+            <!-- restart game -->
+            <div><button class="btn btn-outline-warning" id="restart_button">Restart Game</button></div>
+        </div>
+    </div>
+</body>
+<script src="../Js/scripteasy.js"></script>
+
+</html>
