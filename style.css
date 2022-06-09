@@ -171,8 +171,8 @@ input:checked+ .slider::before{
     }
     .deg input{
         position:fixed;
-        top: 238px;
-        left: 167px;
+        top: 220px;
+        left: 85px;
     }
     .slider:before{
         top: 5px;
