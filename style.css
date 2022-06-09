@@ -18,17 +18,14 @@
     line-height: 50px;
     padding: 16px 8px;
     font-size: 45px;
-    /* background-color: rgb(132, 184, 214); */
     background-color: #828c8f;
     border: 1px solid rgb(13, 38, 66);
-    
 }
 
 .buttons {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin-top: 30px;
-    
 }
 
 .buttons > div {
@@ -36,8 +33,6 @@
     padding: 20px;
     border: 1px solid rgb(0, 0, 0);
     background-color: #828c8f;
-    /* border-right: 1px solid#999;
-    border-bottom: 1px solid#999; */
 }
 
 .button {
@@ -50,13 +45,13 @@
     text-align: center;
     font-size: 18px;
     cursor: pointer;
-    
 }
 
 #equal {
     background-color: rgb(226, 139, 25);
     color: white;
 }
+
 #equal:hover {
     background-color: #295479;
     transition: 0.5s ease-in-out;
@@ -181,8 +176,3 @@ input:checked+ .slider::before{
 
 
 
-/* case 'x!':
-                let result = 1;
-                for(let i = 1; i<=display.innerText; i++){
-                    result = result * i;
-                } */

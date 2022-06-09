@@ -1,14 +1,9 @@
 let display = document.getElementById('display');
-const toggle = document.querySelector('.toggle input')
 let buttons = Array.from(document.getElementsByClassName('button'));
 let changeTheme = document.getElementById("change-theme");
 const container = document.querySelector(".container");
 let isDeg = document.getElementById("is-deg")
-// let exponent = document.getElementById('exponent');
 
-// exponent.addEventListener("click", function(){
-
-// });
 
 if (!localStorage.getItem("suhaniCalc")) {
     localStorage.setItem("suhaniCalc", "0");
@@ -53,7 +48,7 @@ buttons.map(button=> {
             case 'C':
                 display.innerText = '';
                 break;
-            case 'DEL':
+            case 'Del':
                 if(display.innerText){
                 display.innerText = display.innerText.slice(0,-1);
                 }
@@ -99,7 +94,7 @@ buttons.map(button=> {
                     display.innerText = Math.tan(z);
                 }
                 break;
-            case 'Asin':
+            case 'sin⁻¹':
                let a = eval(display.innerText);
                 if (isDeg.checked == true){  
                     display.innerText = Math.asin(a)*180/Math.PI;
@@ -108,22 +103,22 @@ buttons.map(button=> {
                     display.innerText = Math.asin(a);
                 }
                 break;
-            case 'Acos':
+            case 'cos⁻¹':
                 let b = eval(display.innerText);
                 if (isDeg.checked == true){   
-                    display.innerText = Math.asin(b)*180/Math.PI;
+                    display.innerText = Math.acos(b)*180/Math.PI;
                 }
                 else{
-                    display.innerText = Math.asin(b);
+                    display.innerText = Math.acos(b);
                 }
                 break;
-            case 'Atan':
+            case 'tan⁻¹':
                 let c = eval(display.innerText);
                 if (isDeg.checked == true){ 
-                    display.innerText = Math.asin(c)*180/Math.PI;
+                    display.innerText = Math.atan(c)*180/Math.PI;
                 }
                 else{
-                    display.innerText = Math.asin(c);
+                    display.innerText = Math.atan(c);
                 }
                 break;
             case 'π':
@@ -142,19 +137,19 @@ buttons.map(button=> {
                 let f = eval(display.innerText);
                 display.innerText = Math.log(f);
                 break;        
-            case 'x^2':
+            case 'x²':
                 let g = eval(display.innerText);
                 display.innerText = Math.pow(g,2);
                 break;
-            case 'x^3':
+            case 'x³':
                 let m = eval(display.innerText);
                 display.innerText = Math.pow(m,3);
                 break;
-            case 'x^1/2':
+            case 'x¹/²':
                 let h = eval(display.innerText);
                 display.innerText = Math.pow(h, 1/2);
                 break;
-            case 'HIS':
+            case 'His':
                 localStorage.getItem("suhaniCalc").split(",").forEach((value) => {
                     console.log(value);
                     display.innerText += value.toString() + ',';
@@ -189,23 +184,4 @@ buttons.map(button=> {
 // toggle.addEventListener('click', ()=>{
 //     const scientific = toggle.parentNode.querySelector('.scientific')
 
-//     scientific.textContent = toggle.checked ? 'Scientific' : 'Regular'
-// })
 
-            // case '1/x':
-            //     let i = eval(display.innerText);
-            //     display.innerText = ;
-            //     break;
-
-                        // case '(':
-            //     display.innerText = '(';
-            //     break;
-            // case ')':
-            //     display.innerText = ')';
-            //     break;
-
-            // function themeSwitch(){
-//     let element = document.body;
-//     element.classList.toggle("dark-mode");
-
-// }
