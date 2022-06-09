@@ -158,10 +158,10 @@ input:checked+ .slider::before{
         left:1px;
     }
     .slider{
-        width: 20px;
+        width: 28px;
     }
     input:checked+ .slider::before{
-        transform: translateX(10px);
+        transform: translateX(8px);
     }
 }
 
