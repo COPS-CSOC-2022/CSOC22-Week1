@@ -1,11 +1,13 @@
 let display = document.getElementById('display');
 const toggle = document.querySelector('.toggle input')
-
 let buttons = Array.from(document.getElementsByClassName('button'));
-
 let changeTheme = document.getElementById("change-theme");
 const container = document.querySelector(".container");
-console.log(container);
+// let exponent = document.getElementById('exponent');
+
+// exponent.addEventListener("click", function(){
+
+// });
 
 if (!localStorage.getItem("suhaniCalc")) {
     localStorage.setItem("suhaniCalc", "0");
@@ -17,6 +19,8 @@ if(sessionStorage.getItem("mode")=="dark"){
 else{
     lightmode();
 }
+
+
 
 changeTheme.addEventListener("change", function(){
     if (changeTheme.checked){
@@ -50,7 +54,7 @@ buttons.map(button=> {
             case 'C':
                 display.innerText = '';
                 break;
-            case 'Back':
+            case 'DEL':
                 if(display.innerText){
                 display.innerText = display.innerText.slice(0,-1);
                 }
@@ -66,32 +70,31 @@ buttons.map(button=> {
                     // alert("Nooo");
                 }
                 break;
-                case 'sin':
-                    let x = eval(display.innerText);
-                    x = x*Math.PI/180; //in degrees
-                    display.innerText = Math.sin(x);
-                    break;
-                case 'cos':
-                    let y = eval(display.innerText);
-                    y = y*Math.PI/180;
-                    display.innerText = Math.cos(y);
-                    break;
-                case 'tan':
-                    let z = eval(display.innerText);
-                    z = z*Math.PI/180;
-                    display.innerText = Math.tan(z);
-                    break;
+            
+            case 'sin':
+                let x = eval(display.innerText);
+                x = x*Math.PI/180; //in degrees
+                display.innerText = Math.sin(x);
                 break;
-            case 'Arcsin':
-               let a = eval(display.innerText);
-               display.innerText = Math.asin(a);
-               break;
-           case 'Arccos':
-                let b = eval(display.innerText);
-                b = b*Math.PI/180;
-                display.innerText = Math.acos(b);
+            case 'cos':
+                let y = eval(display.innerText);
+                y = y*Math.PI/180;
+                display.innerText = Math.cos(y);
                 break;
             case 'tan':
+                let z = eval(display.innerText);
+                z = z*Math.PI/180;
+                display.innerText = Math.tan(z);
+                break;
+            case 'Asin':
+               let a = eval(display.innerText);
+               display.innerText = Math.asin(a);//in radians
+               break;
+           case 'Acos':
+                let b = eval(display.innerText);
+                display.innerText = Math.acos(b);
+                break;
+            case 'Atan':
                 let c = eval(display.innerText);
                 display.innerText = Math.atan(c);
                 break;
@@ -119,11 +122,28 @@ buttons.map(button=> {
                 let h = eval(display.innerText);
                 display.innerText = Math.pow(h, 1/2);
                 break;
-            case 'History':
+            case 'HIS':
                 localStorage.getItem("suhaniCalc").split(",").forEach((value) => {
                     console.log(value);
                     display.innerText += value.toString() + ',';
                 });
+                break;
+            case 'x!':
+                let i = eval(display.innerText);
+                let ans = 1;
+                if (i===0){
+                    display.innerText = 1;
+                }
+                else{
+                    for(j=1; j<=i; j++){
+                        ans *= j;
+                    }
+                    display.innerText = ans;
+                }
+                break;
+            case '1/x':
+                let k = display.innerText;
+                display.innerText = 1/k;
                 break;
             default:
                 display.innerText += e.target.innerText;

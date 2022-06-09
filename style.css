@@ -148,8 +148,9 @@ input:checked+ .slider::before{
         line-height: 10px;
         padding: 0px;
     }
-    .display{
-        height: 50px;
+    #display{
+        height: 40px;
+        font-size: 40px;
     }
     .toggle{
         position: relative;
