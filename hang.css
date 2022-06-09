@@ -132,32 +132,6 @@ body{
 
 }
 
-@media (max-width:1300px){
-    body{
-        background: black
-    }
-    h1{
-        color:white;
-    }
-    .maxScore{
-        color:#6d6d6d;
-        margin-left: 0px;
-        text-align: center;
-    }
-    .hint{
-        color: #6d6d6d;
-     }
-     .time{
-        color: #6d6d6d;
-        text-align: center;
-        margin-left: 0px;
-        margin-top: 10px;
-     }
-     .lives{
-       color: #6d6d6d;
-       text-align: center;
-       margin-right: 0;
-     }
-}
+
 
 
