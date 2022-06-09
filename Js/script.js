@@ -43,7 +43,7 @@ const the_score = localStorage.getItem(the_player);
 
 // restart button event
 restart_game.addEventListener('click', () => {
-    window.location.href = '../html/index.html';
+    window.location.href = '../index.html';
 })
 
 

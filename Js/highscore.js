@@ -2,7 +2,7 @@
 // return btn
 const btn = document.getElementById("btn");
 btn.addEventListener("click", function () {
-    window.location.href = '../html/index.html';
+    window.location.href = '../index.html';
 }
 );
 

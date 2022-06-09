@@ -48,7 +48,7 @@ let hard_btn = document.querySelector('#hard_btn');
 
 
 restart_game.addEventListener('click', () => {
-    window.location.href = '../html/index.html';
+    window.location.href = '../index.html';
 })
 
 
