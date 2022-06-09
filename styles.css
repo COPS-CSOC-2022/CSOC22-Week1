@@ -1,0 +1,269 @@
+body{
+    font-family: 'Crimson Pro', serif;  
+    background: linear-gradient(-30deg,#EB5353,#EB5353,#EB5353 );
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite; 
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.heading{
+    
+    width: auto;
+    color: white;
+    height:auto;
+    font-size: 2.5rem;
+    margin:0;
+    text-align: center;
+    padding:1%;
+    border-radius: 2rem;
+}
+#mainc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#hang{
+    width: 50%;
+}
+
+#imag{
+    width: 40%;
+    margin: 0 30%;
+    display: flex;
+    justify-content: center;
+}
+.bod{
+
+    width: 50%;
+    height: auto;
+    padding: 0.1%;
+    font-size: 2rem;
+    margin: 0.5% auto;
+    text-align: center;
+    border-radius:1.5rem;
+}
+#define{
+    margin: 2% 20%;
+    font-size: 2rem;
+    text-align: center;
+}
+button{
+    padding: 0.5%;
+    margin: 1%;
+}
+#hint{
+    margin: 3%;
+}
+
+input{
+    border-radius: 2rem;
+    margin:0.5rem;
+}
+#wordscreen{
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+#kev{
+    margin: 0% 20%;
+    padding: 0 10%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around
+}
+.let{
+    font-size: 2.5em;
+    font-weight: bold;
+    margin:0 20px;
+  
+}
+
+.options{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+#dash{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: bold;
+    margin:0px 20px;
+}
+#ve{
+    display: flex;
+    float: left;
+    justify-content: space-around;
+    align-items: center;
+}
+#time{
+    text-align: center;
+    font-size: medium;
+    color: brown;
+    font-size: 2rem;
+}
+#lives{
+    text-align: center;
+    font-size: medium;
+    color: brown;
+    font-size: 2rem;
+}
+.btn btn-lg btn-info m-1{
+    text-align: center;
+    margin: 5px;
+}
+#score{
+text-align: center;
+    font-size: medium;
+    color: brown;
+    font-size: 2rem;
+}
+#keys{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+}
+/*
+@media screen and(max-width:625px){
+    .heading{
+        background-color: #DD99DD;
+        width: auto;
+        height:auto;
+        font-size: 1.8rem;
+        margin:auto 20%;
+        text-align: center;
+        padding: auto;
+        border-radius: 1.2rem;
+    }
+    .bod{
+        background-color: #B0B0B0;
+        width: auto;
+        height: auto;
+        padding: auto;
+        font-size: 1.4rem;
+        margin: 8% 8%;
+        text-align: center;
+        border-radius:1rem;
+    }
+    button{
+        padding: 0.5%;
+    }
+
+    #wordscreen{
+        font-size: 1.8rem;
+        font-weight: bold;
+    
+    }
+    #kev{
+        margin: 2% 2%;
+        display: flex;
+        float: left;
+        justify-content:center;
+    }
+    .let{
+        font-size: 2rem;
+        font-weight: bold;
+        margin: 4% 4%;
+       visibility: hidden;
+    }
+}
+@media screen and(max-width:425px){
+    .heading{
+        background-color: #DD99DD;
+        width: auto;
+        height:auto;
+        font-size: 1rem;
+        margin:auto 20%;
+        text-align: center;
+        padding: auto;
+        border-radius: .9rem;
+    }
+    .bod{
+        background-color: #B0B0B0;
+        width: auto;
+        height: auto;
+        padding: auto;
+        font-size: 1rem;
+        margin: 8% 8%;
+        text-align: center;
+        border-radius:.75rem;
+    }
+    button{
+        padding: 0.5%;
+    }
+
+    #wordscreen{
+        font-size: 1.3rem;
+        font-weight: bold;
+    
+    }
+    #kev{
+        margin: 2% 2%;
+        display: flex;
+        float: left;
+        justify-content:center;
+    }
+    .let{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 4% 4%;
+       visibility: hidden;
+    }
+}
+
+@media screen and(max-width:350px){
+    .heading h1{
+        background-color: #DD99DD;
+        width: auto;
+        height:auto;
+        font-size: .5rem;
+        margin:auto 20%;
+        text-align: center;
+        padding: auto;
+        border-radius: .9rem;
+    }
+    .bod div{
+        background-color: #B0B0B0;
+        width: auto;
+        height: auto;
+        padding: auto;
+        font-size: 1rem;
+        margin: 8% 8%;
+        text-align: center;
+        border-radius:.75rem;
+    }
+    button{
+        padding: 0.5%;
+    }
+
+    #wordscreen div{
+        font-size: 1.3rem;
+        font-weight: bold;
+    
+    }
+    #kev div{
+        margin: 2% 2%;
+        display: flex;
+        float: left;
+        justify-content:center;
+    }
+    .let div{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 4% 4%;
+       visibility: hidden;
+    }
+}*/
