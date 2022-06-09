@@ -641,7 +641,14 @@ function saveTofac(form)
     }
     a++;
     console.log(a);
-
     // console.log(document.body.style.color);
     // document.getElementById("t6").classList.toggle("toun")
   }
+
+  function ion(form) 
+  {
+    // saveToion(form);
+    form.display.value =(eval(form.display.value));
+    form.display.value =1/ form.display.value;
+  }
+  
