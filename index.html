@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Calculator</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <p class="heading">CALCULATOR</p>
+    </div>
+    <div class="flex-container-column card">
+        <div class="display">
+            <h1 id="displayNumber">
+                0
+            </h1>
+        </div>
+        <div class="flex-container-row">
+            <div class="button operator">|x|</div>
+            <div class="button operator">π</div>
+            <div class="button operator">e</div>
+            <div class="button operator">sqrt</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="button operator">ln</div>
+            <div class="button operator">log</div>
+            <div class="button operator">1/x</div>
+            <div class="button operator">/</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="button operator">sin</div>
+            <div class="button operator">cos</div>
+            <div class="button operator">tan</div>
+            <div class="button operator">*</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="button">7</div>
+            <div class="button">8</div>
+            <div class="button">9</div>
+            <div class="button negative">+/-</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="button">4</div>
+            <div class="button">5</div>
+            <div class="button">6</div>
+            <div class="button operator">-</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="button">1</div>
+            <div class="button">2</div>
+            <div class="button">3</div>
+            <div class="button operator">+</div>
+        </div>
+        <div class="flex-container-row">
+            <div class="button clear">CE</div>
+            <div class="button">0</div>
+            <div class="button">.</div>
+            <div class="button equals">=</div>
+            
+        </div>
+    </div>
+
+    <div class="history card">
+        <h2>History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Operand</th>
+                    <th>Operator</th>
+                    <th>Operand</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody id="historyList"></tbody>
+        </table>
+    </div>
+
+    <!-- <div>
+        <p class="center">Copyright 2022 Kakashi</p>
+    </div> -->
+
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
