@@ -69,6 +69,11 @@
     transition: 0.5s ease-in-out;
 }
 
+.deg input{
+    position:absolute;
+    height: 50px;
+}
+
 .toggle{
     position: relative;
     top: 50px;
@@ -154,15 +159,19 @@ input:checked+ .slider::before{
     }
     .toggle{
         position: relative;
-        top: 5px;
+        top: 7px;
         left:1px;
     }
     .slider{
         width: 28px;
-        height: 10px
+        height: 20px
     }
     input:checked+ .slider::before{
         transform: translateX(8px);
+    }
+    .deg input{
+        position: absolute;
+        height:35;
     }
 }
 

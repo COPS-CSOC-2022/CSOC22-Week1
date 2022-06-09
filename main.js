@@ -146,6 +146,10 @@ buttons.map(button=> {
                 let g = eval(display.innerText);
                 display.innerText = Math.pow(g,2);
                 break;
+            case 'x^3':
+                let m = eval(display.innerText);
+                display.innerText = Math.pow(m,3);
+                break;
             case 'x^1/2':
                 let h = eval(display.innerText);
                 display.innerText = Math.pow(h, 1/2);
