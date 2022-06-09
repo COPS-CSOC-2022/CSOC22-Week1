@@ -61,12 +61,24 @@ button{
     margin: 1% 1%;
 }
 #def{
-    margin: 1%;
+    margin: 1% 2%;
+    
 }
 #hint{
-    margin: 3%;
+    margin: 3% 2%;
 }
-
+#exit{
+    margin: 2% 2%;
+}
+#reset{
+    margin: 2% 2%;
+}
+#easy{
+    margin: 2% 2%;
+}
+#hard{
+    margin: 2% 2%;
+}
 input{
     border-radius: 2rem;
     margin:0.5rem;
