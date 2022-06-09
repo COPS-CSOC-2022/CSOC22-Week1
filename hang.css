@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Joan&family=Press+Start+2P&family=Roboto:ital@0;1&display=swap');
+
+
+h1{
+    text-align: center;
+    font-family: 'Press Start 2P', sans-serif;
+    /* margin-top: 20px; */
+    padding-top: 40px;
+}
+.butt{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
+}
+
+#but{
+    display:flex ;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    flex-wrap: wrap;
+
+}
+.hint{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-family: 'Joan', serif;
+    margin-top: 25px;
+}
+.but_down{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+
+}
+body{
+ 
+  height: 100vh;
+  /* width: 100%; */
+  background: linear-gradient( #FFDEE9,#B5FFFC);
+
+}
+#word{
+    text-align: center;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+    color: cadetblue;
+    font-size: 3rem;
+    transition: all 1s;
+}
+.topText{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.lives{
+    margin-top:20px;
+    font-size: 1em;
+    margin-right: 2em;
+    font-family: 'Press Start 2P', sans-serif;
+    color: #C84861;
+    text-align: right;
+   float: right;
+}
+
+.try{
+    margin-top: 10px;
+    text-align: center;
+    color: cadetblue;
+    font-size: 20px;
+    font-family: 'Press Start 2P', sans-serif;
+}
+.maxScore{
+    /* margin-bottom: 10px; */
+    font-size: 1em;
+    margin-left: 1em;
+    font-family: 'Press Start 2P', sans-serif;
+    border: #F1D65F solid 1px;
+    border-radius: 15px;
+    background-color: #F1D65F;
+    padding: 10px 20px;
+}
+.time{
+    margin-top:10px;
+    font-size: 1em;
+    margin-left: 1em;
+    font-family: 'Press Start 2P', sans-serif;
+    border: #85DD77 solid 1px;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color:#85DD77;
+}
+#login{
+    /* margin-top:10px; */
+    font-size: 1em;
+    margin-right: 2em;
+    font-family: 'Press Start 2P', sans-serif;
+    /* border: #C84861 solid 1px; */
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color:#e07086;
+    float: right;
+}
+#flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+#buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: space-evenly;
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin: 70px 30px;
+    box-shadow: #6d6d6d 0px 0px 10px;
+    transition: all 1s;
+}
+.wait{
+    text-align: center;
+    font-family:'Press Start 2P', sans-serif ;
+
+}
+
+@media (max-width:1300px){
+    body{
+        background: black
+    }
+    h1{
+        color:white;
+    }
+    .maxScore{
+        color:#6d6d6d;
+        margin-left: 0px;
+        text-align: center;
+    }
+    .hint{
+        color: #6d6d6d;
+     }
+     .time{
+        color: #6d6d6d;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 10px;
+     }
+     .lives{
+       color: #6d6d6d;
+       text-align: center;
+       margin-right: 0;
+     }
+}
+
+
