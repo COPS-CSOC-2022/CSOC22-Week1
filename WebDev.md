@@ -53,3 +53,5 @@ Remember, the deadline for this week's task is June 7th, 2022, at 23:59.
 <!-- - Your Name - [Repo Name](Link) [Site](Site Link) -->
 
 <!-- - Sanyu Daver - [Tic Tac](https://github.com/sanyud/TicTac) [Site](www.copsiitbhu.co.in) -->
+
+<!-- -Maithri Muralikrishna - [SimpleCalculator](https://github.com/maithri-3/SimpleCalculator) [My Calculator](https://maithri-3.github.io/SimpleCalculator/)--->
