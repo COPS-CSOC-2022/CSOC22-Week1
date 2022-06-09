@@ -52,4 +52,4 @@ Remember, the deadline for this week's task is June 7th, 2022, at 23:59.
 
 <!-- - Your Name - [Repo Name](Link) [Site](Site Link) -->
 
-<!-- - Sanyu Daver - [Tic Tac](https://github.com/sanyud/TicTac) [Site](www.copsiitbhu.co.in) -->
+<!-- - Chirag Goel - [Tic Tac](https://github.com/chiggshiggs/CSOC22-Week1) [Site](www.copsiitbhu.co.in) -->
