@@ -3,6 +3,7 @@ const toggle = document.querySelector('.toggle input')
 let buttons = Array.from(document.getElementsByClassName('button'));
 let changeTheme = document.getElementById("change-theme");
 const container = document.querySelector(".container");
+let isDeg = document.getElementById("is-deg")
 // let exponent = document.getElementById('exponent');
 
 // exponent.addEventListener("click", function(){
@@ -19,8 +20,6 @@ if(sessionStorage.getItem("mode")=="dark"){
 else{
     lightmode();
 }
-
-
 
 changeTheme.addEventListener("change", function(){
     if (changeTheme.checked){
@@ -70,18 +69,24 @@ buttons.map(button=> {
                     // alert("Nooo");
                 }
                 break;
-            
-            case 'sin':
+            case 'sin': 
                 let x = eval(display.innerText);
-                x = x*Math.PI/180; //in degrees
-                display.innerText = Math.sin(x);
+                if (isDeg.checked = true){
+                    x = x*Math.PI/180;
+                    display.innerText = Math.sin(x);
+                }
+                else{
+                    display.innerText = Math.sin(x);
+                }
                 break;
             case 'cos':
-                let y = eval(display.innerText);
-                y = y*Math.PI/180;
-                display.innerText = Math.cos(y);
+                if (isRad.checked = true){
+                    let y = eval(display.innerText);
+                    y = y*Math.PI/180;
+                    display.innerText = Math.cos(y);
+                }
                 break;
-            case 'tan':
+            case 'tan':                
                 let z = eval(display.innerText);
                 z = z*Math.PI/180;
                 display.innerText = Math.tan(z);
@@ -90,7 +95,7 @@ buttons.map(button=> {
                let a = eval(display.innerText);
                display.innerText = Math.asin(a);//in radians
                break;
-           case 'Acos':
+            case 'Acos':
                 let b = eval(display.innerText);
                 display.innerText = Math.acos(b);
                 break;
@@ -150,6 +155,7 @@ buttons.map(button=> {
         }
     });
 });
+
 
 
 
