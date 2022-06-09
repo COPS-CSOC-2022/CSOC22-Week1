@@ -50,4 +50,4 @@ Remember, the deadline for this week's task is June 7th, 2022, at 23:59.
 
 Patel Aryan -[
 CSOC22-Week1
-](https://github.com/Eli4479/CSOC22-Week1) [Hangman]()
+](https://github.com/Eli4479/CSOC22-Week1) [Hangman](https://csoc-22-week1-zeta.vercel.app/)
