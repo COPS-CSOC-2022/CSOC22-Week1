@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
     <title>Calculator</title>
 </head>
 <body>
+    <!-- Toggle Mode button image -->
+    <img src="moon.png" id="Mode" >
+
+    <!-- Calculator history -->
+    <h3>History</h3>
+    <div id="history-log">
+    </div>
+
+    <!-- Main section -->
+    <section class="main">
     <div class="container">
         <div id="display">
             <h6 id="drg">D</h6>
+            <div id="screen"></div>
         </div>
             <div class="buttons">
                 <div class="btn">e^x</div>
@@ -23,7 +35,7 @@
                 <div class="btn">log</div>
                 <div class="btn">AC</div>
                 <div class="btn">DEL</div>
-                <div class="btn">%</div>
+                <div class="btn">%(mod)</div>
                 <div class="btn">/</div>
                 <div class="btn">7</div>
                 <div class="btn">8</div>
@@ -43,6 +55,10 @@
                 <div class="btn" id="equal">=</div>
             </div>
     </div>
+
+    </section>
+
+    <!-- JavaScript -->
     <script src="main.js"></script>
 </body>
 </html>
