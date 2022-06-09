@@ -170,8 +170,9 @@ input:checked+ .slider::before{
         transform: translateX(8px);
     }
     .deg input{
-        position: absolute;
-        height:20px;
+        position:fixed;
+        top: 238px;
+        left: 167px;
     }
     .slider:before{
         top: 5px;
