@@ -97,7 +97,7 @@ e.addEventListener('click',()=>{
                 console.log(nu_of_right);
                 if(nu_of_right.length==word.length&&word.length>0){
                     sound();
-                    window.location.assign('index.html')
+                    window.location.assign('homee.html')
                     }
             }
         }
@@ -150,7 +150,7 @@ op.remove();
 
                 if(nu_of_right.length==word.length&&word.length>0){
                     sound();
-                    window.location.assign('index.html')
+                    window.location.assign('homee.html')
                     }
             }
             else if(hi[v]!='.'&&hh==1&&hh2<1){
@@ -165,7 +165,7 @@ op.remove();
 
                 if(nu_of_right.length==word.length&&word.length>0){
                     sound();
-                    window.location.assign('index.html')
+                    window.location.assign('homee.html')
                     
                     }
             }
@@ -208,7 +208,7 @@ if(!nu_of_right.includes(v)){
 
             if(nu_of_right.length==word.length&&word.length>0){
                sound();
-                window.location.assign('index.html')
+                window.location.assign('homee.html')
 
                 if(word.length<=5){
                 localStorage.setItem(player_name,Number(player_score)+10);
@@ -244,13 +244,13 @@ if(!nu_of_right.includes(v)){
           if(nu_of_wrong.length==4&&mode==1){
             live.innerHTML=`You Lost<br><h3>The word was ${word}</h3>`;
             setTimeout(()=>{
-                window.location.assign('home.html');
+                window.location.assign('index.html');
                 }, 3000);
         }
         if(nu_of_wrong.length==3&&mode==3){
             live.innerHTML=`You Lost<br><h3>The word was ${word}</h3>`;
 setTimeout(()=>{
-    window.location.assign('home.html');
+    window.location.assign('index.html');
     }, 3000);
            }
       }
@@ -319,22 +319,22 @@ function word_enter(le) {
         if(nu_of_wrong.length==4&&mode==1){
 live.innerHTML=`You Lost<br><h3>The word was ${word}</h3>`;
 setTimeout(()=>{
-    window.location.assign('home.html');
+    window.location.assign('index.html');
     }, 3000);
       }
       if(nu_of_wrong.length==3&&mode==3){
         live.innerHTML=`You Lost<br><h3>The word was ${word}</h3>`;
         setTimeout(()=>{
-            window.location.assign('home.html');
+            window.location.assign('index.html');
             }, 3000);
          }
     }
     }
 reset.addEventListener('click',()=>{
-    return window.location.assign('index.html');
+    return window.location.assign('homee.html');
 })
 exit.addEventListener('click',()=>{
-    return window.location.assign('home.html');
+    return window.location.assign('index.html');
 })
 
 function game_timer(){
@@ -346,7 +346,7 @@ var gtime = setInterval(()=>{
     document.getElementById('time').innerHTML='Time is up!';
     sound();
     setTimeout(()=>{
-        window.location.assign('home.html');
+        window.location.assign('index.html');
         }, 2500);
 }
 },1000);
