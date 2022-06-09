@@ -1,0 +1,225 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body 
+{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    user-select: none;
+    background: #6486f6;
+}
+.calculator 
+{
+    background: white;
+    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    align-items: center;
+    border-radius: 1rem;
+    padding: 25px;
+}
+.heading
+{
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 5.5vh;
+}
+.row button 
+{
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-color: rgb(161, 161, 161);
+    outline: none;
+    margin: 5px;
+    border-radius: 4px;
+    transition: .1s;
+    border-radius: 1rem;
+    background: #6486f6;
+    box-shadow: 5px 5px rgb(52, 52, 107);
+} 
+.row button:hover
+{
+    filter: brightness(0.80);
+}
+.display #screen 
+{
+    margin-bottom: .5em;
+    width: 680px;
+    height: 70px;
+    margin: 5px;
+    font-size: 35px;
+    outline: none;
+    border-color: rgb(147, 145, 145);
+    text-align: right;
+    padding-right: .5em;
+    background: #6486f6;
+    border-radius: 1rem;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px rgb(52, 52, 107);
+}
+.dark-mode
+{
+    background: rgb(40, 40, 40);
+    
+}
+.wrapper-color-switch
+{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-top: -0.5em;
+}
+.color-switch
+{
+    width: 2em;
+    height: 1em;
+    border-radius: 10em;
+    position: absolute;
+    cursor: pointer;
+    background: linear-gradient(#0f0f0f, #48484a);
+}  
+.color-switch-toggle
+{
+    width: 0.9em;
+    height: 0.9em;
+    background: linear-gradient(white, rgb(189, 188, 188));
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+    margin-top: 0.05em;
+    margin-left: 0.05em;
+}
+.color-switch::before
+{
+    position: absolute;
+    display: inline-block;
+    width: 12em;
+    top: 0.4em;
+}
+#input-color-switch:checked ~ label .color-switch-toggle 
+{
+    transform: translatex(1em);
+}
+
+#input-color-switch
+{
+    display: none; 
+}
+.historyContainer
+{
+    background: white;
+    background: linear-gradient(to right bottom,rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    border-radius: 1rem;
+    padding: 25px;
+    width: 20%;
+    height: 590px;
+    margin-left: -300px;
+    margin-right: 35px;
+    text-align: left;
+    overflow: scroll;
+}
+.historyContent
+{
+    text-align: left;
+}
+#clearHistory, #closeHistory
+{
+    width: 50px;
+    height: 25px;
+    border-radius: 0.5rem;
+    background: #6486f6;
+    box-shadow: 3px 3px rgb(52, 52, 107);
+    font-weight: 200px;
+    margin-left: 5px;
+}
+#clearHistory
+{
+    margin-left: 50px;
+}
+#clearHistory:hover, #closeHistory:hover
+{
+    filter: brightness(0.85);
+}
+.back
+{
+    width: 100px;
+    height: 30px;
+    border-radius: 0.5rem;
+    background: black;
+    box-shadow: 5px 5px rgb(52, 52, 107);
+    margin-bottom: 95vh;
+    color: white;
+}
+#diff
+{
+    background: linear-gradient(rgb(251, 146, 97), rgb(248, 131, 77));
+    box-shadow: 3px 3px rgb(244, 96, 28);
+}
+
+
+@media screen and (max-width: 800px) 
+{
+    .left, .main, .right 
+    {
+      width: 100%;
+    }
+    .heading
+    {
+        font-size: 14px;
+    }
+    .display #screen
+    {
+        width: 200px;
+        height: 30px;
+        font-size: 15px;
+        border: none;
+    }
+    .row button
+    {
+        width: 25px;
+        height: 20px;
+        margin: 3.5px;
+        font-size: 6.5px;
+        border: none;
+    }
+    .calculator
+    {
+        width: 60%;
+        height: 35%;
+        position: absolute;
+        margin-top: -55vh;
+    }
+    #closeHistory, #clearHistory
+    {
+        width: 25px;
+        height: 15px;
+        font-size: 7.5px;
+        margin: 0px;
+        margin-left: 5px;
+        border: none;
+    }
+    #clearHistory
+    {
+        margin-left: 20px
+    }
+    #historyContainer
+    {
+        margin: 0px;
+        width: 60%;
+        height: 25vh;
+        margin-top: 20vh;
+        position: relative;
+        font-size: 10px;
+        padding-top: 10px;
+    }
+}

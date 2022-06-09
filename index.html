@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<html>
+<body>
+    <div id="historyContainer" class="historyContainer">
+        <h2><strong><u> HISTORY </u></strong> <button id="clearHistory">Clear</button> <button id="closeHistory">Close</button></h2></br>
+        <div id="historyContent" class="historyContent"></div>
+    </div>
+    <div id="calculator" class="calculator">
+        <div class="heading">
+            <div class="name">
+                <e><u><strong>ONLINE CALCULATOR</strong></u></e>
+            </div>
+            <div class="wrapper-color-switch">
+                <input type="checkbox" id="input-color-switch">
+                <label for="input-color-switch" class="color-switch">
+                    <div class="color-switch-toggle"></div>
+                </label>
+            </div>          
+      <div class="display">
+          <input type="text" id="screen" placeholder="0">
+      </div>
+      <div class="buttons">
+          <div class="row">
+              <button id="diff" class="btns" onclick="backspace()">DEL</button>
+              <button class="btns" onclick="factorial()">x!</button>
+              <button class="btn">(</button>
+              <button class="btn">)</button>
+              <button class="btn">%</button>
+              <button id="diff" class="btns" onclick="screen.value=''">AC</button>
+          </div>
+          <div class="row">
+            <button id="diff" class="btns" onclick="history()">HIS</button>
+            <button class="btns" onclick="inverse()">1/x</button>
+            <button class="btns" onclick="x(2)">x<sup>2</sup></button>
+            <button class="btns" onclick="x(3)">x<sup>3</sup></button>
+            <button type="button" name="button" id="radToggle" onclick="angle()" value="rad" class="btns">RAD</button>
+            <a href="graph.html"><button id="diff" class="btns">GRAPH</button></a>
+          </div>
+          <div class="row">
+            <button class="btns" onclick="x(4)">x<sup>4</sup></button>
+            <button class="btns" onclick="x(5)">x<sup>5</sup></button>
+            <button class="btns" onclick="x(6)">x<sup>6</sup></button>
+            <button class="btns" onclick="x(7)">x<sup>7</sup></button>
+            <button class="btns" onclick="x(8)">x<sup>8</sup></button>
+            <button class="btns" onclick="x(9)">x<sup>9</sup></button>
+          </div>
+          <div class="row">
+              <button class="btns" onclick="sin()">sin</button>
+              <button class="btns" onclick="pi()">π</button>
+              <button class="btn">7</button>
+              <button class="btn">8</button>
+              <button class="btn">9</button>
+              <button class="btn">÷</button>
+          </div>
+         <div class="row">
+              <button class="btns" onclick="cos()">cos</button>
+              <button class="btns" onclick="log()">log</button>
+              <button class="btn">4</button>
+              <button class="btn">5</button>
+              <button class="btn">6</button>
+              <button class="btn">×</button>
+          </div>
+          <div class="row">
+              <button class="btns" onclick="tan()">tan</button>
+              <button class="btns" onclick="ln()">ln</button>
+              <button class="btn">1</button>
+              <button class="btn">2</button>
+              <button class="btn">3</button>
+              <button class="btn">-</button>
+          </div>
+          <div class="row">
+              <button class="btns" onclick="e()">e<sup>x</sup></button>
+              <button class="btns" onclick="sqrt()">√</button>
+              <button class="btn">0</button>
+              <button class="btn">.</button>
+              <button class="btn">+</button>
+              <button id="diff" class="btns" onclick="solve()">=</button>
+          </div>
+      </div>
+    </div>
+  <script src="main.js"></script>
+</body>
+</html>
