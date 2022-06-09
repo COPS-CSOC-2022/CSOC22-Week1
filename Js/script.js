@@ -1,92 +1,88 @@
-const heading = document.querySelector('#heading');
+// grabbing and declaring variable
+const Head = document.querySelector('#heading');
 const word = document.querySelector('#word');
-const incorrect = document.querySelector('#incorrect');
-const word_place = document.querySelector('#word-place');
-const aplhabets_place = document.querySelector('#alphabets-place');
-const lives_number = document.querySelector('#lives_number');
-const hint_button = document.querySelector('#hint-button')
-const hint_text = document.querySelector('#hint-statement')
-const url_for_word = 'https://random-word-api.herokuapp.com/word';
-const page = document.getElementById('container')
-const streck_place = document.querySelector('#streck-place')
-const restart_game = document.querySelector('#restart_button')
-const timer_place = document.querySelector('#timer-place')
-const people_name = localStorage.key(0);
-let player_score = localStorage.getItem(people_name);
-let streck_count = 0;
-let lives;
-let found_correct_word;
-let Hard = 1;
-let Easy = 0;
-let time = 120;
-let hint_arr = [];
+const incorrect_place = document.querySelector('#incorrect');
+const alphabet = document.querySelector('#alphabets-place');
+const number_of_lives = document.querySelector('#lives_number');
+const button_of_hint = document.querySelector('#hint-button')
+const URL = 'https://random-word-api.herokuapp.com/word';
+const Whole_page = document.getElementById('container')
+const streak_content = document.querySelector('#streck-place')
+const reset_btn = document.querySelector('#restart_button')
+const timer_content = document.querySelector('#timer-place')
+const head = document.querySelector('.head')
+const body_arms = document.querySelectorAll('.secondthing')
+const words = document.querySelector('#word-place');
+const legs = document.querySelectorAll('.thirdthing')
+const audio = new Audio("../sound/sound.mp3");
+let counting_streak = 0;
+let life;
+let letter_found;
+let hard_level = 1;
+let seconds = 120;
+let array_for_hint_button = [];
+var playing_player_index;
 
-let easy_btn = document.querySelector('#easy_btn');
-let hard_btn = document.querySelector('#hard_btn');
+// getting player name and its score to change
+for (var i = 1; i <= localStorage.length; i++) {
+    var the_playing_player = localStorage.key(i);
+    if (the_playing_player === "name") {
+        playing_player_index = i;
+    }
+}
+const name_of_players = localStorage.key(playing_player_index);
+const player_name = localStorage.getItem(name_of_players);
+const score_of_player = localStorage.getItem(player_name);
 
 
 
-console.log(player_score);
-console.log(people_name);
 
-
-
-
-restart_game.addEventListener('click', () => {
-    window.location.href = '../html/form.html';
+// restart button event
+reset_btn.addEventListener('click', () => {
+    window.location.href = '../index.html';
 })
 
 
 
-fetch(url_for_word).then(function (response) {
+// getting data from API
+fetch(URL).then(function (response) {
     return response.json();
 }).then(function (Data) {
-    console.log(Data[0]);
 
-
-
-    if (Data[0].length > 5 && Hard === 1) {
-
-        word.innerHTML = Data[0];
-        lives = 3;
-        lives_number.textContent = lives;
-
-
-
-        const capital_word = Data[0].toUpperCase();
-        const word_alphabet_array = capital_word.split('');
-        const word_length = Data[0].length;
-        found_correct_word = word_length;
-
-
-
-
+    // checking hard_level condition of word
+    if (Data[0].length > 5 && hard_level === 1) {
+        life = 3;
+        const WORD_IN_CAPITAL = Data[0].toUpperCase();
+        const array_of_capital_letter = WORD_IN_CAPITAL.split('');
+        number_of_lives.textContent = life;
+        const length_of_word = Data[0].length;
         var char_array = [];
+        letter_found = length_of_word;
 
-
-        var timer = setInterval(() => {
-            time -= 1;
-            timer_place.innerHTML = time + "s";
-            if (time === 0) {
-                clearInterval(timer);
-                page.classList.add('loose_win')
-                word_place.textContent = "";
-                word_alphabet_array.forEach(alpha => {
-                    word_place.textContent = word_place.textContent + " " + alpha + " ";
+        // timer
+        var countdown = setInterval(() => {
+            seconds -= 1;
+            timer_content.innerHTML = seconds + "s";
+            if (seconds === 0) {
+                clearInterval(countdown);
+                Whole_page.classList.add('loose_win')
+                words.textContent = "";
+                array_of_capital_letter.forEach(alpha => {
+                    words.textContent = words.textContent + " " + alpha + " ";
                 });
-                heading.textContent = "Time is up! You Lose";
-                page.classList.add('loose_win')
-                restart_game.classList.remove('loose_win')
-                restart_game.classList.add('click_able')
+                Head.textContent = "Time is up! You Lose";
+                Whole_page.classList.add('loose_win')
+                reset_btn.classList.remove('loose_win')
+                reset_btn.classList.add('click_able')
             }
         }, 1000);
 
 
 
-
-        for (let index = 0; index < word_length; index++) {
+        // dash for word
+        for (let index = 0; index < length_of_word; index++) {
             char_array.push('_');
-            word_place.textContent = word_place.textContent + '   _  ';
+            words.textContent = words.textContent + '   _  ';
         }
 
 
@@ -94,26 +90,28 @@ fetch(url_for_word).then(function (response) {
 
         // display all aplhabets
         for (let index = 0; index < 26; index++) {
-            aplhabets_place.innerHTML = aplhabets_place.innerHTML + '<button class="btn btn-outline-primary" id="alphabet">' + String.fromCharCode(65 + index) + '</button>';
+            alphabet.innerHTML = alphabet.innerHTML + '<button class="btn btn-outline-primary alphabet" id="alphabet">' + String.fromCharCode(65 + index) + '</button>';
         }
+
+
 
 
 
         const all_alphabet = document.querySelectorAll('#alphabet');
         // nodelist to array
         all_alphabet.forEach(function (alphabet) {
+
             alphabet.addEventListener('click', function () {
+                // seeing click on word
+                audio.play();
                 alphabet.classList.remove('btn-outline-primary');
                 alphabet.classList.add('btn-primary');
                 alphabet.classList.add('disabled');
-
-
                 // find alphabet exist in word at which place
-                const alphabet_exist = word_alphabet_array.indexOf(alphabet.textContent);
+                const alphabet_exist = array_of_capital_letter.indexOf(alphabet.textContent);
                 var index = -1;
                 var index_array = [];
-
-
+                // if alphabet exist see in word
                 if (alphabet_exist > -1) {
                     all_alphabet.forEach(e => {
                         if (e.textContent == alphabet.textContent) {
@@ -121,51 +119,51 @@ fetch(url_for_word).then(function (response) {
                             e.classList.remove('btn-outline-primary');
                         }
                     });
-                    word_alphabet_array.forEach(alphabets => {
+                    array_of_capital_letter.forEach(alphabets => {
                         index++;
                         if (alphabets == alphabet.textContent) {
                             index_array.push(index);
                         }
                     });
                     index = -1;
-
-
-                    streck_count += index_array.length;
-                    streck_place.textContent = streck_count;
-
-
+                    counting_streak += index_array.length;
+                    streak_content.textContent = counting_streak;
                     index_array.forEach(number => {
                         char_array[number] = alphabet.textContent;
                     });
 
 
-                    word_place.innerHTML = "";
+                    words.innerHTML = "";
 
                     char_array.forEach(char => {
-                        word_place.textContent = word_place.textContent + " " + char + " ";
+                        words.textContent = words.textContent + " " + char + " ";
                     })
 
 
-                    found_correct_word -= index_array.length;
+                    letter_found -= index_array.length;
 
 
 
-                    if (found_correct_word === 0) {
-                        clearInterval(timer);
-                        page.classList.add('loose_win')
-                        restart_game.classList.remove('loose_win')
-                        restart_game.classList.add('click_able')
-                        heading.textContent = "You Win";
+                    if (letter_found === 0) {
+                        clearInterval(countdown);
+                        Whole_page.classList.add('loose_win');
+                        Head.textContent = "You Win";
                         // string to int convertion
-                        var score = parseInt(player_score);
+                        var score = parseInt(score_of_player);
                         score += 3;
-                        localStorage.setItem(people_name, score);
+                        localStorage.setItem(player_name, score);
+                        // location reload after 5 seconds
+                        setTimeout(() => {
+                            window.location.reload();
+                        }
+                            , 3000);
+
                     }
                 } else {
-                    // display in incorrect 
-                    streck_count = 0;
-                    streck_place.textContent = streck_count;
-                    incorrect.textContent = incorrect.textContent + " " + alphabet.textContent;
+                    // display in incorrect_place
+                    counting_streak = 0;
+                    streak_content.textContent = counting_streak;
+                    incorrect_place.textContent = incorrect_place.textContent + " " + alphabet.textContent;
                     all_alphabet.forEach(e => {
                         if (e.textContent == alphabet.textContent) {
                             e.classList.add('btn-danger');
@@ -173,32 +171,44 @@ fetch(url_for_word).then(function (response) {
                         }
                     });
 
-                    lives_number.textContent = lives_number.textContent - 1;
-                    lives--;
-                    if (lives === 0) {
-                        clearInterval(timer);
-                        word_place.textContent = "";
-                        word_alphabet_array.forEach(alpha => {
-                            word_place.textContent = word_place.textContent + " " + alpha + " ";
+                    number_of_lives.textContent = number_of_lives.textContent - 1;
+                    life--;
+                    if (life === 2) {
+                        head.classList.remove('display')
+                    }
+                    if (life === 1) {
+                        body_arms.forEach(thing => {
+                            thing.classList.remove('display')
                         });
-                        page.classList.add('loose_win')
-                        restart_game.classList.remove('loose_win')
-                        restart_game.classList.add('click_able')
-                        heading.textContent = "You Lose";
+
+                    }
+                    if (life === 0) {
+                        legs.forEach(thing => {
+                            thing.classList.remove('display')
+                        });
+                        clearInterval(countdown);
+                        words.textContent = "";
+                        array_of_capital_letter.forEach(alpha => {
+                            words.textContent = words.textContent + " " + alpha + " ";
+                        });
+                        Whole_page.classList.add('loose_win')
+                        reset_btn.classList.remove('loose_win')
+                        reset_btn.classList.add('click_able')
+                        Head.textContent = "You Lose";
                     }
                 }
             })
-            hint_button.addEventListener('click', () => {
-                hint_button.classList.add('disabled');
-                for (let k = 0; k < word_length; k++) {
+            button_of_hint.addEventListener('click', () => {
+                button_of_hint.classList.add('disabled');
+                for (let k = 0; k < length_of_word; k++) {
                     if (char_array[k] == '_') {
-                        hint_arr.push(k);
+                        array_for_hint_button.push(k);
                     }
                 }
-                // random number between 0 and hint_arr.length
                 all_alphabet.forEach(e => {
-                    if (e.textContent == word_alphabet_array[hint_arr[0]]) {
-                        e.classList.add('btn-success');
+                    if (e.textContent == array_of_capital_letter[array_for_hint_button[0]]) {
+                        e.classList.remove('alphabet');
+                        e.classList.add('alphabet-hint');
                         e.classList.remove('btn-outline-primary');
                     }
                 });
