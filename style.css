@@ -1,10 +1,14 @@
 :root{
-    --primaary-colour: #323330;
+    --primaary-colour: #01011b;
     --secondary-colour: aliceblue;
+    --tertiary-colour: rgba(23, 23, 24, 0.929) ;
+    --quaternary-colour: #1c1c1de4;
 }
 .light-mode{
-    --primaary-colour:aliceblue;
-    --secondary-colour:#323330;
+    --primaary-colour:rgb(255, 255, 255);
+    --secondary-colour:#01011b;
+    --tertiary-colour: ;
+    --quaternary-colour: aliceblue ;
 }
 
 .sci{
@@ -33,11 +37,13 @@ body{
     background: var(--primaary-colour);
     color: var(--secondary-colour);
     transition: background 0.5s linear;
+    font-family: 'Varela Round', sans-serif;
+    border: 0;
+    margin: 0;
 }
 
 .main{
     display: grid;
-    grid-template-columns: 2fr 1fr;
 }
 
 .invisible{
@@ -56,17 +62,25 @@ body{
 
 .buttons {
     display: grid;
-
+    background: var(--quaternary-colour);
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border-radius: 50px 50px 0 0;
 }
 
-
+.red{
+    color:tomato;
+}
+.green{
+    color: aquamarine;
+}
 .button {
-    line-height: 100px;
+    line-height: 50px;
     text-align: center;
     font-size: 25px;
     cursor: pointer;
-    border-radius: 50px;
+    border-radius: 10px;
+    background: var(--tertiary-colour);
+    margin: 10%;
 }
 
 #equal {
