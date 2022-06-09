@@ -58,7 +58,9 @@ body{
     text-align: center;
 }
 button{
-    padding: 0.5%;
+    margin: 1% 1%;
+}
+#def{
     margin: 1%;
 }
 #hint{

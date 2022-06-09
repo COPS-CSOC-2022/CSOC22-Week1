@@ -238,7 +238,9 @@ if(!nu_of_right.includes(v)){
         }
           nu_of_wrong.push(v);
           console.log(nu_of_wrong);
+          if(word.length>0){
           live.innerHTML=`Lives left-${ku-nu_of_wrong.length}`;
+          }
           if(nu_of_wrong.length==4&&mode==1){
             live.innerHTML=`You Lost<br><h3>The word was ${word}</h3>`;
             setTimeout(()=>{
@@ -257,7 +259,9 @@ setTimeout(()=>{
 )
 
 function word_enter(le) {
+    if(word.length>0){
     document.getElementById(le).setAttribute('disabled', true);
+    }
     if(word.includes(le)){
     document.getElementById(le).style.backgroundColor='green';
     if(!nu_of_right.includes(le)){
@@ -308,7 +312,9 @@ function word_enter(le) {
             image.src=`${3+nu_of_wrong.length}.png`;
         }
         nu_of_wrong.push(le);
+        if(word.length>0){
         live.innerHTML=`Lives left-${ku-nu_of_wrong.length}`;
+        }
         console.log(nu_of_wrong);
         if(nu_of_wrong.length==4&&mode==1){
 live.innerHTML=`You Lost<br><h3>The word was ${word}</h3>`;
