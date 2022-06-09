@@ -283,7 +283,7 @@ function word_enter(le) {
                 }
                 if(nu_of_right.length==word.length&&word.length>0){
                     sound();
-                    window.location.assign('index.html')
+                    window.location.assign('homee.html')
                     if(word.length<=5){
                     localStorage.setItem(player_name,Number(player_score)+10);
                     player_score+=10;
