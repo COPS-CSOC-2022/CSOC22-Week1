@@ -48,7 +48,7 @@ var movies =[
         }
     }
     function updateHangmanPicture() {
-        document.getElementById('hangmanPic').src = './images/' + mistakes + '.jpg';
+        document.getElementById('hangmanPic').src = './' + mistakes + '.jpg';
       }
       
       function checkIfGameWon() {
@@ -77,7 +77,7 @@ var movies =[
       function reset() {
         mistakes = 0;
         guessed = [];
-        document.getElementById('hangmanPic').src = './images/0.jpg';
+        document.getElementById('hangmanPic').src = './0.jpg';
       
         randomWord();
         guessedWord();
