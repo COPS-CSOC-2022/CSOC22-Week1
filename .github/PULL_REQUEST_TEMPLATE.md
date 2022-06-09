@@ -5,7 +5,7 @@
 
 - [ ] Android
 - [ ] Flutter
-- [ ] Web Devlopment
+- [x] Web Devlopment
 
 ### Task Completed
 <!-- you only have to fill in one of the tasks -->
@@ -19,14 +19,14 @@
 
 #### Calculator
 
-- [ ] **Task 1**: Create a simple calculator with basic mathematical operations.
-- [ ] **Task 2**: Add complex operations including exponentiation, logarithms, trigonometry, etc.
-- [ ] **Task 3:** Add an option to change settings, say from radians to degrees and vice versa, and an option to change the theme of the app.
+- [x] **Task 1**: Create a simple calculator with basic mathematical operations.
+- [x] **Task 2**: Add complex operations including exponentiation, logarithms, trigonometry, etc.
+- [x] **Task 3:** Add an option to change settings, say from radians to degrees and vice versa, and an option to change the theme of the app.
 - [ ] **Task 4:** Feature to show a history of previous calculations.
 - [ ] **Extras:** Add feature for matrix calculations and plotting of simple basic graphs using equations.
 
 ### Submission
 
 <!-- Add in your repo and apk link or web site link as per track -->
-[Repo](link)
-[APK|Web Site](link)
+[Repo](https://github.com/somudas/Calculator)
+[APK|Web Site](https://calculator-ivory-five.vercel.app/)
