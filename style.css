@@ -159,6 +159,7 @@ input:checked+ .slider::before{
     }
     .slider{
         width: 28px;
+        height: 10px
     }
     input:checked+ .slider::before{
         transform: translateX(8px);

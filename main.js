@@ -71,7 +71,7 @@ buttons.map(button=> {
                 break;
             case 'sin': 
                 let x = eval(display.innerText);
-                if (isDeg.checked = true){
+                if (isDeg.checked == true){
                     x = x*Math.PI/180;
                     display.innerText = Math.sin(x);
                 }
@@ -80,28 +80,54 @@ buttons.map(button=> {
                 }
                 break;
             case 'cos':
-                if (isRad.checked = true){
-                    let y = eval(display.innerText);
+                let y = eval(display.innerText);
+                if (isDeg.checked == true){                    
                     y = y*Math.PI/180;
                     display.innerText = Math.cos(y);
                 }
+                else{
+                    display.innerText = Math.cos(y);
+                }
                 break;
-            case 'tan':                
+            case 'tan':    
                 let z = eval(display.innerText);
-                z = z*Math.PI/180;
-                display.innerText = Math.tan(z);
+                if (isDeg.checked == true){            
+                    z = z*Math.PI/180;
+                    display.innerText = Math.tan(z);
+                }
+                else{
+                    display.innerText = Math.tan(z);
+                }
                 break;
             case 'Asin':
                let a = eval(display.innerText);
-               display.innerText = Math.asin(a);//in radians
-               break;
+                if (isDeg.checked == true){ 
+                    a = a*180/Math.PI;   
+                    display.innerText = Math.asin(a);
+                }
+                else{
+                    display.innerText = Math.asin(a);
+                }
+                break;
             case 'Acos':
                 let b = eval(display.innerText);
-                display.innerText = Math.acos(b);
+                if (isDeg.checked == true){ 
+                    b = b*180/Math.PI;   
+                    display.innerText = Math.asin(b);
+                }
+                else{
+                    display.innerText = Math.asin(b);
+                }
                 break;
             case 'Atan':
                 let c = eval(display.innerText);
-                display.innerText = Math.atan(c);
+                if (isDeg.checked == true){ 
+                    c = c*180/Math.PI;   
+                    display.innerText = Math.asin(c);
+                }
+                else{
+                    display.innerText = Math.asin(c);
+                }
                 break;
             case 'π':
                 π = 3.14159265
