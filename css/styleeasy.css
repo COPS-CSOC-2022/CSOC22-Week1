@@ -197,3 +197,9 @@ body {
     top: 20px;
     right: 45px;
 }
+
+.lives {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+}

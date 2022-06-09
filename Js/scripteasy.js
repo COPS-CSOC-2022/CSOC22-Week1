@@ -117,7 +117,6 @@ fetch(url_for_word).then(function (response) {
         // nodelist to array
         all_alphabet.forEach(function (alphabet) {
             alphabet.addEventListener('click', function () {
-                sound.play();
                 alphabet.classList.remove('btn-outline-primary');
                 alphabet.classList.add('btn-primary');
                 alphabet.classList.add('disabled');
@@ -130,6 +129,7 @@ fetch(url_for_word).then(function (response) {
 
 
                 if (alphabet_exist > -1) {
+                    sound.play();
                     all_alphabet.forEach(e => {
                         if (e.textContent == alphabet.textContent) {
                             e.classList.add('btn-success');

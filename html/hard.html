@@ -60,16 +60,17 @@
         <div>
             <h1 id="heading">Hangman</h1>
             <!-- lives place -->
-            <div class="m-2 p-2 lives">You Have <span id="lives_number"></span> lives remaining</div>
+            <div class="m-2 p-2 lives"><span id="lives_number"></span> lives remaining</div>
 
             <!-- travel between pages -->
             <a href="./easy.html"><button class="btn btn-outline-success m-2 p-2" id="easy_btn">Easy</button></a>
             <a href="./hard.html"><button class="btn btn-danger m-2 p-2" id="hard_btn">Hard</button></a>
+            <!-- hint btn -->
+            <button class="btn btn-outline-info m-2 p-2" id="hint-button">Hint</button>
         </div>
         <!-- the word place  -->
         <div id="word"></div>
-        <!-- hint btn -->
-        <div><button class="btn btn-outline-info" id="hint-button">Hint</button>
+        <div>
 
 
             <div id="word-place"></div>
@@ -78,7 +79,7 @@
             <div id="hint-statement"></div>
 
 
-            <div>you have streak of <span id="streck-place">0</span></div>
+            <div>Streak Count:<span id="streck-place">0</span></div>
 
             <!-- timer -->
             <div>Time Left:<span id="timer-place">120s</span></div>
