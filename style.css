@@ -1,0 +1,30 @@
+body{
+    background-color: darkblue;
+    text-align: center;
+    color: white;
+}
+h1{
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+p{
+    font-size: 2rem;
+}
+a{
+    text-decoration: none;
+    color: cyan;
+    font-size: 2rem;
+    
+}
+#easy{
+    margin-right: 50px;
+}
+#difficult{
+    background-color: ;
+}
+i{
+    margin-left: 10px;
+}
+/* #highscore{
+    padding: 100px 100px;
+} */

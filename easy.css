@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+}
+span{
+    padding: 0px 5px;
+}
+.word{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 0%;
+    font-size: 1.5rem;
+}
+.underline{
+    margin-top: 0px;
+    height: 2px;
+}
+.score{
+    margin-top: 30px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+#countdown{
+    font-size: 1.2rem;
+}
+#help{
+    margin: 20px;
+}
+#hint{
+    margin: 40px;
+    border-radius: 25px;
+    background-color: rgb(33, 33, 193);
+    color: white;
+    width: 80px;
+    height: 40px;
+    border: 1px solid skyblue;
+}
+#quit{
+    margin: 40px;
+    border-radius: 25px;
+    background-color: rgb(33, 33, 193);
+    color: white;
+    width: 80px;
+    height: 40px;
+    border: 1px solid skyblue;
+}
+#hint:hover{
+    background-color: blue;
+}
+#quit:hover{
+    background-color: blue;
+}
+#chances{
+    margin-bottom: 20px;
+}
+#hangmanpic{
+    margin-top: 1px;
+    height: 280px;
+    padding: 0 0;
+}
+#amit{
+    height: 250px;
+}
