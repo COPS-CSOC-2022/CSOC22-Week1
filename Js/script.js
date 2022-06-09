@@ -1,3 +1,4 @@
+// grabbing and declaring variable
 const heading = document.querySelector('#heading');
 const word = document.querySelector('#word');
 const incorrect = document.querySelector('#incorrect');
@@ -14,6 +15,8 @@ const timer_place = document.querySelector('#timer-place')
 const firstthing = document.querySelector('.head')
 const secondthing = document.querySelectorAll('.secondthing')
 const thirdthing = document.querySelectorAll('.thirdthing')
+let easy_btn = document.querySelector('#easy_btn');
+let hard_btn = document.querySelector('#hard_btn');
 const sound = new Audio("../sound/sound.mp3");
 let streck_count = 0;
 let lives;
@@ -22,13 +25,13 @@ let Hard = 1;
 let Easy = 0;
 let time = 120;
 let hint_arr = [];
+var index_of_the_player;
 
-console.log(localStorage);
+// getting player name and its score to change
 for (var i = 1; i <= localStorage.length; i++) {
-
     var the_playing_player = localStorage.key(i);
     if (the_playing_player === "name") {
-        var index_of_the_player = i;
+        index_of_the_player = i;
     }
 }
 const names = localStorage.key(index_of_the_player);
@@ -37,48 +40,30 @@ const the_score = localStorage.getItem(the_player);
 
 
 
-let easy_btn = document.querySelector('#easy_btn');
-let hard_btn = document.querySelector('#hard_btn');
 
-
-
-console.log(the_player);
-console.log(the_score);
-
-
-
-
+// restart button event
 restart_game.addEventListener('click', () => {
     window.location.href = '../html/index.html';
 })
 
 
 
+// getting data from API
 fetch(url_for_word).then(function (response) {
     return response.json();
 }).then(function (Data) {
-    console.log(Data[0]);
 
-
-
+    // checking hard condition of word
     if (Data[0].length > 5 && Hard === 1) {
-
         lives = 3;
         lives_number.textContent = lives;
-
-
-
         const capital_word = Data[0].toUpperCase();
         const word_alphabet_array = capital_word.split('');
         const word_length = Data[0].length;
         found_correct_word = word_length;
-
-
-
-
         var char_array = [];
 
-
+        // timer
         var timer = setInterval(() => {
             time -= 1;
             timer_place.innerHTML = time + "s";
@@ -98,7 +83,7 @@ fetch(url_for_word).then(function (response) {
 
 
 
-
+        // dash for word
         for (let index = 0; index < word_length; index++) {
             char_array.push('_');
             word_place.textContent = word_place.textContent + '   _  ';
@@ -121,18 +106,16 @@ fetch(url_for_word).then(function (response) {
         all_alphabet.forEach(function (alphabet) {
 
             alphabet.addEventListener('click', function () {
+                // seeing click on word 
                 sound.play();
                 alphabet.classList.remove('btn-outline-primary');
                 alphabet.classList.add('btn-primary');
                 alphabet.classList.add('disabled');
-
-
                 // find alphabet exist in word at which place
                 const alphabet_exist = word_alphabet_array.indexOf(alphabet.textContent);
                 var index = -1;
                 var index_array = [];
-
-
+                // if alphabet exist see in word 
                 if (alphabet_exist > -1) {
                     all_alphabet.forEach(e => {
                         if (e.textContent == alphabet.textContent) {
@@ -147,12 +130,8 @@ fetch(url_for_word).then(function (response) {
                         }
                     });
                     index = -1;
-
-
                     streck_count += index_array.length;
                     streck_place.textContent = streck_count;
-
-
                     index_array.forEach(number => {
                         char_array[number] = alphabet.textContent;
                     });
@@ -171,9 +150,7 @@ fetch(url_for_word).then(function (response) {
 
                     if (found_correct_word === 0) {
                         clearInterval(timer);
-                        page.classList.add('loose_win')
-                        restart_game.classList.remove('loose_win')
-                        restart_game.classList.add('click_able')
+                        page.classList.add('loose_win');
                         heading.textContent = "You Win";
                         // string to int convertion
                         var score = parseInt(the_score);

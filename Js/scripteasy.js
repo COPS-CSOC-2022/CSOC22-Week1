@@ -168,8 +168,6 @@ fetch(url_for_word).then(function (response) {
                     if (found_correct_word === 0) {
                         clearInterval(timer);
                         page.classList.add('loose_win')
-                        restart_game.classList.remove('loose_win')
-                        restart_game.classList.add('click_able')
                         heading.textContent = "You Win";
                         // string to int convertion
                         var score = parseInt(the_score);

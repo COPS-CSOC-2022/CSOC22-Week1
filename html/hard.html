@@ -17,6 +17,7 @@
 
 
 <body>
+    <!-- the hangman photo -->
     <div class="hangman">
 
         <div class="recth">
@@ -58,22 +59,42 @@
     <div class="m-0 p-0" id="container">
         <div>
             <h1 id="heading">Hangman</h1>
-            <div>rule list</div>
-
+            <!-- lives place -->
             <div class="m-2 p-2 lives">You Have <span id="lives_number"></span> lives remaining</div>
 
+            <!-- travel between pages -->
             <a href="./easy.html"><button class="btn btn-outline-success m-2 p-2" id="easy_btn">Easy</button></a>
             <a href="./hard.html"><button class="btn btn-danger m-2 p-2" id="hard_btn">Hard</button></a>
         </div>
+        <!-- the word place  -->
         <div id="word"></div>
-        <div id="A"></div>
+        <!-- hint btn -->
         <div><button class="btn btn-outline-info" id="hint-button">Hint</button>
+
+
             <div id="word-place"></div>
+
+
             <div id="hint-statement"></div>
+
+
             <div>you have streck of <span id="streck-place">0</span></div>
-            <div id="timer-place">120s</div>
-            <div id="incorrect"></div>
+
+            <!-- timer -->
+            <div>Time Left:<span id="timer-place">120s</span></div>
+
+            <!-- place to show incorrect word -->
+            <div>
+                <h3>Incorrect Words:</h3>
+                <h4>
+                    <div id="incorrect"></div>
+                </h4>
+            </div>
+
+            <!-- all alphabet to be shown -->
             <div id="alphabets-place"></div>
+
+            <!-- restart game -->
             <div><button class="btn btn-outline-warning" id="restart_button">Restart Game</button></div>
         </div>
     </div>

@@ -1,25 +1,21 @@
-console.table(localStorage);
 
+// return btn
 const btn = document.getElementById("btn");
 btn.addEventListener("click", function () {
-    console.log(121);
     window.location.href = '../html/index.html';
 }
 );
 
 
-// convert localStorage to array
+// convert localStorage to array and get all key names from localStorage
 var high_score = Object.values(localStorage);
-
-
-// get all key names from localStorage
 var keys = Object.keys(localStorage);
-console.log(high_score);
-console.log(keys);
+
+// find index of name key which is not to print
 var index = high_score.indexOf(localStorage.name);
-console.log(index);
 
 
+// sorted both keys and score
 for (let j = 0; j < high_score.length; j++) {
 
     for (let k = 0; k < high_score.length; k++) {
@@ -34,20 +30,9 @@ for (let j = 0; j < high_score.length; j++) {
             }
         }
     }
-
-
 }
 
-
-
-
-console.log(high_score);
-console.log(keys);
-
-// find  INDEX of the name key in localStorage
-
-
-// display high_score
+// display high_score in page
 for (var i = 0; i < high_score.length && i < 11; i++) {
 
     if (i != index) {
