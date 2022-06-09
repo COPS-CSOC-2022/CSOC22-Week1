@@ -8,6 +8,43 @@ const toggle = document.querySelector('.toggle input')
 // })
 let buttons = Array.from(document.getElementsByClassName('button'));
 
+// function themeSwitch(){
+//     let element = document.body;
+//     element.classList.toggle("dark-mode");
+
+// }
+
+let changeTheme = document.getElementById("change-theme");
+    if(sessionStorage.getItem("mode")=="dark"){
+        darkmode();
+    }
+    else{
+        lightmode();
+    }
+
+    changeTheme.addEventListener("change", function(){
+        if (changeTheme.checked){
+            darkmode();
+        }
+        else{
+            lightmode();
+        }
+    });
+
+    function darkmode(){
+        document.body.classList.add("dark-mode");
+        changeTheme.checked = true;
+        sessionStorage.setItem("mode", "dark");
+    }
+
+    function lightmode(){
+        document.body.classList.remove("dark-mode"); 
+        changeTheme.checked = false;
+        sessionStorage.setItem("mode", "light");
+    }
+
+
+
 buttons.map(button=> {
     button.addEventListener('click', (e) => {
         switch(e.target.innerText){
@@ -27,22 +64,24 @@ buttons.map(button=> {
                     // alert("Nooo");
                 }
                 break;
-            case 'sin':
-                let x = eval(display.innerText);
-                x = x*Math.PI/180;
-                display.innerText = Math.sin(x);
-                
-                // alert("Woooo");
-                break;
-            case 'cos':
-                let y = eval(display.innerText);
-                y = y*Math.PI/180;
-                display.innerText = Math.cos(y);
-                break;
-            case 'tan':
-                let z = eval(display.innerText);
-                z = z*Math.PI/180;
-                display.innerText = Math.tan(z);
+            case 'Deg':
+                case 'sin':
+                    let x = eval(display.innerText);
+                    x = x*Math.PI/180; //in degrees
+                    display.innerText = Math.sin(x);
+                    
+                    // alert("Woooo");
+                    break;
+                case 'cos':
+                    let y = eval(display.innerText);
+                    y = y*Math.PI/180;
+                    display.innerText = Math.cos(y);
+                    break;
+                case 'tan':
+                    let z = eval(display.innerText);
+                    z = z*Math.PI/180;
+                    display.innerText = Math.tan(z);
+                    break;
                 break;
             case 'Arcsin':
                let a = eval(display.innerText);
@@ -99,3 +138,6 @@ buttons.map(button=> {
         }
     });
 });
+
+
+
