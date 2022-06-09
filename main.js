@@ -101,9 +101,8 @@ buttons.map(button=> {
                 break;
             case 'Asin':
                let a = eval(display.innerText);
-                if (isDeg.checked == true){ 
-                    a = a*180/Math.PI;   
-                    display.innerText = Math.asin(a);
+                if (isDeg.checked == true){  
+                    display.innerText = Math.asin(a)*180/Math.PI;
                 }
                 else{
                     display.innerText = Math.asin(a);
@@ -111,9 +110,8 @@ buttons.map(button=> {
                 break;
             case 'Acos':
                 let b = eval(display.innerText);
-                if (isDeg.checked == true){ 
-                    b = b*180/Math.PI;   
-                    display.innerText = Math.asin(b);
+                if (isDeg.checked == true){   
+                    display.innerText = Math.asin(b)*180/Math.PI;
                 }
                 else{
                     display.innerText = Math.asin(b);
@@ -122,8 +120,7 @@ buttons.map(button=> {
             case 'Atan':
                 let c = eval(display.innerText);
                 if (isDeg.checked == true){ 
-                    c = c*180/Math.PI;   
-                    display.innerText = Math.asin(c);
+                    display.innerText = Math.asin(c)*180/Math.PI;
                 }
                 else{
                     display.innerText = Math.asin(c);
