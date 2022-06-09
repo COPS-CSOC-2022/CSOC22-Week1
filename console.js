@@ -138,12 +138,14 @@ function addToHistory(value) {
     if (i<1) {
         let newElement= document.getElementById(`Div${i}`);
         newElement.classList.add("new-element");
+        newElement.scrollIntoView({behavior:"smooth"});
     }
     else {
         let newElement= document.getElementById(`Div${i}`);
         newElement.classList.add("new-element");
         let oldElement= document.getElementById(`Div${i-1}`);
         oldElement.classList.remove("new-element"); 
+        newElement.scrollIntoView({behavior:"smooth"});
     }
     
 
