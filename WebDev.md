@@ -51,5 +51,9 @@ Remember, the deadline for this week's task is June 7th, 2022, at 23:59.
 <!-- Add you name in below list as -->
 
 <!-- - Your Name - [Repo Name](Link) [Site](Site Link) -->
+[Calculator](https://github.com/somudas/Calculator)
+
+
+[Vercel-Web Site](https://calculator-ivory-five.vercel.app/)
 
 <!-- - Sanyu Daver - [Tic Tac](https://github.com/sanyud/TicTac) [Site](www.copsiitbhu.co.in) -->
