@@ -71,4 +71,5 @@ Submission has to be done by sharing your github repo link and the .apk file of 
 - Make a Pull request
 
 ## Submissions
-https://github.com/Yash-Agarwal1708/CSOC22-Week1.git
+repo:- https://github.com/Yash-Agarwal1708/CSOC22-Week1.git
+.apk file:- https://drive.google.com/drive/folders/1ZLoLLxurfCRyIn_tm6dop0UVoR8PeXlx
