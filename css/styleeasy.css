@@ -1,0 +1,200 @@
+.loose_win {
+    pointer-events: none;
+}
+
+.click_able {
+    pointer-events: all;
+}
+
+body {
+    text-align: center;
+    background-color: #346b31 ;
+    color: white;
+}
+
+#heading {
+font-family: 'Londrina Outline', cursive;    font-size: 4rem;
+    line-height: 1.5;
+    font-weight: 900;
+    margin: 70px auto 10px;
+
+}
+
+.box{
+
+  background-image: url('chalk-board.jpg' );
+  background-repeat: no-repeat;
+    background-position: center;
+    padding:30px;
+
+  }
+
+
+#alphabets-place {
+    margin: 50px;
+}
+
+.rule-list {
+    color: silver;
+}
+
+#easy_btn {
+    margin-right: 100px;
+}
+
+#hard_btn {
+    margin-right: 100px;
+}
+
+#word {
+    margin: 1% auto 1%;
+    font-family: 'Montserrat-bold', sans-serif;
+    font-weight: 300;
+}
+
+#hint-button {
+    margin-bottom: 1%;
+}
+
+.alphabet-hint {
+    height: 55px;
+    width: 55px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: all 1s ease;
+    background-image: linear-gradient(90deg, #0AA1DD, #79DAE8);
+    box-shadow: 0 2px 18px 0 rgba(248, 94, 122, 0.39), 0 1px 2px 0 rgba(248, 91, 124, 0.33);
+}
+
+
+.alphabet {
+    height: 55px;
+    width: 55px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: all 1s ease;
+    background-image: linear-gradient(90deg,  #ffbbbb, #ffe4c0);
+    box-shadow: 0 2px 18px 0 rgba(248, 94, 122, 0.39), 0 1px 2px 0 rgba(248, 91, 124, 0.33);
+}
+
+.recth {
+  background-image:  url("chalk.jpg");
+
+    width: 200px;
+    height: 15px;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+.rectv {
+  background-image:  url("chalk.jpg");
+
+    width: 15px;
+    height: 190px;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+
+}
+
+.rope {
+  background-image:  url("chalk.jpg");
+
+    width: 10px;
+    height: 20px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+
+}
+
+.head {
+  background-image:  url("chalk.jpg");
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    top: 120px;
+    left: 180px;
+}
+
+.body {
+  background-image:  url("chalk.jpg");
+    width: 10px;
+    height: 110px;
+    position: absolute;
+    top: 130px;
+    left: 200px;
+
+}
+
+.arms1 {
+  background-image:  url("chalk.jpg");
+    width: 10px;
+    height: 40px;
+    position: absolute;
+    top: 160px;
+    left: 208px;
+    transform: rotate(-30deg);
+
+}
+
+.arms2 {
+  background-image:  url("chalk.jpg");
+    width: 10px;
+    height: 40px;
+    position: absolute;
+    top: 160px;
+    left: 192px;
+    transform: rotate(30deg);
+
+
+}
+
+.leg1 {
+  background-image:  url("chalk.jpg");
+    width: 10px;
+    height: 40px;
+    position: absolute;
+    top: 230px;
+    left: 208px;
+    transform: rotate(-30deg);
+
+
+}
+
+.leg2 {
+  background-image:  url("chalk.jpg");
+    width: 10px;
+    height: 40px;
+    position: absolute;
+    top: 230px;
+    left: 192px;
+    transform: rotate(30deg);
+
+}
+
+.display {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .hangman {
+        display: none;
+    }
+
+    /* hide it elsewhere */
+}
+
+.timer-place{
+  position: absolute;
+  top:5%;
+  right:7%;
+}
