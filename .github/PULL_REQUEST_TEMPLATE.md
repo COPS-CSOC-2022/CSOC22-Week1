@@ -28,5 +28,5 @@
 ### Submission
 
 <!-- Add in your repo and apk link or web site link as per track -->
-[Repo](link)
-[APK|Web Site](link)
+[Repo](https://github.com/YAZURA-SHANKHDHAR/Calculator)
+[APK|Web Site](https://github.com/YAZURA-SHANKHDHAR/Calculator/blob/master/app/app-debug.apk)
