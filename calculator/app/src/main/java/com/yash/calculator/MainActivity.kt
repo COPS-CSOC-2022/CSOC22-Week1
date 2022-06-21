@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var expo : Button
     private lateinit var multi : Button
     private lateinit var divide : Button
+    private lateinit var dot : Button
 
     private lateinit var btnEqual : Button
 
@@ -56,6 +57,7 @@ class MainActivity : AppCompatActivity() {
         backspace = findViewById(R.id.BtnBackspace)
         divide = findViewById(R.id.button4)
         btnEqual = findViewById(R.id.BtnEquals)
+        dot = findViewById(R.id.button19)
 
 
         clear.setOnClickListener{
@@ -98,6 +100,9 @@ class MainActivity : AppCompatActivity() {
         }
         substract.setOnClickListener {
             input.text = addToInputText('-')
+        }
+        dot.setOnClickListener {
+            input.text = addToInputText('.')
         }
         expo.setOnClickListener {
             input.text = addToInputText('^')
