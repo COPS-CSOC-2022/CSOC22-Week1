@@ -4,7 +4,45 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_picture"
+
     tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/grey"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:padding="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textColorHint="@color/light_pink"
+            android:hint="Press numbers have fun.."/>
+
+        <TextView
+            android:id="@+id/output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:textSize="50sp"
+            android:hint="results here"
+            android:textColorHint="@color/background_chat_color"/>
+
+    </LinearLayout>
 
     <TableLayout
         android:id="@+id/tableLayout"
@@ -19,7 +57,8 @@
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/Clear"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -28,34 +67,40 @@
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn2"
-                android:text="@string/clear" />
+                android:text="@string/clear"
+                android:textColor="#FFE082" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/BtnBackspace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/black"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_btn4"
+                android:text="@string/backspace"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/BtnExpo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="1dp"
+                android:textColor="@color/black"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn3"
-                android:text="@string/brackets" />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="4dp"
-                android:layout_marginTop="4dp"
-                android:layout_marginEnd="1dp"
-                android:layout_marginBottom="1dp"
-                android:layout_weight="1"
-                android:background="@drawable/background_btn3"
-                android:text="@string/exponent" />
+                android:text="@string/exponent"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button4"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -64,7 +109,9 @@
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn3"
-                android:text="@string/add" />
+                android:text="@string/divide"
+
+                android:textColor="@color/black" />
         </TableRow>
 
         <TableRow
@@ -77,11 +124,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
+                android:textColor="@color/black"
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn3"
-                android:text="@string/seven" />
+                android:text="@string/seven"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button6"
@@ -90,10 +139,12 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="1dp"
+                android:textColor="@color/black"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn3"
-                android:text="@string/eight" />
+                android:text="@string/eight"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button7"
@@ -102,22 +153,26 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="1dp"
+                android:textColor="@color/black"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn3"
-                android:text="@string/nine" />
+                android:text="@string/nine"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
-                android:id="@+id/button8"
+                android:id="@+id/BtnMul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
+                android:textColor="@color/black"
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn3"
-                android:text="@string/multiplication" />
+                android:text="@string/multiplication"
+                style="?android:attr/buttonBarButtonStyle" />
         </TableRow>
 
         <TableRow
@@ -130,11 +185,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
+                android:textColor="@color/black"
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn3"
-                android:text="@string/four" />
+                android:text="@string/four"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button10"
@@ -142,11 +199,13 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
+                android:textColor="@color/black"
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn3"
-                android:text="@string/five" />
+                android:text="@string/five"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button11"
@@ -155,13 +214,16 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="1dp"
+                android:textColor="@color/black"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn3"
-                android:text="@string/six" />
+                android:text="@string/six"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
-                android:id="@+id/button12"
+                android:id="@+id/BtnMinus"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -171,7 +233,8 @@
                 android:layout_weight="1"
 
                 android:background="@drawable/background_btn3"
-                android:text="@string/minus" />
+                android:text="@string/minus"
+                android:textColor="@color/black" />
         </TableRow>
 
         <TableRow
@@ -180,6 +243,7 @@
 
             <Button
                 android:id="@+id/button13"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -188,7 +252,8 @@
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn3"
-                android:text="@string/one" />
+                android:text="@string/one"
+                android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/button14"
@@ -198,9 +263,11 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
+                android:textColor="@color/black"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn3"
-                android:text="@string/two" />
+                android:text="@string/two"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button15"
@@ -209,22 +276,26 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="1dp"
+                android:textColor="@color/black"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn3"
-                android:text="@string/three" />
+                android:text="@string/three"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
-                android:id="@+id/button17"
+                android:id="@+id/BtnAdd"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
+                android:textColor="@color/black"
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn3"
-                android:text="@string/add" />
+                android:text="@string/add"
+                style="?android:attr/buttonBarButtonStyle" />
 
         </TableRow>
 
@@ -239,15 +310,18 @@
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="1dp"
+
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn0"
-                android:text="Button"
 
-                android:textColor="@color/white" />
+
+                android:textColor="@color/white"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
                 android:id="@+id/button18"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
@@ -256,7 +330,8 @@
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn3"
-                android:text="@string/zero" />
+                android:text="@string/zero"
+                android:textColor="@color/black" />
 
             <Button
                 android:id="@+id/button19"
@@ -266,32 +341,27 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
+                android:textColor="@color/black"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn3"
-                android:text="@string/point" />
+                android:text="@string/point"
+                style="?android:attr/buttonBarButtonStyle" />
 
             <Button
-                android:id="@+id/button20"
+                android:id="@+id/BtnEquals"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="1dp"
+                android:textColor="#FFE082"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:background="@drawable/background_btn1"
-                android:text="@string/equals" />
+                android:text="@string/equals"
+                style="?android:attr/buttonBarButtonStyle" />
         </TableRow>
     </TableLayout>
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

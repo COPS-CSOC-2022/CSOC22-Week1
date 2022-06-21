@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">calculator</string>
     <string name="add">+</string>
-    <string name="multiplication">x</string>
+    <string name="multiplication">×</string>
     <string name="divide">÷</string>
     <string name="point">.</string>
     <string name="zero">0</string>
@@ -14,12 +14,12 @@
     <string name="seven">7</string>
     <string name="eight">8</string>
     <string name="nine">9</string>
-    <string name="brackets">( )</string>
+    <string name="backspace">⌫</string>
     <string name="clear">C</string>
     <string name="equals">=</string>
     <string name="exponent">^</string>
     <string name="minus">-</string>
-
+    <string name="button">Button</string>
 
 
 </resources>
