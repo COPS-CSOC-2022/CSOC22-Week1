@@ -1,0 +1,69 @@
+.dark-mode {
+    background-color: black;
+}
+
+.switch {
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: palevioletred;
+    background: radial-gradient(black, rgb(0, 255, 170));
+    height: 7vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 2vw;
+    border: 2px black;
+    box-shadow: 0px 3px 3px 3px violet;
+}
+
+h1 {
+    animation: akky 2s ease-in-out infinite;
+}
+
+@keyframes akky {
+    0% {
+        color: antiquewhite;
+    }
+
+    50% {
+        color: rgb(121, 222, 253);
+    }
+
+    100% {
+        color: antiquewhite;
+    }
+}
+
+.akky {
+    text-align: center;
+
+}
+
+.ok {
+    display: inline-block;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 3px 3px rgb(7, 156, 248);
+}
+
+table {
+    margin: auto;
+}
+
+input {
+    font-size: 21.5px;
+    border-radius: 12px;
+    height: 30px;
+}
+
+button {
+    font-size: 30px;
+    width: 65px;
+    height: 60px;
+    border-radius: 16px;
+    background-color: aqua;
+    cursor: pointer;
+}
