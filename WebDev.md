@@ -1,14 +1,14 @@
-#  CSOC'22 Week1 Web Development
+# CSOC'22 Week1 Web Development
 
-##  Introduction
+## Introduction
 
 Web development is a basic skill that is often said as a good start to the development field. This week you will learn the basics of web development. You will get familiar with HTML, CSS, and JavaScript. On completion, you will be able to make simple static websites for both desktop and mobile.
 
-##  Responsive UI
+## Responsive UI
 
 One major thing to ensure while working on Web Apps is to ensure that most people will open your websites on mobile first based on that we develop our site on Mobile First approach and then make changes to scale with increasing screen size
 
-###  Native CSS Tools
+### Native CSS Tools
 
 These are vanilla CSS Tools that will allow you to make your UI respond to changes in the screen size.
 
@@ -20,7 +20,7 @@ These are vanilla CSS Tools that will allow you to make your UI respond to chang
 
 - Media Queries
 
-###  CSS Frameworks
+### CSS Frameworks
 
 They provide you with a set of classes and components that scale with the screen size. Although its only recommended to use them when you understand native CSS properly.
 
@@ -32,7 +32,7 @@ They provide you with a set of classes and components that scale with the screen
 
 - [Materialize](https://materializecss.com/)
 
-##  Submission Guidelines :
+## Submission Guidelines :
 
 Submission has to be done by sharing your github repo link and deployment link of site
 
@@ -46,10 +46,8 @@ Submission has to be done by sharing your github repo link and deployment link o
 
 Remember, the deadline for this week's task is June 7th, 2022, at 23:59.
 
-##  Submissions
+## Submissions
 
-<!-- Add you name in below list as -->
-
-<!-- - Your Name - [Repo Name](Link) [Site](Site Link) -->
-
-<!-- - Sanyu Daver - [Tic Tac](https://github.com/sanyud/TicTac) [Site](www.copsiitbhu.co.in) -->
+Patel Aryan -[
+CSOC22-Week1
+](https://github.com/Eli4479/CSOC22-Week1) [Hangman](https://csoc-22-week1-zeta.vercel.app/)
