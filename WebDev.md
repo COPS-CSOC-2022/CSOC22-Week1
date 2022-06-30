@@ -48,7 +48,7 @@ Remember, the deadline for this week's task is June 7th, 2022, at 23:59.
 
 ##  Submissions
 
-Akshat Goel - CSOC22-Week1(https://github.com/DecryptAG/CSOC22-Week1) - [Vercel]https://csoc22-calculator.vercel.app/
+Akshat Goel - [CSOC22-Week1](https://github.com/DecryptAG/CSOC22-Week1)  [Site](https://csoc22-calculator.vercel.app/)
 <!-- Add you name in below list as -->
 
 <!-- - Your Name - [Repo Name](Link) [Site](Site Link) -->
