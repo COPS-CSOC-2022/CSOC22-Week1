@@ -49,6 +49,9 @@ Remember, the deadline for this week's task is June 7th, 2022, at 23:59.
 ##  Submissions
 
 <!-- Add you name in below list as -->
+Abhishek
+[Repo](https://github.com/abhishek-sultaniya/CSOC22-Week1)
+[APK|Web Site](https://abhishek-sultaniya.github.io/CSOC22-Week1/)
 
 <!-- - Your Name - [Repo Name](Link) [Site](Site Link) -->
 
