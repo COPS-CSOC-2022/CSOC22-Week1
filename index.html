@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific-Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <button id="btn2">Light Mode</button>
+    <button id="btn1">Dark Mode</button>
+
+      <div class="center">
+        <form name="forms" class="for">
+            <input name="display" id="display" type="text">
+            <div class="buttons">
+                <input type="button" value="9" onclick="designate('9')">
+                <input type="button" value="8" onclick="designate('8')">
+                <input type="button" value="7" onclick="designate('7')">
+                <input type="button" value="DEL" onclick="del()">
+                <input type="button" value="AC" onclick="ac()"><br>
+                <input type="button" value="6"   onclick="designate('6')">
+                <input type="button" value="5"   onclick="designate('5')">
+                <input type="button" value="4"   onclick="designate('4')">
+                <input type="button" value="-"   onclick="designate('-')">
+                <input type="button" value="+"   onclick="designate('+')"><br>
+                <input type="button" value="3"   onclick="designate('3')">
+                <input type="button" value="2"   onclick="designate('2')">
+                <input type="button" value="1"   onclick="designate('1')">
+                <input type="button" value="*"   onclick="designate('*')">
+                <input type="button" value="/"   onclick="designate('/')"><br>
+                <input type="button" value="0"   onclick="designate('0')">
+                <input type="button" value="."   onclick="designate('.')">
+                <input type="button" value="("   onclick="designate('(')">
+                <input type="button" value=")"   onclick="designate(')')">
+                <input type="button" value="&#8730;"   onclick="sqrt()"><br>
+                <input type="button" value="%"   onclick="per()">
+                <input type="button" value="x!"   onclick="fact()">
+                <input type="button" value="rad"   onclick="rad()">
+                <input type="button" value="x&#178;"   onclick="square()">
+                <input type="button" value="log"   onclick="logarithm()"><br>
+                <input type="button" value="ln"   onclick="lan()">
+                <input type="button" value="pi"   onclick="pi()">
+                <input type="button" value="sin"   onclick="sine()">
+                <input type="button" value="cos"   onclick="cos()">
+                <input type="button" value="tan"   onclick="tan()"><br>
+                <input type="button" value="0"   onclick="designate('0')">
+                <input type="button" value="="   onclick="equal()">
+
+            </div>
+        </form>
+    </div>
+    
+
+
+
+    <div id="upper">
+        <div id="matrix1" class="parent">
+            <h1 class="title">Matrix A</h1>
+            <input type="number" class="m1r1" value="0"/>
+            <input type="number" class="m1r1" value="0"/>
+            <input type="number" class="m1r1" value="0"/>
+            <input type="number" class="m1r2" value="0"/>
+            <input type="number" class="m1r2" value="0"/>
+            <input type="number" class="m1r2" value="0"/>
+            <input type="number" class="m1r3" value="0"/>
+            <input type="number" class="m1r3" value="0"/>
+            <input type="number" class="m1r3" value="0"/>
+            <div class="functions">
+                <input type="button" class="function" value="Det" onclick="mc.calDeterminantA()"/>
+                <input type="button" class="function" value="Tran" onclick="mc.transposeMatrixA()"/>
+                <input type="button" class="function" value="Rank" onclick="mc.calRankA()"/>
+                
+                
+            </div>
+        </div>
+        <div id="operations">
+            <input class="operation" type="button" value="A+B" onclick="mc.addMatrix()"/>
+            <input class="operation" type="button" value="A-B" onclick="mc.subtractMatrix()"/>
+            <input class="operation" type="button" value="A*B" onclick="mc.multiplyMatrix()"/>
+            <input type="button" class="operation" value="Del" onclick="mc.clear()"/>
+        </div>
+        <div id="matrix2" class="parent">
+             <h1 class="title">Matrix B</h1>
+             <input type="number" class="m2r1" value="0"/>
+             <input type="number" class="m2r1" value="0"/>
+             <input type="number" class="m2r1" value="0"/>
+             <input type="number" class="m2r2" value="0"/>
+             <input type="number" class="m2r2" value="0"/>
+             <input type="number" class="m2r2" value="0"/>
+             <input type="number" class="m2r3" value="0"/>
+             <input type="number" class="m2r3" value="0"/>
+             <input type="number" class="m2r3" value="0"/>
+             <div class="functions">
+                <input type="button" class="function" value="Det" onclick="mc.calDeterminantB()"/>
+                <input type="button" class="function" value="Tran" onclick="mc.transposeMatrixB()"/>
+                <input type="button" class="function" value="Rank" onclick="mc.calRankB()"/>
+                
+                
+            </div>
+        </div>
+    </div>
+    <br>
+    <div id="lower">
+        
+        <textarea wrap="soft" id="console" cols="20" rows="10" disabled>Result:</textarea>
+    </div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
+
+</html>
