@@ -1,0 +1,114 @@
+/* Variables used */
+:root{
+    --background-color:white;
+    --text-color: black;
+    --base-color:rgba(153,153,153,1);
+    --primary-color: rgb(45, 44, 44);
+    --secondary-color: white;
+
+}
+.dark-theme{
+
+    --background-color: black;
+    --base-color:rgba(38,38,38,255) ;
+    --primary-color: rgba(53,53,58,255);
+    --secondary-color: rgba(37,38,38,255);
+    --text-color: white;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+#Mode{
+    width:35px;
+    text-align:right;
+    margin-left:-10px;
+    position: absolute;
+    padding: 5px;
+    border: 5px solid var(--text-color);
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+#history-log{
+    position: absolute;
+    text-align: right;
+    margin-top: 15vh;
+    margin-left: 12vw;
+    color: var(--text-color);
+}
+h3{
+    position: absolute;
+    text-align: right;
+    margin-top: 80px;;
+    margin-left: 12vw;
+    color: var(--text-color)
+}
+
+.container{
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    max-width:40vw;
+    max-height: 90vmax;
+    margin:10vh auto 0 auto;
+    box-shadow: 0px 0px 43px 17px var(--base-color);
+}
+
+#display{
+    text-align: right;
+    height: 70px;
+    padding: 16px 8px;
+    font-size: 25px;
+    border: 1px solid;
+}
+#display > h6{
+    text-align:left;
+    margin-left: 20px;
+    vertical-align: top;
+    margin-top:0px;
+}
+
+.buttons{
+    display: grid;
+    border-bottom: 1px solid ;
+    border-left: 1px solid ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.buttons > div {
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+
+.btn {
+    border: 0.5px solid;
+    line-height: 100px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    transition: 0.3s ease-in-out;
+}
+
+#equal{
+    background: rgb(82, 82, 222);
+    color: white;
+}
+
+/* Media query for increased responsiveness */
+@media screen and (max-width: 1000px){
+    #display{
+        height: 40px;
+        font-size: 20px;
+    }
+    .btn{
+        font-size:20px;
+        line-height: 70px;
+    }
+}
