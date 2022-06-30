@@ -53,3 +53,5 @@ Remember, the deadline for this week's task is June 7th, 2022, at 23:59.
 <!-- - Your Name - [Repo Name](Link) [Site](Site Link) -->
 
 <!-- - Sanyu Daver - [Tic Tac](https://github.com/sanyud/TicTac) [Site](www.copsiitbhu.co.in) -->
+
+- Nandini Saagar - [Scientific Calculator](https://github.com/Nandinisaagar/Week-1-Submission-.git) [site](https://week-1-submission.vercel.app/)
