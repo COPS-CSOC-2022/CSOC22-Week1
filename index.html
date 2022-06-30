@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <header>
+        <h4>The HangMan Game</h4>
+        <h2 id="targetColor"></h2>
+    </header>
+</head>
+    <div class="game-container">
+        <svg height="250" width="200" class="figure-container">
+            <!-- Rod -->
+            <line x1="60" y1="20" x2="140" y2="20" />
+            <line x1="140" y1="20" x2="140" y2="50" />
+            <line x1="60" y1="20" x2="60" y2="230" />
+            <line x1="20" y1="230" x2="100" y2="230" />
+
+            <!-- Head -->
+            <circle cx="140" cy="70" r="20" class="figure-part" />
+            <!-- Body -->
+            <line x1="140" y1="90" x2="140" y2="150" class="figure-part" />
+            <!-- Arms -->
+            <line x1="140" y1="120" x2="120" y2="100" class="figure-part" />
+            <line x1="140" y1="120" x2="160" y2="100" class="figure-part" />
+            <!-- Legs -->
+            <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
+            <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
+        </svg>
+        <ul>
+            <li style="--clr:#00ade1">
+                <a href="easy.html" data-text="&nbsp;Easy">&nbsp;Easy&nbsp;</a>
+            </li>
+            <li style="--clr:#00ade1">
+                <a href="index.html" data-text="&nbsp;Hard">&nbsp;Hard&nbsp</a>
+            </li>
+            <div>
+        </div>
+        </ul>
+        <div class="wrong-ans">
+            <div id="wrong-letters"></div>
+        </div>
+        <div class="word" id="word"></div>
+    </div>
+
+    <!-- Container for final message -->
+    <div class="instant-container" id="instant-container">
+        <div class="instant">
+            <h2 id="final-message"></h2>
+            <button id="play-button">Play Again</button>
+        </div>
+    </div>
+
+
+    <!-- Notification -->
+    <div class="notification-container" id="notification-container">
+        <p>You have already entered this letter</p>
+    </div>
+     <!-- hint -->
+     <div class="box">
+        <button id="hint">Hint</button>
+     </div>
+     <div>
+         <p id="countdown"></p>
+    </div>
+     
+     
+    <script src="index.js"></script>
+</body>
+</html>
