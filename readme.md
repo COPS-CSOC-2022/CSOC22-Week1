@@ -105,7 +105,18 @@ The objective is that you need to build a Calculator which will perform at least
 
 -  **Extras:** Add feature for matrix calculations and plotting of simple basic graphs using equations.
 
-  
+## Points
+
+Here is the breakdown of the points related to each task
+
+| Task      | Points |
+| :-------: | :-------: |
+| Task 1|30|
+|Task 2|30|
+|Task 3|30|
+|Task 4|30|
+|Bonus|20|
+|**Total**|140|
 
 ## Judging
 
