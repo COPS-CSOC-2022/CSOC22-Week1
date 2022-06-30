@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HANGMAN 2</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="hard.css">
+    </head>
+    <body>
+        <div class="score">SCORE <span id="score">0</span></div>
+        <div id="countdown"></div>
+        <div class="word">
+            <span id="one" class="letter">_</span>
+            <span id="two" class="letter">_</span>
+            <span id="three" class="letter">_</span>
+            <span id="four" class="letter">_</span>
+            <span id="five" class="letter">_</span>
+            <span id="six" class="letter">_</span>
+            <span id="seven" class="letter">_</span>
+        </div>
+        <!-- <div>
+            <span class="underline">_</span>
+            <span class="underline">_</span>
+            <span class="underline">_</span>
+            <span class="underline">_</span>
+            <span class="underline">_</span>
+            <span class="underline">_</span>
+            <span class="underline">_</span>
+        </div> -->
+        <div id="help"></div>
+        <div id="chances">Chances Left: <span id="life">3</span></div>
+        <br>
+        <div id="aplhabets_place">
+            
+        </div>
+        <button id="hint" onclick="hint()">HINT</button>
+        <button id="quit" onclick="quit()">QUIT</button>
+        <div id="hangmanpic">
+            <img src="./imagehard/1.png" id="amit">
+        </div>
+        <script src="hard.js"></script>
+    </body>
+</html>
