@@ -50,6 +50,6 @@ Remember, the deadline for this week's task is June 7th, 2022, at 23:59.
 
 <!-- Add you name in below list as -->
 
-<!-- - Your Name - [Repo Name](Link) [Site](Site Link) -->
+<!-- - Amey Naik - [CSOC22-Week1](https://github.com/ameynaik-9/CSOC22-Week1) [Site](https://csoc-22-week1-ameybranch-o1rdiysin-ameynaikalfa0909-gmailcom.vercel.app/index.html) -->
 
 <!-- - Sanyu Daver - [Tic Tac](https://github.com/sanyud/TicTac) [Site](www.copsiitbhu.co.in) -->
