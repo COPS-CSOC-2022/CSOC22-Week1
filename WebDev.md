@@ -48,8 +48,6 @@ Remember, the deadline for this week's task is June 7th, 2022, at 23:59.
 
 ##  Submissions
 
-<!-- Add you name in below list as -->
-
-<!-- - Your Name - [Repo Name](Link) [Site](Site Link) -->
-
-<!-- - Sanyu Daver - [Tic Tac](https://github.com/sanyud/TicTac) [Site](www.copsiitbhu.co.in) -->
+NAME: MD ATHAR
+Repo Link: https://github.com/mdathar4403/calculator.git 
+Topic : Calculator Site link : https://calculator-psi-seven.vercel.app/
