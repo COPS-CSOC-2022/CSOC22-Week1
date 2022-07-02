@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/modes.css">
+    <link rel="icon" href="images/hangman.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&family=Cantarell&family=Merriweather&family=Montserrat&family=Sacramento&family=Tourney:wght@300&display=swap" rel="stylesheet">
+    <title>Hangman Game-Yash Agrawal</title>
+</head>
+
+<body>
+    
+    <div class="m-0 p-0" id="container">
+        <div>
+            <h1 id="heading">Hangman</h1>
+
+            <!-- Loading image -->
+            <div id="loading">
+                Please wait while the game is loading...
+            </div>
+
+            <!-- lives -->
+            <div class="m-2 p-2 lives"> Lives left : <span id="no-of-lives"> </span> </div>
+
+            <!-- toggle between pages -->
+            <a href="easy.html"><button class="btn btn-primary m-2 p-2" id="easyBtn">Easy</button></a>
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <a href="hard.html"><button class="btn btn-outline-secondary m-2 p-2" id="hardBtn">Hard</button></a>
+            
+            
+        </div>
+
+        <!-- the hangman -->
+        <div class="hangman">
+            <div class="roof"></div>
+            <div class="wall"></div>
+            <div class="rope"></div>
+            <div class="head display"></div>
+            <div class="body step2 display"></div>
+            <div class="arm-left step3 display"></div>
+            <div class="arm-right step3 display"></div>
+            <div class="leg-left step4 display"></div>
+            <div class="leg-right step5 display"></div>
+        </div>
+        <!-- the content holder -->
+        <div id="word"></div>
+        <div class="main-content">
+
+
+            <div id="word-holder"></div>
+            <br><br>
+
+
+            <div class="timer">Time Left :  <span id="timer"> 300s </span></div>
+
+
+            <div class="streak-count">Streak (of words) : <span id="streak-count">   0</span></div>
+
+
+
+            <div class="incorrect-words">
+                <h3>Incorrect Words:</h3>
+                <h4>
+                    <div class="incorrect-words" id="incorrect-words"></div>
+                </h4>
+            </div>
+            <!-- hint button -->
+            <button class="btn btn-outline-warning m-2 p-2" id="hintButton">Hint</button>
+
+            <!-- restart game -->
+            <div id="restart-btn"><button class="btn btn-outline-warning" id="restart-button" >Restart Game</button></div>
+
+            <!-- all alphabet to be shown -->
+            <div id="alphabets-holder"></div>
+
+            
+        </div>
+    </div>
+</body>
+<script src="scripts/easymode.js"></script>
+
+</html> 

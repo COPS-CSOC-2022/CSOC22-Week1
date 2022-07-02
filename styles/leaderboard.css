@@ -1,0 +1,54 @@
+html, body {
+    text-align: center;
+    background-image: url('../images/hangman-bg.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    font-family: 'Montserrat';
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#heading {
+    font-family: 'Sacramento';
+    font-size: 5rem;
+}
+.container {
+    padding: 10%;
+}
+#table-headings {
+    font-family: 'Arvo';
+}
+.btn {
+    position: relative;
+    margin: 50px auto;
+    background: #021118;
+    background-image: -webkit-linear-gradient(top, #13242d, #120303);
+    background-image: -moz-linear-gradient(top, #13242d, #120303);
+    background-image: -ms-linear-gradient(top, #13242d, #120303);
+    background-image: -o-linear-gradient(top, #13242d, #120303);
+    background-image: linear-gradient(to bottom, #13242d, #120303);
+    -webkit-border-radius: 17;
+    -moz-border-radius: 17;
+    border-radius: 17px;
+    text-shadow: 1px 1px 3px #c4c4c4;
+    -webkit-box-shadow: 1px 7px 9px #c4c4c4;
+    -moz-box-shadow: 1px 7px 9px #c4c4c4;
+    box-shadow: 1px 7px 9px #c4c4c4;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+.btn:hover {
+    background: #b6b9ba;
+    background-image: -webkit-linear-gradient(top, #b6b9ba, #858585);
+    background-image: -moz-linear-gradient(top, #b6b9ba, #858585);
+    background-image: -ms-linear-gradient(top, #b6b9ba, #858585);
+    background-image: -o-linear-gradient(top, #b6b9ba, #858585);
+    background-image: linear-gradient(to bottom, #b6b9ba, #858585);
+    text-decoration: none;
+}
