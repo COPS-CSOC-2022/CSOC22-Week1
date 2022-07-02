@@ -17,8 +17,8 @@ const step4 = document.querySelector('.step4');
 const step5 = document.querySelector('.step5');
 
 const timeHolder = document.querySelector('#timer');
-const audio = new Audio("../sounds/wrong_input.wav");
-const audioDead = new Audio("../sounds/you_dead.wav");
+const audio = new Audio("sounds/wrong_input.wav");
+const audioDead = new Audio("sounds/you_dead.wav");
 let streak = 0;
 let lives;
 let remIndex;
