@@ -37,7 +37,7 @@ for (var i = 0; i < highScoreArr.length && i < 11; i++) {
             const nameOfPlayer = document.createElement('td');
             const highestScore = document.createElement('td');
     
-            sNo.textContent = i+1;
+            sNo.textContent = i;
             nameOfPlayer.textContent = keys[i];
             highestScore.textContent = highScoreArr[i];
     
