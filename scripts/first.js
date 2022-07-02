@@ -15,7 +15,7 @@ enterButton.addEventListener('click', function(event) {
     else {
         localStorage.setItem("name", playerName);
         localStorage.setItem(playerName, '0');
-        window.location.href = '../easy.html';
+        window.location.href = 'easy.html';
     }
 });
 
