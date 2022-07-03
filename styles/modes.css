@@ -59,6 +59,9 @@ body {
     margin: 20px auto 0px;
     font-size: 2rem;
 }
+#word-holder {
+    padding: 30px;
+}
 #word {
     margin: 1% auto 1%;
     font-family: 'Montserrat-bold', sans-serif;
@@ -110,7 +113,7 @@ body {
     width: 10.5%;
     height: 1.73%;
     position: absolute;
-    margin: auto;
+    margin: 20px auto;
     right: 45%;
     top: 30%;
 }
@@ -121,7 +124,7 @@ body {
     width: 0.78%;
     height: 22%;
     position: absolute;
-    margin: auto;
+    margin: 20px auto;
     right: 45%;
     top: 30%;
 
@@ -133,7 +136,7 @@ body {
     width: 0.52%;
     height: 2.31%;
     position: absolute;
-    margin: auto;
+    margin: 20px auto;
     right: 50%;
     top: 31%;
 
@@ -146,7 +149,7 @@ body {
     height: 5.79%;
     border-radius: 100%;
     position: absolute;
-    margin: auto;
+    margin: 20px auto;
     right: 49%;
     top: 33%;
 }
@@ -156,7 +159,7 @@ body {
     width: 0.52%;
     height: 12.74%;
     position: absolute;
-    margin: auto;
+    margin: 20px auto;
     right: 50%;
     top: 36%;
 
@@ -167,7 +170,7 @@ body {
     width: 0.52%;
     height: 4.63%;
     position: absolute;
-    margin: auto;
+    margin: 20px auto;
     right: 51%;
     top: 38%;
     transform: rotate(30deg);
@@ -179,7 +182,7 @@ body {
     width: 0.52%;
     height: 4.63%;
     position: absolute;
-    margin: auto;
+    margin: 20px auto;
     right: 49%;
     top: 38%;
     transform: rotate(-30deg);
@@ -192,7 +195,7 @@ body {
     width: 0.52%;
     height: 4.63%;
     position: absolute;
-    margin: auto;
+    margin: 20px auto;
     right: 50.5%;
     top: 48%;
     transform: rotate(30deg);
@@ -204,7 +207,7 @@ body {
     width: 0.52%;
     height: 4.63%;
     position: absolute;
-    margin: auto;
+    margin: 20px auto;
     right: 49.5%;
     top: 48%;
     transform: rotate(-30deg);
