@@ -68,6 +68,7 @@ fetch(randomWordGen).then(function (response) {
 
         //removing loading message on loading
         document.getElementById('loading').classList.add("display");
+        document.getElementById('hangman').classList.remove("display");
 
         const capitalized = data[0].toUpperCase();
         const finalWordArr = capitalized.split('');
