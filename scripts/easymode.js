@@ -70,8 +70,9 @@ fetch(randomWordGen).then(function (response) {
         lives = 5;
         noOfLives.textContent = lives;
 
-        //removing loading message on loading
+        //removing loading message on loading and showing hangman
         document.getElementById('loading').classList.add("display");
+        document.getElementById('hangman').classList.remove("display");
 
         const capitalized = data[0].toUpperCase();
         const finalWordArr = capitalized.split('');
