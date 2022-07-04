@@ -4,6 +4,7 @@ function slide() {
     if (!slidingOn){
         document.querySelector(".slide-box").style.display = "flex";
         document.querySelector(".outer").style.width = "730px";
+        document.querySelector(".outer").style.transitionDuration="1s";
         document.querySelector(".inner").style.flexBasis = "52%";
         document.querySelector(".arrow-text").innerHTML = "<\n<\n<\n";
 
