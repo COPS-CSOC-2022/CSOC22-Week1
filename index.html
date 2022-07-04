@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Web Calculator</title>
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand heading" href="#">CALCULATOR</a>
+        <my-button class="navbar-toggler" type="my-button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </my-button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">SCIENTIFIC <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="https://matrixcalc.org/en/">MATRIX CALCULATOR</a>
+            <a class="nav-item nav-link" href="https://www.desmos.com/calculator">GRAPHING CALCULATOR</a>
+            <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
+          </div>
+        </div>
+      </nav>
+
+    <div class="main1">
+        <div class="my-display">
+            <h1 id="displayNumber">0</h1>
+        </div>
+        <div class="outer">
+            <div class="inner">
+                <div class="my-row">
+                    <div class="my-button operator">%</div>
+                    <div class="my-button operator">/</div>
+                    <div class="my-button operator">*</div>
+                    <div class="my-button backspace">C</div>
+                    <!-- <div class="my-button operator operator">sin</div> -->
+                </div>
+                <div class="my-row">
+                    <div class="my-button number">7</div>
+                    <div class="my-button number">8</div>
+                    <div class="my-button number">9</div>
+                    <div class="my-button negative">+/-</div>
+                    <!-- <div class="my-button operator operator">sin</div> -->
+                </div>
+                <div class="my-row">
+                    <div class="my-button number">4</div>
+                    <div class="my-button number">5</div>
+                    <div class="my-button number">6</div>
+                    <div class="my-button operator">-</div>
+                </div>
+                <div class="my-row">
+                    <div class="my-button number">1</div>
+                    <div class="my-button number">2</div>
+                    <div class="my-button number">3</div>
+                    <div class="my-button operator">+</div>
+                </div>
+                <div class="my-row">
+                    <div class="my-button clear">AC</div>
+                    <div class="my-button number">0</div>
+                    <div class="my-button number">.</div>
+                    <div class="my-button equals">=</div>
+                    
+                </div>
+            </div>
+
+            <div class="slide-box">
+                <div class="my-row">
+                    <div class="my-button unary">sin</div>
+                    <div class="my-button unary">cos</div>
+                    <div class="my-button unary">tan</div>
+                </div>
+                <div class="my-row">
+                    <div class="large my-button unary">sin^-1</div>
+                    <div class="large my-button unary">cos^-1</div>
+                    <div class="large my-button unary">tan^-1</div>
+                </div>
+                <div class="my-row">
+                    <div class="my-button unary">log</div>
+                    <div class="my-button unary">ln</div>
+                    <div class="my-button unary">e^x</div>
+                </div>
+                <div class="my-row">
+                    <div class="my-button unary">sqrt</div>
+                    <div class="my-button operator">^</div>
+                    <div class="my-button unary">x^2</div>
+                </div>
+                <div class="my-row">
+                    <div class="my-button unary">1/x</div>
+                    <div class="my-button unary">π</div>
+                    <div class="my-button unary">|x|</div>
+                    
+                </div>
+            </div>
+
+            <div class="arrow1" onclick="slide()">
+<pre class="arrow-text">
+>
+>
+>
+</pre>
+            </div>
+        </div>
+    </div>
+
+    <div class="history">
+        <h2>History</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th style="font-family: 'Roboto Slab', serif;">First Num</th>
+                    <th style="font-family: 'Roboto Slab', serif;">Operator</th>
+                    <th style="font-family: 'Roboto Slab', serif;">Second Num</th>
+                    <th style="font-family: 'Roboto Slab', serif;">Result</th>
+                </tr>
+            </thead>
+            <tbody id="historyList"></tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="storage.js"></script>
+</body>
+</html>
