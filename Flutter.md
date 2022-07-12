@@ -70,4 +70,26 @@ Submission has to be done by sharing your github repo link and the .apk file of 
 - Commit and Push the changes
 - Make a Pull request
 
-## Submissions
+
+# Submissions
+
+## Calculator APP USING FLUTTER
+
+Calculator is flutter app which has following features:
+1. Basic Calculations 
+2. Trignometric calculations 
+3. Two Themes setting
+4. Line Charts To visualize data
+5. BMI Calculations
+
+
+### Used Packages
+The App Uses Following Packages:
+1. https://pub.dev/packages/velocity_x
+2. https://pub.dev/packages/math_expressions
+3. https://pub.dev/packages/draw_graph
+4. https://pub.dev/packages/syncfusion_flutter_charts
+
+[Repo Link](https://github.com/Shubham9455/Calculator-App-Using-Flutter---CSOC--)
+
+[APK LINk](https://github.com/Shubham9455/Calculator-App-Using-Flutter---CSOC--/blob/master/app-release.apk)
