@@ -72,4 +72,4 @@ Submission has to be done by sharing your github repo link and the .apk file of 
 
 ## Submissions
 - repo link : https://github.com/you-think-you-know-me/MyCalc.git
-- apk file  : https://github.com/you-think-you-know-me/MyCalc/tree/main/build/app
+- apk file  : https://github.com/you-think-you-know-me/MyCalc/blob/main/build/app/outputs/flutter-apk/app-release.apk
