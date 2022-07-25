@@ -189,6 +189,16 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
+    fun onThemeConverter(view: View) {
+        val intent = Intent(this, MainActivity_Light::class.java)
+        startActivity(intent)
+    }
+
+    fun onUnitConverter(view: View) {
+        val intent = Intent(this, Unit_Converter::class.java)
+        startActivity(intent)
+    }
+
     fun onRotate(view:View){
 
         requestedOrientation = if (isPortrait){
@@ -198,6 +208,14 @@ class MainActivity : AppCompatActivity() {
             ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         }
         isPortrait = !isPortrait
+    }
+
+    fun onMatrix(view: View) {
+
+    }
+
+    fun onHostory(view: View) {
+
     }
 
 }

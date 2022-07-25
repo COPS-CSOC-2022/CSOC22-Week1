@@ -51,6 +51,32 @@
         >
 
         <Button
+            android:id="@+id/btnMatrix"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onMatrix"
+            android:paddingLeft="18dp"
+            android:text="[.]"
+            android:textSize="17sp"
+            app:backgroundTint="#364DCD" />
+
+        <Button
+            android:id="@+id/btnUnitConverter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onUnitConverter"
+            android:paddingLeft="15dp"
+            android:textSize="30sp"
+            app:backgroundTint="#364DCD"
+            app:icon="@drawable/ic_convert" />
+
+        <Button
             android:id="@+id/btnGraph"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -58,35 +84,9 @@
             android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:onClick="onGraph"
-            android:paddingLeft="20dp"
+            android:paddingLeft="15dp"
             app:backgroundTint="#364DCD"
             app:icon="@drawable/ic_graph" />
-
-        <Button
-            android:id="@+id/btnMatrix"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"
-            android:onClick="onClear"
-            android:paddingLeft="18dp"
-            android:text="[.]"
-            android:textSize="25sp"
-            app:backgroundTint="#364DCD" />
-
-        <Button
-            android:id="@+id/btnConverter"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="5dp"
-            android:layout_weight="1"
-            android:onClick="onClear"
-            android:paddingLeft="20dp"
-            android:text="U"
-            android:textSize="30sp"
-            app:backgroundTint="#364DCD" />
 
         <Button
             android:id="@+id/btnHistory"
@@ -95,8 +95,8 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:onClick="onClear"
-            android:paddingLeft="20dp"
+            android:onClick="onHistory"
+            android:paddingLeft="10dp"
             android:textSize="40sp"
             app:backgroundTint="#364DCD"
             app:icon="@android:drawable/ic_menu_recent_history"
@@ -110,11 +110,23 @@
             android:layout_marginRight="5dp"
             android:layout_weight="1"
             android:onClick="onRotate"
-            android:paddingLeft="20dp"
+            android:paddingLeft="10dp"
             android:textSize="40sp"
             app:backgroundTint="#364DCD"
             app:icon="@android:drawable/ic_menu_always_landscape_portrait"
             />
+
+        <Button
+            android:id="@+id/btnThemeConverter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onThemeConverter"
+            android:paddingLeft="15dp"
+            app:backgroundTint="#364DCD"
+            app:icon="@drawable/ic_light_mode" />
 
     </LinearLayout>
 

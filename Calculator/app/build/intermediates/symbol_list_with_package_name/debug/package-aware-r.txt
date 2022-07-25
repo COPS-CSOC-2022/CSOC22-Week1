@@ -265,6 +265,10 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clearsTag
 attr clickAction
 attr clockFaceBackgroundColor
@@ -3249,10 +3253,14 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_clock_black_24dp
+drawable ic_convert
+drawable ic_degree
 drawable ic_graph
+drawable ic_home
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_light_mode
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -3260,6 +3268,9 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable ic_scale
+drawable ic_speed
+drawable ic_temp
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
 drawable m3_radiobutton_ripple
@@ -3312,10 +3323,14 @@ id CTRL
 id Cosecx
 id Cosx
 id Cotx
+id CtoF
 id Cubex
 id Equal
 id FUNCTION
 id FirstFragment
+id FtoC
+id FtoK
+id KtoF
 id Logx
 id META
 id NO_DEBUG
@@ -3417,6 +3432,7 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id btn0
+id btn00
 id btn1
 id btn2
 id btn3
@@ -3429,7 +3445,6 @@ id btn9
 id btnAdd
 id btnBack
 id btnClear
-id btnConverter
 id btnCos
 id btnDecimal
 id btnDivide
@@ -3454,10 +3469,10 @@ id btnSin
 id btnSqrt
 id btnSquarex
 id btnTan
+id btnThemeConverter
+id btnUnitConverter
 id btnXPowerY
 id buttonPanel
-id button_first
-id button_second
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3528,9 +3543,11 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
+id drawerLayout
 id dropdown_editable
 id dropdown_menu
 id dropdown_noneditable
+id dtor
 id easeIn
 id easeInOut
 id easeOut
@@ -3559,6 +3576,7 @@ id fitXY
 id fixed
 id flip
 id floating
+id foottom
 id forever
 id fragment_container_view_tag
 id frost
@@ -3605,6 +3623,8 @@ id item4
 id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
+id kmphtomps
+id kmtomile
 id labeled
 id layout
 id left
@@ -3640,6 +3660,7 @@ id material_value_index
 id matrix
 id message
 id middle
+id miletokm
 id mini
 id month_grid
 id month_navigation_bar
@@ -3648,6 +3669,8 @@ id month_navigation_next
 id month_navigation_previous
 id month_title
 id motion_base
+id mpstokmph
+id mtofoot
 id mtrl_anchor_parent
 id mtrl_calendar_day_selector_frame
 id mtrl_calendar_days_of_week
@@ -3675,7 +3698,7 @@ id multiply
 id nav_controller_view_tag
 id nav_graph
 id nav_host_fragment_container
-id nav_host_fragment_content_main
+id nav_view
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3726,6 +3749,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rtod
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3821,8 +3845,6 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
-id textview_first
-id textview_second
 id time
 id title
 id titleDividerNoCustom
@@ -3843,6 +3865,12 @@ id tvInput
 id tvResult
 id unchecked
 id uniform
+id unit_degree
+id unit_input
+id unit_length
+id unit_output
+id unit_speed
+id unit_temp
 id unlabeled
 id up
 id useLogo
@@ -3959,8 +3987,9 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_graph
 layout activity_main
+layout activity_main_light
 layout activity_plotting_graph
-layout content_main
+layout activity_unit_converter
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3978,8 +4007,6 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dp_example
-layout fragment_first
-layout fragment_second
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -4059,6 +4086,7 @@ layout text_view_with_theme_line_height
 layout text_view_without_line_height
 menu example_menu
 menu example_menu2
+menu nav_menu_unit_converter
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
@@ -4100,6 +4128,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string close
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -4185,6 +4214,7 @@ string mtrl_timepicker_confirm
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string next
+string open
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -5284,6 +5314,7 @@ styleable Carousel carousel_backwardTransition carousel_emptyViewsBehavior carou
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize

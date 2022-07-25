@@ -10,6 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Calculator">
         <activity
+            android:name=".Unit_Converter"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity_Light"
+            android:exported="false" />
+        <activity
             android:name=".PlottingGraph"
             android:exported="false"
             android:parentActivityName=".Graph" />

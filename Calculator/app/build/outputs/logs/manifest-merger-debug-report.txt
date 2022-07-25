@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-43:12
 MERGED from [androidx.databinding:viewbinding:7.1.2] C:\Users\manas\.gradle\caches\transforms-3\c274a125088e9387c4498590dbce1324\transformed\viewbinding-7.1.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] C:\Users\manas\.gradle\caches\transforms-3\3f4df1190b173f4235d379adcc8b1bb1\transformed\navigation-fragment-ktx-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment-ktx:1.2.4] C:\Users\manas\.gradle\caches\transforms-3\ad274909afcfd1e647d82b7b08b1900d\transformed\fragment-ktx-1.2.4\AndroidManifest.xml:17:1-24:12
@@ -18,6 +18,7 @@ MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\manas\.g
 MERGED from [androidx.appcompat:appcompat:1.4.2] C:\Users\manas\.gradle\caches\transforms-3\060a7221e4158082b69e4c17b109abed\transformed\appcompat-1.4.2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.intuit.ssp:ssp-android:1.0.5] C:\Users\manas\.gradle\caches\transforms-3\383ad6e412c812893f439344bcbe2736\transformed\ssp-android-1.0.5\AndroidManifest.xml:2:1-11:12
 MERGED from [com.intuit.sdp:sdp-android:1.0.5] C:\Users\manas\.gradle\caches\transforms-3\2d50923cceb33ec7fcd2c83c80fc2166\transformed\sdp-android-1.0.5\AndroidManifest.xml:2:1-11:12
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\manas\.gradle\caches\transforms-3\b4bbcb994dce5d4d95c88582acc1d268\transformed\circleimageview-3.1.0\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\manas\.gradle\caches\transforms-3\a8d61499fa069c54974b568507ed2faf\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.3.5] C:\Users\manas\.gradle\caches\transforms-3\0f9c760736296020432260a9b6893229\transformed\navigation-fragment-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\manas\.gradle\caches\transforms-3\34a3296975a63672b5cd304e9050ff55\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
@@ -60,29 +61,31 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\manas\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\manas\.gradle\caches\transforms-3\bf6f6efc009e5e544b348e31144b4b9d\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\manas\.gradle\caches\transforms-3\563980873d44ac8bc5a14f3a3575b789\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\manas\.gradle\caches\transforms-3\1de1497f5fa1cb6951fa9dd81ed8fefd\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-36:12
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:3:5-37
 		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-36:12
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:5:5-34:19
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:5:5-41:19
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\manas\.gradle\caches\transforms-3\4e622b57e20e3df3783bf5cfeb311880\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\manas\.gradle\caches\transforms-3\4e622b57e20e3df3783bf5cfeb311880\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\manas\.gradle\caches\transforms-3\c68977e39e9f7376090234baa0032b01\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\manas\.gradle\caches\transforms-3\c68977e39e9f7376090234baa0032b01\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\manas\.gradle\caches\transforms-3\b4bbcb994dce5d4d95c88582acc1d268\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\manas\.gradle\caches\transforms-3\b4bbcb994dce5d4d95c88582acc1d268\transformed\circleimageview-3.1.0\AndroidManifest.xml:9:5-20
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\manas\.gradle\caches\transforms-3\441d4fc037de6fb441500e8a56b36e60\transformed\emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\manas\.gradle\caches\transforms-3\441d4fc037de6fb441500e8a56b36e60\transformed\emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.core:core:1.7.0] C:\Users\manas\.gradle\caches\transforms-3\234a538a20b20407a3c9b7e7a53bb83d\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
@@ -107,48 +110,62 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\manas\.gradle\cach
 		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
 		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:11:9-48
-activity#com.example.calculator.PlottingGraph
-ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:12:9-15:51
+activity#com.example.calculator.Unit_Converter
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:12:9-15:58
 	android:parentActivityName
-		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:15:13-48
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:15:13-55
 	android:exported
 		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:14:13-37
 	android:name
-		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:13:13-42
-activity#com.example.calculator.Graph
-ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:16:9-19:58
-	android:parentActivityName
-		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:19:13-55
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:13:13-43
+activity#com.example.calculator.MainActivity_Light
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:16:9-18:40
 	android:exported
 		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:18:13-37
 	android:name
-		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:17:13-34
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:17:13-47
+activity#com.example.calculator.PlottingGraph
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:19:9-22:51
+	android:parentActivityName
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:22:13-48
+	android:exported
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:21:13-37
+	android:name
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:20:13-42
+activity#com.example.calculator.Graph
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:23:9-26:58
+	android:parentActivityName
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:26:13-55
+	android:exported
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:24:13-34
 activity#com.example.calculator.MainActivity2
-ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:20:9-24:67
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:27:9-31:67
 	android:label
-		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:23:13-57
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:30:13-57
 	android:exported
-		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:22:13-37
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:29:13-37
 	android:theme
-		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:24:13-64
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:31:13-64
 	android:name
-		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:21:13-42
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:28:13-42
 activity#com.example.calculator.MainActivity
-ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:25:9-33:20
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:32:9-40:20
 	android:exported
-		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:27:13-36
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:34:13-36
 	android:name
-		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:26:13-41
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:33:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:28:13-32:29
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:35:13-39:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:29:17-69
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:36:17-69
 	android:name
-		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:29:25-66
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:36:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:31:17-77
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:38:17-77
 	android:name
-		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:31:27-74
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:38:27-74
 uses-sdk
 INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
@@ -181,6 +198,8 @@ MERGED from [com.intuit.ssp:ssp-android:1.0.5] C:\Users\manas\.gradle\caches\tra
 MERGED from [com.intuit.ssp:ssp-android:1.0.5] C:\Users\manas\.gradle\caches\transforms-3\383ad6e412c812893f439344bcbe2736\transformed\ssp-android-1.0.5\AndroidManifest.xml:7:5-9:41
 MERGED from [com.intuit.sdp:sdp-android:1.0.5] C:\Users\manas\.gradle\caches\transforms-3\2d50923cceb33ec7fcd2c83c80fc2166\transformed\sdp-android-1.0.5\AndroidManifest.xml:7:5-9:41
 MERGED from [com.intuit.sdp:sdp-android:1.0.5] C:\Users\manas\.gradle\caches\transforms-3\2d50923cceb33ec7fcd2c83c80fc2166\transformed\sdp-android-1.0.5\AndroidManifest.xml:7:5-9:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\manas\.gradle\caches\transforms-3\b4bbcb994dce5d4d95c88582acc1d268\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
+MERGED from [de.hdodenhof:circleimageview:3.1.0] C:\Users\manas\.gradle\caches\transforms-3\b4bbcb994dce5d4d95c88582acc1d268\transformed\circleimageview-3.1.0\AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\manas\.gradle\caches\transforms-3\a8d61499fa069c54974b568507ed2faf\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\manas\.gradle\caches\transforms-3\a8d61499fa069c54974b568507ed2faf\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment:2.3.5] C:\Users\manas\.gradle\caches\transforms-3\0f9c760736296020432260a9b6893229\transformed\navigation-fragment-2.3.5\AndroidManifest.xml:20:5-22:41

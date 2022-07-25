@@ -81,22 +81,6 @@ public final class ActivityMainBinding implements ViewBinding {
    * <p>
    * Present:
    * <ul>
-   *   <li>layout/</li>
-   * </ul>
-   *
-   * Absent:
-   * <ul>
-   *   <li>layout-land/</li>
-   * </ul>
-   */
-  @Nullable
-  public final Button btnConverter;
-
-  /**
-   * This binding is not available in all configurations.
-   * <p>
-   * Present:
-   * <ul>
    *   <li>layout-land/</li>
    * </ul>
    *
@@ -377,6 +361,38 @@ public final class ActivityMainBinding implements ViewBinding {
    * <p>
    * Present:
    * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnThemeConverter;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnUnitConverter;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
    *   <li>layout-land/</li>
    * </ul>
    *
@@ -398,16 +414,17 @@ public final class ActivityMainBinding implements ViewBinding {
       @NonNull Button btn0, @NonNull Button btn1, @NonNull Button btn2, @NonNull Button btn3,
       @NonNull Button btn4, @NonNull Button btn5, @NonNull Button btn6, @NonNull Button btn7,
       @NonNull Button btn8, @NonNull Button btn9, @NonNull Button btnAdd, @NonNull Button btnBack,
-      @NonNull Button btnClear, @Nullable Button btnConverter, @Nullable Button btnCos,
-      @NonNull Button btnDecimal, @NonNull Button btnDivide, @Nullable Button btnE,
-      @Nullable Button btnEPowerx, @NonNull Button btnEndBkt, @NonNull Button btnEqual,
-      @Nullable Button btnGraph, @Nullable Button btnHistory, @Nullable Button btnInverseCos,
-      @Nullable Button btnInverseSin, @Nullable Button btnInversetan, @Nullable Button btnLog,
-      @Nullable Button btnMatrix, @NonNull Button btnMinus, @Nullable Button btnModx,
-      @NonNull Button btnMultiply, @NonNull Button btnOpenBkt, @Nullable Button btnPi,
-      @NonNull Button btnRotate, @Nullable Button btnSin, @Nullable Button btnSqrt,
-      @Nullable Button btnSquarex, @Nullable Button btnTan, @Nullable Button btnXPowerY,
-      @NonNull EditText tvInput, @NonNull TextView tvResult) {
+      @NonNull Button btnClear, @Nullable Button btnCos, @NonNull Button btnDecimal,
+      @NonNull Button btnDivide, @Nullable Button btnE, @Nullable Button btnEPowerx,
+      @NonNull Button btnEndBkt, @NonNull Button btnEqual, @Nullable Button btnGraph,
+      @Nullable Button btnHistory, @Nullable Button btnInverseCos, @Nullable Button btnInverseSin,
+      @Nullable Button btnInversetan, @Nullable Button btnLog, @Nullable Button btnMatrix,
+      @NonNull Button btnMinus, @Nullable Button btnModx, @NonNull Button btnMultiply,
+      @NonNull Button btnOpenBkt, @Nullable Button btnPi, @NonNull Button btnRotate,
+      @Nullable Button btnSin, @Nullable Button btnSqrt, @Nullable Button btnSquarex,
+      @Nullable Button btnTan, @Nullable Button btnThemeConverter,
+      @Nullable Button btnUnitConverter, @Nullable Button btnXPowerY, @NonNull EditText tvInput,
+      @NonNull TextView tvResult) {
     this.rootView = rootView;
     this.Cubex = Cubex;
     this.btn0 = btn0;
@@ -423,7 +440,6 @@ public final class ActivityMainBinding implements ViewBinding {
     this.btnAdd = btnAdd;
     this.btnBack = btnBack;
     this.btnClear = btnClear;
-    this.btnConverter = btnConverter;
     this.btnCos = btnCos;
     this.btnDecimal = btnDecimal;
     this.btnDivide = btnDivide;
@@ -448,6 +464,8 @@ public final class ActivityMainBinding implements ViewBinding {
     this.btnSqrt = btnSqrt;
     this.btnSquarex = btnSquarex;
     this.btnTan = btnTan;
+    this.btnThemeConverter = btnThemeConverter;
+    this.btnUnitConverter = btnUnitConverter;
     this.btnXPowerY = btnXPowerY;
     this.tvInput = tvInput;
     this.tvResult = tvResult;
@@ -561,9 +579,6 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.btnConverter;
-      Button btnConverter = ViewBindings.findChildViewById(rootView, id);
-
       id = R.id.btnCos;
       Button btnCos = ViewBindings.findChildViewById(rootView, id);
 
@@ -660,6 +675,12 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.btnTan;
       Button btnTan = ViewBindings.findChildViewById(rootView, id);
 
+      id = R.id.btnThemeConverter;
+      Button btnThemeConverter = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnUnitConverter;
+      Button btnUnitConverter = ViewBindings.findChildViewById(rootView, id);
+
       id = R.id.btnXPowerY;
       Button btnXPowerY = ViewBindings.findChildViewById(rootView, id);
 
@@ -676,11 +697,11 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((LinearLayout) rootView, Cubex, btn0, btn1, btn2, btn3, btn4,
-          btn5, btn6, btn7, btn8, btn9, btnAdd, btnBack, btnClear, btnConverter, btnCos, btnDecimal,
-          btnDivide, btnE, btnEPowerx, btnEndBkt, btnEqual, btnGraph, btnHistory, btnInverseCos,
-          btnInverseSin, btnInversetan, btnLog, btnMatrix, btnMinus, btnModx, btnMultiply,
-          btnOpenBkt, btnPi, btnRotate, btnSin, btnSqrt, btnSquarex, btnTan, btnXPowerY, tvInput,
-          tvResult);
+          btn5, btn6, btn7, btn8, btn9, btnAdd, btnBack, btnClear, btnCos, btnDecimal, btnDivide,
+          btnE, btnEPowerx, btnEndBkt, btnEqual, btnGraph, btnHistory, btnInverseCos, btnInverseSin,
+          btnInversetan, btnLog, btnMatrix, btnMinus, btnModx, btnMultiply, btnOpenBkt, btnPi,
+          btnRotate, btnSin, btnSqrt, btnSquarex, btnTan, btnThemeConverter, btnUnitConverter,
+          btnXPowerY, tvInput, tvResult);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

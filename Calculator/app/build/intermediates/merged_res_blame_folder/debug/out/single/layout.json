@@ -4,6 +4,10 @@
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\activity_plotting_graph.xml"
     },
     {
+        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_unit_converter.xml",
+        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\activity_unit_converter.xml"
+    },
+    {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_first.xml",
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\fragment_first.xml"
     },
@@ -14,6 +18,10 @@
     {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_graph.xml",
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\activity_graph.xml"
+    },
+    {
+        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main_light.xml",
+        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\activity_main_light.xml"
     },
     {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_second.xml",
