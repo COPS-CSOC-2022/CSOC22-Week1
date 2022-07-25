@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_picture_darkmode"
+    android:background="@drawable/background_picture_light"
 
     tools:context=".MainActivity">
 
@@ -82,8 +82,7 @@
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
                 android:textSize="@dimen/_23sdp"
-
-                android:background="@drawable/background_btn4"
+                android:background="@drawable/background_btn3"
                 android:text="@string/backspace"
                 style="?android:attr/buttonBarButtonStyle" />
 
@@ -97,7 +96,7 @@
                 android:textColor="@color/black"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/exponent"
                 android:textSize="@dimen/_23sdp"
                 style="?android:attr/buttonBarButtonStyle" />
@@ -112,9 +111,9 @@
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:textSize="@dimen/_23sdp"
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/divide"
+                android:textSize="@dimen/_23sdp"
 
                 android:textColor="@color/black" />
         </TableRow>
@@ -133,9 +132,9 @@
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:textSize="@dimen/_23sdp"
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/seven"
+                android:textSize="@dimen/_23sdp"
                 style="?android:attr/buttonBarButtonStyle" />
 
             <Button
@@ -148,9 +147,10 @@
                 android:textColor="@color/black"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:textSize="@dimen/_23sdp"
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/eight"
+                android:textSize="@dimen/_23sdp"
+
                 style="?android:attr/buttonBarButtonStyle" />
 
             <Button
@@ -163,7 +163,7 @@
                 android:textColor="@color/black"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/nine"
                 android:textSize="@dimen/_23sdp"
                 style="?android:attr/buttonBarButtonStyle" />
@@ -178,7 +178,7 @@
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/multiplication"
                 android:textSize="@dimen/_23sdp"
                 style="?android:attr/buttonBarButtonStyle" />
@@ -198,7 +198,7 @@
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/four"
                 android:textSize="@dimen/_23sdp"
                 style="?android:attr/buttonBarButtonStyle" />
@@ -213,7 +213,7 @@
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/five"
                 android:textSize="@dimen/_23sdp"
                 style="?android:attr/buttonBarButtonStyle" />
@@ -228,7 +228,7 @@
                 android:textColor="@color/black"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/six"
                 android:textSize="@dimen/_23sdp"
                 style="?android:attr/buttonBarButtonStyle" />
@@ -245,7 +245,7 @@
                 android:layout_weight="1"
                 android:textSize="@dimen/_23sdp"
 
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/minus"
                 android:textColor="@color/black" />
         </TableRow>
@@ -264,7 +264,7 @@
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/one"
                 android:textSize="@dimen/_23sdp"
                 android:textColor="@color/black" />
@@ -279,10 +279,9 @@
                 android:layout_marginBottom="1dp"
                 android:textColor="@color/black"
                 android:layout_weight="1"
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/two"
                 android:textSize="@dimen/_23sdp"
-
                 style="?android:attr/buttonBarButtonStyle" />
 
             <Button
@@ -295,7 +294,7 @@
                 android:textColor="@color/black"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/three"
                 android:textSize="@dimen/_23sdp"
                 style="?android:attr/buttonBarButtonStyle" />
@@ -310,7 +309,7 @@
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/add"
                 android:textSize="@dimen/_23sdp"
                 style="?android:attr/buttonBarButtonStyle" />
@@ -323,21 +322,21 @@
 
             <Button
                 android:id="@+id/button16"
+                style="?android:attr/buttonBarButtonStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="4dp"
                 android:layout_marginTop="4dp"
-                android:layout_marginEnd="1dp"
 
+                android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:text="@string/light_mode"
+                android:text="@string/dark_mode"
                 android:textSize="@dimen/_20sdp"
-                android:background="@drawable/background_btn0"
 
 
-                android:textColor="@color/white"
-                style="?android:attr/buttonBarButtonStyle" />
+                android:background="@drawable/background_btn5"
+                android:textColor="@color/white" />
 
             <Button
                 android:id="@+id/button18"
@@ -349,7 +348,7 @@
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 android:layout_weight="1"
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/zero"
                 android:textSize="@dimen/_23sdp"
                 android:textColor="@color/black" />
@@ -364,7 +363,7 @@
                 android:layout_marginBottom="1dp"
                 android:textColor="@color/black"
                 android:layout_weight="1"
-                android:background="@drawable/background_btn3"
+                android:background="@drawable/background_btn4"
                 android:text="@string/point"
                 android:textSize="@dimen/_23sdp"
                 style="?android:attr/buttonBarButtonStyle" />

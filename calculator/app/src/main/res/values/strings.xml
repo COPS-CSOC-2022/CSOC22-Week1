@@ -20,6 +20,8 @@
     <string name="exponent">^</string>
     <string name="minus">-</string>
     <string name="button">Button</string>
+    <string name="light_mode">🌔</string>
+    <string name="dark_mode">🌒</string>
 
 
 </resources>

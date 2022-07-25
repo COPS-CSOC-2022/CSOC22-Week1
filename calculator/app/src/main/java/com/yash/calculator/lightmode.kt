@@ -3,15 +3,13 @@ package com.yash.calculator
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
 import android.widget.Button
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_main.*
 import org.mariuszgromada.math.mxparser.Expression
 import java.text.DecimalFormat
 
-class MainActivity : AppCompatActivity() {
-
+class lightmode : AppCompatActivity() {
     private lateinit var clear : Button
     private lateinit var button01 : Button
     private lateinit var button02 : Button
@@ -29,18 +27,13 @@ class MainActivity : AppCompatActivity() {
     private lateinit var expo : Button
     private lateinit var multi : Button
     private lateinit var divide : Button
-    private lateinit var dot : Button
     private lateinit var modeswitch : Button
+    private lateinit var dot : Button
 
     private lateinit var btnEqual : Button
-
-
-
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_lightmode)
         clear = findViewById(R.id.Clear)
         button00 = findViewById(R.id.button18)
         button01 = findViewById(R.id.button13)
@@ -49,10 +42,10 @@ class MainActivity : AppCompatActivity() {
         button04 = findViewById(R.id.button4)
         button05 = findViewById(R.id.button10)
         button06 = findViewById(R.id.button11)
+        modeswitch = findViewById(R.id.button16)
         button07 = findViewById(R.id.button5)
         button08 = findViewById(R.id.button6)
         button09 = findViewById(R.id.button7)
-        modeswitch = findViewById(R.id.button16)
         add = findViewById(R.id.BtnAdd)
         substract = findViewById(R.id.BtnMinus)
         multi = findViewById(R.id.BtnMul)
@@ -69,7 +62,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         modeswitch.setOnClickListener{
-            val intent =Intent(this@MainActivity, lightmode::class.java)
+            val intent = Intent(this@lightmode, MainActivity::class.java)
             startActivity(intent)
             overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out )
         }
@@ -157,12 +150,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun  addToInputText(buttonValue: Any): String{
-       return "${input.text}$buttonValue"
+        return "${input.text}$buttonValue"
     }
     private fun getInputExpression(): String {
         var expression = input.text.replace(Regex("÷"),"/")
         expression = expression.replace(Regex("×"),"*")
         return expression
     }
+
 
 }
