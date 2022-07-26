@@ -227,5 +227,11 @@ class Unit_Converter : AppCompatActivity() {
 
     }
 
+    fun onTheme(view: View) {
+        val intent = Intent(this, Unit_Converter_Light::class.java)
+        startActivity(intent)
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
+    }
+
 
 }

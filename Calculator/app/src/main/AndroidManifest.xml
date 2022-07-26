@@ -10,12 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Calculator">
         <activity
+            android:name=".Unit_Converter_Light"
+            android:exported="false"
+            android:parentActivityName=".MainActivity_Light"/>
+        <activity
+            android:name=".Graph_Light"
+            android:exported="false"
+            android:parentActivityName=".MainActivity_Light" />
+        <activity
             android:name=".Unit_Converter"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity_Light"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".PlottingGraph"
             android:exported="false"
@@ -24,11 +33,6 @@
             android:name=".Graph"
             android:exported="false"
             android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.Calculator.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -3254,6 +3254,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_clock_black_24dp
 drawable ic_convert
+drawable ic_dark_mode
 drawable ic_degree
 drawable ic_graph
 drawable ic_home
@@ -3454,6 +3455,7 @@ id btnEndBkt
 id btnEqual
 id btnGraph
 id btnHistory
+id btnHome
 id btnInverseCos
 id btnInverseSin
 id btnInversetan
@@ -3986,10 +3988,12 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_graph
+layout activity_graph_light
 layout activity_main
 layout activity_main_light
 layout activity_plotting_graph
 layout activity_unit_converter
+layout activity_unit_converter_light
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

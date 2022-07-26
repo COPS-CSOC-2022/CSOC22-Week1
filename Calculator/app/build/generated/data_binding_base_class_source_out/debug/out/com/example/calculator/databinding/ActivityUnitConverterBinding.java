@@ -68,6 +68,9 @@ public final class ActivityUnitConverterBinding implements ViewBinding {
   public final Button btnMatrix;
 
   @NonNull
+  public final Button btnThemeConverter;
+
+  @NonNull
   public final DrawerLayout drawerLayout;
 
   @NonNull
@@ -83,8 +86,9 @@ public final class ActivityUnitConverterBinding implements ViewBinding {
       @NonNull Button btn00, @NonNull Button btn1, @NonNull Button btn2, @NonNull Button btn3,
       @NonNull Button btn4, @NonNull Button btn5, @NonNull Button btn6, @NonNull Button btn7,
       @NonNull Button btn8, @NonNull Button btn9, @NonNull Button btnBack, @NonNull Button btnClear,
-      @NonNull Button btnDecimal, @NonNull Button btnMatrix, @NonNull DrawerLayout drawerLayout,
-      @NonNull NavigationView navView, @NonNull EditText unitInput, @NonNull TextView unitOutput) {
+      @NonNull Button btnDecimal, @NonNull Button btnMatrix, @NonNull Button btnThemeConverter,
+      @NonNull DrawerLayout drawerLayout, @NonNull NavigationView navView,
+      @NonNull EditText unitInput, @NonNull TextView unitOutput) {
     this.rootView = rootView;
     this.btn0 = btn0;
     this.btn00 = btn00;
@@ -101,6 +105,7 @@ public final class ActivityUnitConverterBinding implements ViewBinding {
     this.btnClear = btnClear;
     this.btnDecimal = btnDecimal;
     this.btnMatrix = btnMatrix;
+    this.btnThemeConverter = btnThemeConverter;
     this.drawerLayout = drawerLayout;
     this.navView = navView;
     this.unitInput = unitInput;
@@ -224,6 +229,12 @@ public final class ActivityUnitConverterBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnThemeConverter;
+      Button btnThemeConverter = ViewBindings.findChildViewById(rootView, id);
+      if (btnThemeConverter == null) {
+        break missingId;
+      }
+
       DrawerLayout drawerLayout = (DrawerLayout) rootView;
 
       id = R.id.nav_view;
@@ -246,7 +257,7 @@ public final class ActivityUnitConverterBinding implements ViewBinding {
 
       return new ActivityUnitConverterBinding((DrawerLayout) rootView, btn0, btn00, btn1, btn2,
           btn3, btn4, btn5, btn6, btn7, btn8, btn9, btnBack, btnClear, btnDecimal, btnMatrix,
-          drawerLayout, navView, unitInput, unitOutput);
+          btnThemeConverter, drawerLayout, navView, unitInput, unitOutput);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

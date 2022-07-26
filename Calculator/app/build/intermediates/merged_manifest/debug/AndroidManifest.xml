@@ -19,12 +19,21 @@
         android:testOnly="true"
         android:theme="@style/Theme.Calculator" >
         <activity
+            android:name="com.example.calculator.Unit_Converter_Light"
+            android:exported="false"
+            android:parentActivityName="com.example.calculator.MainActivity_Light" />
+        <activity
+            android:name="com.example.calculator.Graph_Light"
+            android:exported="false"
+            android:parentActivityName="com.example.calculator.MainActivity_Light" />
+        <activity
             android:name="com.example.calculator.Unit_Converter"
             android:exported="false"
             android:parentActivityName="com.example.calculator.MainActivity" />
         <activity
             android:name="com.example.calculator.MainActivity_Light"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName="com.example.calculator.MainActivity" />
         <activity
             android:name="com.example.calculator.PlottingGraph"
             android:exported="false"

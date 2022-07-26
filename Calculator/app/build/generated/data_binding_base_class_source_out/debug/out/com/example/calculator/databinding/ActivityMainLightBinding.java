@@ -4,25 +4,476 @@ package com.example.calculator.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.calculator.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityMainLightBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final LinearLayout rootView;
 
-  private ActivityMainLightBinding(@NonNull ConstraintLayout rootView) {
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button Cubex;
+
+  @NonNull
+  public final Button btn0;
+
+  @NonNull
+  public final Button btn1;
+
+  @NonNull
+  public final Button btn2;
+
+  @NonNull
+  public final Button btn3;
+
+  @NonNull
+  public final Button btn4;
+
+  @NonNull
+  public final Button btn5;
+
+  @NonNull
+  public final Button btn6;
+
+  @NonNull
+  public final Button btn7;
+
+  @NonNull
+  public final Button btn8;
+
+  @NonNull
+  public final Button btn9;
+
+  @NonNull
+  public final Button btnAdd;
+
+  @NonNull
+  public final Button btnBack;
+
+  @NonNull
+  public final Button btnClear;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnCos;
+
+  @NonNull
+  public final Button btnDecimal;
+
+  @NonNull
+  public final Button btnDivide;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnE;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnEPowerx;
+
+  @NonNull
+  public final Button btnEndBkt;
+
+  @NonNull
+  public final Button btnEqual;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnGraph;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnHistory;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnInverseCos;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnInverseSin;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnInversetan;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnLog;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnMatrix;
+
+  @NonNull
+  public final Button btnMinus;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnModx;
+
+  @NonNull
+  public final Button btnMultiply;
+
+  @NonNull
+  public final Button btnOpenBkt;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnPi;
+
+  @NonNull
+  public final Button btnRotate;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnSin;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnSqrt;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnSquarex;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnTan;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnThemeConverter;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnUnitConverter;
+
+  /**
+   * This binding is not available in all configurations.
+   * <p>
+   * Present:
+   * <ul>
+   *   <li>layout-land/</li>
+   * </ul>
+   *
+   * Absent:
+   * <ul>
+   *   <li>layout/</li>
+   * </ul>
+   */
+  @Nullable
+  public final Button btnXPowerY;
+
+  @NonNull
+  public final EditText tvInput;
+
+  @NonNull
+  public final TextView tvResult;
+
+  private ActivityMainLightBinding(@NonNull LinearLayout rootView, @Nullable Button Cubex,
+      @NonNull Button btn0, @NonNull Button btn1, @NonNull Button btn2, @NonNull Button btn3,
+      @NonNull Button btn4, @NonNull Button btn5, @NonNull Button btn6, @NonNull Button btn7,
+      @NonNull Button btn8, @NonNull Button btn9, @NonNull Button btnAdd, @NonNull Button btnBack,
+      @NonNull Button btnClear, @Nullable Button btnCos, @NonNull Button btnDecimal,
+      @NonNull Button btnDivide, @Nullable Button btnE, @Nullable Button btnEPowerx,
+      @NonNull Button btnEndBkt, @NonNull Button btnEqual, @Nullable Button btnGraph,
+      @Nullable Button btnHistory, @Nullable Button btnInverseCos, @Nullable Button btnInverseSin,
+      @Nullable Button btnInversetan, @Nullable Button btnLog, @Nullable Button btnMatrix,
+      @NonNull Button btnMinus, @Nullable Button btnModx, @NonNull Button btnMultiply,
+      @NonNull Button btnOpenBkt, @Nullable Button btnPi, @NonNull Button btnRotate,
+      @Nullable Button btnSin, @Nullable Button btnSqrt, @Nullable Button btnSquarex,
+      @Nullable Button btnTan, @Nullable Button btnThemeConverter,
+      @Nullable Button btnUnitConverter, @Nullable Button btnXPowerY, @NonNull EditText tvInput,
+      @NonNull TextView tvResult) {
     this.rootView = rootView;
+    this.Cubex = Cubex;
+    this.btn0 = btn0;
+    this.btn1 = btn1;
+    this.btn2 = btn2;
+    this.btn3 = btn3;
+    this.btn4 = btn4;
+    this.btn5 = btn5;
+    this.btn6 = btn6;
+    this.btn7 = btn7;
+    this.btn8 = btn8;
+    this.btn9 = btn9;
+    this.btnAdd = btnAdd;
+    this.btnBack = btnBack;
+    this.btnClear = btnClear;
+    this.btnCos = btnCos;
+    this.btnDecimal = btnDecimal;
+    this.btnDivide = btnDivide;
+    this.btnE = btnE;
+    this.btnEPowerx = btnEPowerx;
+    this.btnEndBkt = btnEndBkt;
+    this.btnEqual = btnEqual;
+    this.btnGraph = btnGraph;
+    this.btnHistory = btnHistory;
+    this.btnInverseCos = btnInverseCos;
+    this.btnInverseSin = btnInverseSin;
+    this.btnInversetan = btnInversetan;
+    this.btnLog = btnLog;
+    this.btnMatrix = btnMatrix;
+    this.btnMinus = btnMinus;
+    this.btnModx = btnModx;
+    this.btnMultiply = btnMultiply;
+    this.btnOpenBkt = btnOpenBkt;
+    this.btnPi = btnPi;
+    this.btnRotate = btnRotate;
+    this.btnSin = btnSin;
+    this.btnSqrt = btnSqrt;
+    this.btnSquarex = btnSquarex;
+    this.btnTan = btnTan;
+    this.btnThemeConverter = btnThemeConverter;
+    this.btnUnitConverter = btnUnitConverter;
+    this.btnXPowerY = btnXPowerY;
+    this.tvInput = tvInput;
+    this.tvResult = tvResult;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public LinearLayout getRoot() {
     return rootView;
   }
 
@@ -43,10 +494,216 @@ public final class ActivityMainLightBinding implements ViewBinding {
 
   @NonNull
   public static ActivityMainLightBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.Cubex;
+      Button Cubex = ViewBindings.findChildViewById(rootView, id);
 
-    return new ActivityMainLightBinding((ConstraintLayout) rootView);
+      id = R.id.btn0;
+      Button btn0 = ViewBindings.findChildViewById(rootView, id);
+      if (btn0 == null) {
+        break missingId;
+      }
+
+      id = R.id.btn1;
+      Button btn1 = ViewBindings.findChildViewById(rootView, id);
+      if (btn1 == null) {
+        break missingId;
+      }
+
+      id = R.id.btn2;
+      Button btn2 = ViewBindings.findChildViewById(rootView, id);
+      if (btn2 == null) {
+        break missingId;
+      }
+
+      id = R.id.btn3;
+      Button btn3 = ViewBindings.findChildViewById(rootView, id);
+      if (btn3 == null) {
+        break missingId;
+      }
+
+      id = R.id.btn4;
+      Button btn4 = ViewBindings.findChildViewById(rootView, id);
+      if (btn4 == null) {
+        break missingId;
+      }
+
+      id = R.id.btn5;
+      Button btn5 = ViewBindings.findChildViewById(rootView, id);
+      if (btn5 == null) {
+        break missingId;
+      }
+
+      id = R.id.btn6;
+      Button btn6 = ViewBindings.findChildViewById(rootView, id);
+      if (btn6 == null) {
+        break missingId;
+      }
+
+      id = R.id.btn7;
+      Button btn7 = ViewBindings.findChildViewById(rootView, id);
+      if (btn7 == null) {
+        break missingId;
+      }
+
+      id = R.id.btn8;
+      Button btn8 = ViewBindings.findChildViewById(rootView, id);
+      if (btn8 == null) {
+        break missingId;
+      }
+
+      id = R.id.btn9;
+      Button btn9 = ViewBindings.findChildViewById(rootView, id);
+      if (btn9 == null) {
+        break missingId;
+      }
+
+      id = R.id.btnAdd;
+      Button btnAdd = ViewBindings.findChildViewById(rootView, id);
+      if (btnAdd == null) {
+        break missingId;
+      }
+
+      id = R.id.btnBack;
+      Button btnBack = ViewBindings.findChildViewById(rootView, id);
+      if (btnBack == null) {
+        break missingId;
+      }
+
+      id = R.id.btnClear;
+      Button btnClear = ViewBindings.findChildViewById(rootView, id);
+      if (btnClear == null) {
+        break missingId;
+      }
+
+      id = R.id.btnCos;
+      Button btnCos = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnDecimal;
+      Button btnDecimal = ViewBindings.findChildViewById(rootView, id);
+      if (btnDecimal == null) {
+        break missingId;
+      }
+
+      id = R.id.btnDivide;
+      Button btnDivide = ViewBindings.findChildViewById(rootView, id);
+      if (btnDivide == null) {
+        break missingId;
+      }
+
+      id = R.id.btnE;
+      Button btnE = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnEPowerx;
+      Button btnEPowerx = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnEndBkt;
+      Button btnEndBkt = ViewBindings.findChildViewById(rootView, id);
+      if (btnEndBkt == null) {
+        break missingId;
+      }
+
+      id = R.id.btnEqual;
+      Button btnEqual = ViewBindings.findChildViewById(rootView, id);
+      if (btnEqual == null) {
+        break missingId;
+      }
+
+      id = R.id.btnGraph;
+      Button btnGraph = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnHistory;
+      Button btnHistory = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnInverseCos;
+      Button btnInverseCos = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnInverseSin;
+      Button btnInverseSin = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnInversetan;
+      Button btnInversetan = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnLog;
+      Button btnLog = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnMatrix;
+      Button btnMatrix = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnMinus;
+      Button btnMinus = ViewBindings.findChildViewById(rootView, id);
+      if (btnMinus == null) {
+        break missingId;
+      }
+
+      id = R.id.btnModx;
+      Button btnModx = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnMultiply;
+      Button btnMultiply = ViewBindings.findChildViewById(rootView, id);
+      if (btnMultiply == null) {
+        break missingId;
+      }
+
+      id = R.id.btnOpenBkt;
+      Button btnOpenBkt = ViewBindings.findChildViewById(rootView, id);
+      if (btnOpenBkt == null) {
+        break missingId;
+      }
+
+      id = R.id.btnPi;
+      Button btnPi = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnRotate;
+      Button btnRotate = ViewBindings.findChildViewById(rootView, id);
+      if (btnRotate == null) {
+        break missingId;
+      }
+
+      id = R.id.btnSin;
+      Button btnSin = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnSqrt;
+      Button btnSqrt = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnSquarex;
+      Button btnSquarex = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnTan;
+      Button btnTan = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnThemeConverter;
+      Button btnThemeConverter = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnUnitConverter;
+      Button btnUnitConverter = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.btnXPowerY;
+      Button btnXPowerY = ViewBindings.findChildViewById(rootView, id);
+
+      id = R.id.tvInput;
+      EditText tvInput = ViewBindings.findChildViewById(rootView, id);
+      if (tvInput == null) {
+        break missingId;
+      }
+
+      id = R.id.tvResult;
+      TextView tvResult = ViewBindings.findChildViewById(rootView, id);
+      if (tvResult == null) {
+        break missingId;
+      }
+
+      return new ActivityMainLightBinding((LinearLayout) rootView, Cubex, btn0, btn1, btn2, btn3,
+          btn4, btn5, btn6, btn7, btn8, btn9, btnAdd, btnBack, btnClear, btnCos, btnDecimal,
+          btnDivide, btnE, btnEPowerx, btnEndBkt, btnEqual, btnGraph, btnHistory, btnInverseCos,
+          btnInverseSin, btnInversetan, btnLog, btnMatrix, btnMinus, btnModx, btnMultiply,
+          btnOpenBkt, btnPi, btnRotate, btnSin, btnSqrt, btnSquarex, btnTan, btnThemeConverter,
+          btnUnitConverter, btnXPowerY, tvInput, tvResult);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

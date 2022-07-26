@@ -70,7 +70,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:onClick="onUnitConverter"
+            android:onClick="onUnit"
             android:paddingLeft="15dp"
             android:textSize="30sp"
             app:backgroundTint="#364DCD"
@@ -123,7 +123,7 @@
             android:layout_marginLeft="8dp"
             android:layout_marginRight="5dp"
             android:layout_weight="1"
-            android:onClick="onThemeConverter"
+            android:onClick="onTheme"
             android:paddingLeft="15dp"
             app:backgroundTint="#364DCD"
             app:icon="@drawable/ic_light_mode" />

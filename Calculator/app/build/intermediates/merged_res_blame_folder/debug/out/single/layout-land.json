@@ -2,5 +2,9 @@
     {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\activity_main.xml",
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout-land\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout-land\\activity_main_light.xml",
+        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout-land\\activity_main_light.xml"
     }
 ]

@@ -12,12 +12,20 @@
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
+        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxhdpi_ic_dark_mode.png.flat",
+        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\drawable-xxhdpi\\ic_dark_mode.png"
+    },
+    {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_degree.png.flat",
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\drawable-hdpi\\ic_degree.png"
     },
     {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_speed.png.flat",
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_speed.png"
+    },
+    {
+        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_ic_dark_mode.xml.flat",
+        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_dark_mode.xml"
     },
     {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_degree.png.flat",
@@ -40,6 +48,10 @@
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_home.png"
     },
     {
+        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_dark_mode.png.flat",
+        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\drawable-hdpi\\ic_dark_mode.png"
+    },
+    {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
@@ -52,8 +64,16 @@
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\drawable-xxhdpi\\ic_home.png"
     },
     {
+        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_unit_converter_light.xml.flat",
+        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\activity_unit_converter_light.xml"
+    },
+    {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_launcher_background.png"
+    },
+    {
+        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\layout-land_activity_main_light.xml.flat",
+        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout-land\\activity_main_light.xml"
     },
     {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-anydpi-v21_ic_graph.xml.flat",
@@ -106,6 +126,10 @@
     {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_dark_mode.png.flat",
+        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_dark_mode.png"
     },
     {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_scale.png.flat",
@@ -216,8 +240,16 @@
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\drawable-mdpi\\ic_light_mode.png"
     },
     {
+        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-mdpi_ic_dark_mode.png.flat",
+        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\drawable-mdpi\\ic_dark_mode.png"
+    },
+    {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main_light.xml.flat",
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\activity_main_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_graph_light.xml.flat",
+        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\activity_graph_light.xml"
     },
     {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_graph.png.flat",
@@ -258,6 +290,10 @@
     {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_light_mode.png.flat",
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\drawable-xhdpi\\ic_light_mode.png"
+    },
+    {
+        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-ldpi_ic_dark_mode.png.flat",
+        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_dark_mode.png"
     },
     {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
@@ -318,6 +354,10 @@
     {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-hdpi_ic_home.png.flat",
         "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\drawable-hdpi\\ic_home.png"
+    },
+    {
+        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-xhdpi_ic_dark_mode.png.flat",
+        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\drawable-xhdpi\\ic_dark_mode.png"
     },
     {
         "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\merged_res\\debug\\drawable-xxxhdpi_ic_speed.png.flat",

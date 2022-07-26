@@ -11,6 +11,7 @@ dimen activity_horizontal_margin
 dimen activity_vertical_margin
 dimen fab_margin
 drawable ic_convert
+drawable ic_dark_mode
 drawable ic_degree
 drawable ic_graph
 drawable ic_home
@@ -60,6 +61,7 @@ id btnEndBkt
 id btnEqual
 id btnGraph
 id btnHistory
+id btnHome
 id btnInverseCos
 id btnInverseSin
 id btnInversetan
@@ -104,10 +106,12 @@ id unit_speed
 id unit_temp
 id value
 layout activity_graph
+layout activity_graph_light
 layout activity_main
 layout activity_main_light
 layout activity_plotting_graph
 layout activity_unit_converter
+layout activity_unit_converter_light
 menu nav_menu_unit_converter
 mipmap ic_launcher
 mipmap ic_launcher_round

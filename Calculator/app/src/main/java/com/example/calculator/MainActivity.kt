@@ -189,12 +189,13 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 
-    fun onThemeConverter(view: View) {
+    fun onTheme(view: View) {
         val intent = Intent(this, MainActivity_Light::class.java)
         startActivity(intent)
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
     }
 
-    fun onUnitConverter(view: View) {
+    fun onUnit(view: View) {
         val intent = Intent(this, Unit_Converter::class.java)
         startActivity(intent)
     }

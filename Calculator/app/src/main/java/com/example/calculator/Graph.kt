@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 
 class Graph : AppCompatActivity() {
@@ -34,5 +33,11 @@ class Graph : AppCompatActivity() {
         val value = value.text.toString()
         intent.putExtra("value_key", value)
         startActivity(intent)
+    }
+
+    fun onTheme(view: View) {
+        val intent = Intent(this, Graph_Light::class.java)
+        startActivity(intent)
+        overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
     }
 }

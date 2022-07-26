@@ -3253,6 +3253,7 @@ int drawable design_password_eye 0x7f070063
 int drawable design_snackbar_background 0x7f070064
 int drawable ic_clock_black_24dp 0x7f070065
 int drawable ic_convert 0x7f07009e
+int drawable ic_dark_mode 0x7f0700a5
 int drawable ic_degree 0x7f07009f
 int drawable ic_graph 0x7f070066
 int drawable ic_home 0x7f0700a4
@@ -3453,6 +3454,7 @@ int id btnEndBkt 0x7f080081
 int id btnEqual 0x7f080082
 int id btnGraph 0x7f080083
 int id btnHistory 0x7f080084
+int id btnHome 0x7f080245
 int id btnInverseCos 0x7f080085
 int id btnInverseSin 0x7f080086
 int id btnInversetan 0x7f080087
@@ -3985,10 +3987,12 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_graph 0x7f0b001c
+int layout activity_graph_light 0x7f0b0082
 int layout activity_main 0x7f0b001d
 int layout activity_main_light 0x7f0b001e
 int layout activity_plotting_graph 0x7f0b001f
 int layout activity_unit_converter 0x7f0b0081
+int layout activity_unit_converter_light 0x7f0b0083
 int layout custom_dialog 0x7f0b0021
 int layout design_bottom_navigation_item 0x7f0b0022
 int layout design_bottom_sheet_dialog 0x7f0b0023

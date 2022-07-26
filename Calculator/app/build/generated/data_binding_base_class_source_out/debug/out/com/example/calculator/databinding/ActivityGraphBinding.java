@@ -45,6 +45,9 @@ public final class ActivityGraphBinding implements ViewBinding {
   public final Button Tanx;
 
   @NonNull
+  public final Button btnThemeConverter;
+
+  @NonNull
   public final Button graphCubex;
 
   @NonNull
@@ -61,9 +64,9 @@ public final class ActivityGraphBinding implements ViewBinding {
 
   private ActivityGraphBinding(@NonNull LinearLayout rootView, @NonNull Button Cosecx,
       @NonNull Button Cosx, @NonNull Button Cotx, @NonNull Button Equal, @NonNull Button Logx,
-      @NonNull Button Secx, @NonNull Button Sinx, @NonNull Button Tanx, @NonNull Button graphCubex,
-      @NonNull Button graphSqrtx, @NonNull Button graphSquareX, @NonNull Button graphX,
-      @NonNull TextView value) {
+      @NonNull Button Secx, @NonNull Button Sinx, @NonNull Button Tanx,
+      @NonNull Button btnThemeConverter, @NonNull Button graphCubex, @NonNull Button graphSqrtx,
+      @NonNull Button graphSquareX, @NonNull Button graphX, @NonNull TextView value) {
     this.rootView = rootView;
     this.Cosecx = Cosecx;
     this.Cosx = Cosx;
@@ -73,6 +76,7 @@ public final class ActivityGraphBinding implements ViewBinding {
     this.Secx = Secx;
     this.Sinx = Sinx;
     this.Tanx = Tanx;
+    this.btnThemeConverter = btnThemeConverter;
     this.graphCubex = graphCubex;
     this.graphSqrtx = graphSqrtx;
     this.graphSquareX = graphSquareX;
@@ -155,6 +159,12 @@ public final class ActivityGraphBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnThemeConverter;
+      Button btnThemeConverter = ViewBindings.findChildViewById(rootView, id);
+      if (btnThemeConverter == null) {
+        break missingId;
+      }
+
       id = R.id.graph_Cubex;
       Button graphCubex = ViewBindings.findChildViewById(rootView, id);
       if (graphCubex == null) {
@@ -186,7 +196,7 @@ public final class ActivityGraphBinding implements ViewBinding {
       }
 
       return new ActivityGraphBinding((LinearLayout) rootView, Cosecx, Cosx, Cotx, Equal, Logx,
-          Secx, Sinx, Tanx, graphCubex, graphSqrtx, graphSquareX, graphX, value);
+          Secx, Sinx, Tanx, btnThemeConverter, graphCubex, graphSqrtx, graphSquareX, graphX, value);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
