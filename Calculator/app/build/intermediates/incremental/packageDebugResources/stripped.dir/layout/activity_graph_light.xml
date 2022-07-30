@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Graph_Light"
+    android:orientation="vertical"
+    android:background="#C5C5CC"
+    >
+
+    z<TextView
+    android:id="@+id/value"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#C5C5CC"
+    android:maxLength="20"
+    android:textSize="36sp"
+    android:textColor="@color/black"
+    android:gravity="right"
+    android:textAlignment="gravity"
+    android:layout_marginTop="50dp"
+    android:paddingVertical="10sp"
+    android:layout_marginRight="16dp"
+    android:layout_marginBottom="100dp"
+    />
+
+
+    <LinearLayout
+        android:layout_width="73dp"
+        android:layout_height="23dp"
+        android:layout_weight="1"
+        android:background="#C5C5CC"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnThemeConverter"
+            android:layout_width="42dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onTheme"
+            android:paddingLeft="18dp"
+            app:backgroundTint="#2196F3"
+            app:icon="@drawable/ic_dark_mode" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#C5C5CC"
+        >
+
+        <Button
+            android:id="@+id/Sinx"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="sin(x)"
+            android:onClick="onClick"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:textSize="25sp"
+            app:backgroundTint="#534F4F"
+            android:textAllCaps="false"
+
+            />
+
+        <Button
+            android:id="@+id/Cosx"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="cos(x)"
+            android:onClick="onClick"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:textSize="25sp"
+            app:backgroundTint="#534F4F"
+            android:textAllCaps="false"
+
+            />
+
+        <Button
+            android:id="@+id/Tanx"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="tan(x)"
+            android:onClick="onClick"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:textSize="25sp"
+            app:backgroundTint="#534F4F"
+            android:textAllCaps="false"
+
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#C5C5CC"
+        >
+
+        <Button
+            android:id="@+id/Cosecx"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="csc(x)"
+            android:onClick="onClick"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:textSize="25sp"
+            app:backgroundTint="#534F4F"
+            android:textAllCaps="false"
+
+            />
+
+        <Button
+            android:id="@+id/Secx"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="sec(x)"
+            android:onClick="onClick"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:textSize="25sp"
+            app:backgroundTint="#534F4F"
+            android:textAllCaps="false"
+
+            />
+
+        <Button
+            android:id="@+id/Cotx"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="cot(x)"
+            android:onClick="onClick"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:textSize="25sp"
+            app:backgroundTint="#534F4F"
+            android:textAllCaps="false"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#C5C5CC"
+        >
+
+        <Button
+            android:id="@+id/graph_SquareX"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="x²"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            app:backgroundTint="#534F4F"
+
+            />
+
+        <Button
+            android:id="@+id/graph_Cubex"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="x³"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            app:backgroundTint="#534F4F"
+
+            />
+
+        <Button
+            android:id="@+id/graph_Sqrtx"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="√x"
+            android:onClick="onClick"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:textSize="30sp"
+            app:backgroundTint="#534F4F"
+            android:textAllCaps="false"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:background="#C5C5CC"
+        >
+
+        <Button
+            android:id="@+id/Logx"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onClick"
+            android:text="log(x)"
+            android:textAllCaps="false"
+            android:textSize="25sp"
+            app:backgroundTint="#534F4F"
+
+            />
+
+        <Button
+            android:id="@+id/graph_x"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onGraphPlot"
+            android:text="x"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            app:backgroundTint="#534F4F"
+
+            />
+
+        <Button
+            android:id="@+id/Equal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:onClick="onGraphPlot"
+            android:text="="
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            app:backgroundTint="#FF5722"
+
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

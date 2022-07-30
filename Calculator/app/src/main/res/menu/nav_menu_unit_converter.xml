@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/unit_length"
+        android:title="Length">
+
+        <menu>
+
+            <item
+                android:id="@+id/miletokm"
+                android:icon="@drawable/ic_scale"
+                android:title="mile to km" />
+
+            <item
+                android:id="@+id/kmtomile"
+                android:icon="@drawable/ic_scale"
+                android:title="km to mile" />
+
+            <item
+                android:id="@+id/foottom"
+                android:icon="@drawable/ic_scale"
+                android:title="foot to m" />
+
+            <item
+                android:id="@+id/mtofoot"
+                android:icon="@drawable/ic_scale"
+                android:title="m to foot" />
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/unit_temp"
+        android:title="Temperature">
+
+        <menu>
+
+            <item
+                android:id="@+id/KtoF"
+                android:icon="@drawable/ic_temp"
+                android:title="K to °F" />
+
+            <item
+                android:id="@+id/FtoK"
+                android:icon="@drawable/ic_temp"
+                android:title="°F to K" />
+
+            <item
+                android:id="@+id/CtoF"
+                android:icon="@drawable/ic_temp"
+                android:title="°C to °F" />
+
+            <item
+                android:id="@+id/FtoC"
+                android:icon="@drawable/ic_temp"
+                android:title="°F to °C" />
+
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/unit_speed"
+        android:title="Speed">
+
+        <menu>
+
+            <item
+                android:id="@+id/kmphtomps"
+                android:icon="@drawable/ic_speed"
+                android:title="Kmph to mps" />
+
+            <item
+                android:id="@+id/mpstokmph"
+                android:icon="@drawable/ic_speed"
+                android:title="mps to Kmph" />
+
+
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/unit_degree"
+        android:title="Degree">
+
+        <menu>
+
+            <item
+                android:id="@+id/rtod"
+                android:icon="@drawable/ic_degree"
+                android:title="radian to degree" />
+
+            <item
+                android:id="@+id/dtor"
+                android:icon="@drawable/ic_degree"
+                android:title="degree to radian" />
+
+
+        </menu>
+
+    </item>
+
+
+</menu>
