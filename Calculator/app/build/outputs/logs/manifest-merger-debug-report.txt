@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
 MERGED from [androidx.databinding:viewbinding:7.1.2] C:\Users\manas\.gradle\caches\transforms-3\4df84a718afd7130e6454b07f627c9d2\transformed\viewbinding-7.1.2\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] C:\Users\manas\.gradle\caches\transforms-3\0b4503d7c0d17263a1885415285cd710\transformed\navigation-fragment-ktx-2.3.5\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment-ktx:1.2.4] C:\Users\manas\.gradle\caches\transforms-3\4f7be6b0d6383b98e1063e5e5f9db909\transformed\fragment-ktx-1.2.4\AndroidManifest.xml:17:1-24:12
@@ -61,25 +61,25 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\manas\.gradle\ca
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\manas\.gradle\caches\transforms-3\2fe16a520b0bfb032a788a3d802e6d59\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\manas\.gradle\caches\transforms-3\7065d7f59015c8ea79df9e21d87bb5db\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\manas\.gradle\caches\transforms-3\afb13ffca8cf2864f5bd087f44c754c9\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
-INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
 	package
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:3:5-37
-		INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:3:5-37
+		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
-		INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
+		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
-		INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:1-53:12
+		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:5:5-51:19
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:5:5-51:19
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\manas\.gradle\caches\transforms-3\ded13e77e5e93b232fadd0ff264f4bf0\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\manas\.gradle\caches\transforms-3\ded13e77e5e93b232fadd0ff264f4bf0\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\manas\.gradle\caches\transforms-3\6fcea0fddd862b470e39af4793f0e5ac\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -99,91 +99,91 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\manas\.gradle\cach
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.7.0] C:\Users\manas\.gradle\caches\transforms-3\aec237d7615e5b5f19aac02e97eeb357\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:11:9-48
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:11:9-48
 activity#com.example.calculator.SplashScreen
-ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:12:9-22:20
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:12:9-22:20
 	android:exported
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:14:13-36
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:14:13-36
 	android:name
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:13:13-41
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:13:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:19:27-74
 activity#com.example.calculator.Unit_Converter_Light
-ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:24:9-27:64
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:24:9-27:64
 	android:parentActivityName
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:27:13-61
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:27:13-61
 	android:exported
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:26:13-37
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:25:13-49
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:25:13-49
 activity#com.example.calculator.Graph_Light
-ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:28:9-31:64
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:28:9-31:64
 	android:parentActivityName
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:31:13-61
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:31:13-61
 	android:exported
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:30:13-37
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:30:13-37
 	android:name
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:29:13-40
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:29:13-40
 activity#com.example.calculator.Unit_Converter
-ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:32:9-35:58
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:32:9-35:58
 	android:parentActivityName
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:35:13-55
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:35:13-55
 	android:exported
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:34:13-37
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:34:13-37
 	android:name
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:33:13-43
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:33:13-43
 activity#com.example.calculator.MainActivity_Light
-ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:36:9-39:58
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:36:9-39:58
 	android:parentActivityName
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:39:13-55
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:39:13-55
 	android:exported
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:38:13-37
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:38:13-37
 	android:name
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:37:13-47
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:37:13-47
 activity#com.example.calculator.PlottingGraph
-ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:40:9-43:51
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:40:9-43:51
 	android:parentActivityName
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:43:13-48
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:43:13-48
 	android:exported
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:42:13-37
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:42:13-37
 	android:name
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:41:13-42
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:41:13-42
 activity#com.example.calculator.Graph
-ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:44:9-47:58
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:44:9-47:58
 	android:parentActivityName
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:47:13-55
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:47:13-55
 	android:exported
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:46:13-37
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:46:13-37
 	android:name
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:45:13-34
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:45:13-34
 activity#com.example.calculator.MainActivity
-ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:48:9-50:39
+ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:48:9-50:39
 	android:exported
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:50:13-37
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:50:13-37
 	android:name
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml:49:13-41
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml:49:13-41
 uses-sdk
-INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
-INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
 MERGED from [androidx.databinding:viewbinding:7.1.2] C:\Users\manas\.gradle\caches\transforms-3\4df84a718afd7130e6454b07f627c9d2\transformed\viewbinding-7.1.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.databinding:viewbinding:7.1.2] C:\Users\manas\.gradle\caches\transforms-3\4df84a718afd7130e6454b07f627c9d2\transformed\viewbinding-7.1.2\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.3.5] C:\Users\manas\.gradle\caches\transforms-3\0b4503d7c0d17263a1885415285cd710\transformed\navigation-fragment-ktx-2.3.5\AndroidManifest.xml:20:5-22:41
@@ -298,16 +298,16 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\manas\.gradle\caches\transform
 MERGED from [androidx.print:print:1.0.0] C:\Users\manas\.gradle\caches\transforms-3\7065d7f59015c8ea79df9e21d87bb5db\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\manas\.gradle\caches\transforms-3\afb13ffca8cf2864f5bd087f44c754c9\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\manas\.gradle\caches\transforms-3\afb13ffca8cf2864f5bd087f44c754c9\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
-INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
-INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
-		ADDED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
-		INJECTED from D:\Manash\Clubs\COPS\Calculator\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\manas\StudioProjects\Calculator\app\src\main\AndroidManifest.xml
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\manas\.gradle\caches\transforms-3\1bdca88ebac9582d03a2e0b002aaa769\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\manas\.gradle\caches\transforms-3\820b2b240fd5ed0ed96ea7fe618e8d85\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20

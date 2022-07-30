@@ -1,6 +1,8 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color ic_launcher_background
+color ic_launcher_calculator_background
 color purple_200
 color purple_500
 color purple_700
@@ -16,6 +18,7 @@ drawable ic_dark_mode
 drawable ic_degree
 drawable ic_graph
 drawable ic_home
+drawable ic_icon_calculator
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_light_mode
@@ -125,6 +128,9 @@ layout fragment_first
 layout fragment_second
 menu nav_menu_unit_converter
 mipmap ic_launcher
+mipmap ic_launcher_calculator
+mipmap ic_launcher_calculator_foreground
+mipmap ic_launcher_calculator_round
 mipmap ic_launcher_round
 navigation nav_graph
 string app_name

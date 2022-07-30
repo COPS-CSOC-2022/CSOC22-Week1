@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
+            "outputFile": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-land\\values-land.xml",
             "map": [
                 {
-                    "source": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\src\\main\\res\\values-land\\dimens.xml",
+                    "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\values-land\\dimens.xml",
                     "from": {
                         "startLines": "1,2",
                         "startColumns": "4,4",
