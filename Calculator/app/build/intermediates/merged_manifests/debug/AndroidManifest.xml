@@ -19,6 +19,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.Calculator" >
         <activity
+            android:name="com.example.calculator.SplashScreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.example.calculator.Unit_Converter_Light"
             android:exported="false"
             android:parentActivityName="com.example.calculator.MainActivity_Light" />
@@ -43,19 +52,8 @@
             android:exported="false"
             android:parentActivityName="com.example.calculator.MainActivity" />
         <activity
-            android:name="com.example.calculator.MainActivity2"
-            android:exported="false"
-            android:label="@string/title_activity_main2"
-            android:theme="@style/Theme.Calculator.NoActionBar" />
-        <activity
             android:name="com.example.calculator.MainActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

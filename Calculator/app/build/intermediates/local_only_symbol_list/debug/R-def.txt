@@ -10,6 +10,7 @@ color white
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
 dimen fab_margin
+drawable ic__logo
 drawable ic_convert
 drawable ic_dark_mode
 drawable ic_degree
@@ -80,6 +81,8 @@ id btnTan
 id btnThemeConverter
 id btnUnitConverter
 id btnXPowerY
+id button_first
+id button_second
 id drawerLayout
 id dtor
 id foottom
@@ -94,8 +97,12 @@ id miletokm
 id mpstokmph
 id mtofoot
 id nav_graph
+id nav_host_fragment_content_main
 id nav_view
 id rtod
+id splash_icon
+id textview_first
+id textview_second
 id tvInput
 id tvResult
 id unit_degree
@@ -110,8 +117,12 @@ layout activity_graph_light
 layout activity_main
 layout activity_main_light
 layout activity_plotting_graph
+layout activity_splash_screen
 layout activity_unit_converter
 layout activity_unit_converter_light
+layout content_main
+layout fragment_first
+layout fragment_second
 menu nav_menu_unit_converter
 mipmap ic_launcher
 mipmap ic_launcher_round

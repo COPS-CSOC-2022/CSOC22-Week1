@@ -3252,6 +3252,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable ic__logo
 drawable ic_clock_black_24dp
 drawable ic_convert
 drawable ic_dark_mode
@@ -3475,6 +3476,8 @@ id btnThemeConverter
 id btnUnitConverter
 id btnXPowerY
 id buttonPanel
+id button_first
+id button_second
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3700,6 +3703,7 @@ id multiply
 id nav_controller_view_tag
 id nav_graph
 id nav_host_fragment_container
+id nav_host_fragment_content_main
 id nav_view
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -3792,6 +3796,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id splash_icon
 id spline
 id split_action_bar
 id spread
@@ -3847,6 +3852,8 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id textview_first
+id textview_second
 id time
 id title
 id titleDividerNoCustom
@@ -3992,8 +3999,10 @@ layout activity_graph_light
 layout activity_main
 layout activity_main_light
 layout activity_plotting_graph
+layout activity_splash_screen
 layout activity_unit_converter
 layout activity_unit_converter_light
+layout content_main
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -4011,6 +4020,8 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout dp_example
+layout fragment_first
+layout fragment_second
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

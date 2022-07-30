@@ -1,42 +1,46 @@
 [
     {
-        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_plotting_graph.xml",
-        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\activity_plotting_graph.xml"
+        "merged": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_second.xml",
+        "source": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\src\\main\\res\\layout\\fragment_second.xml"
     },
     {
-        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_unit_converter.xml",
-        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\activity_unit_converter.xml"
+        "merged": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_unit_converter_light.xml",
+        "source": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\src\\main\\res\\layout\\activity_unit_converter_light.xml"
     },
     {
-        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_unit_converter_light.xml",
-        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\activity_unit_converter_light.xml"
+        "merged": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main_light.xml",
+        "source": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\src\\main\\res\\layout\\activity_main_light.xml"
     },
     {
-        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_first.xml",
-        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\fragment_first.xml"
+        "merged": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_main.xml",
-        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\content_main.xml"
+        "merged": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_graph_light.xml",
+        "source": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\src\\main\\res\\layout\\activity_graph_light.xml"
     },
     {
-        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_graph.xml",
-        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\activity_graph.xml"
+        "merged": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_first.xml",
+        "source": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\src\\main\\res\\layout\\fragment_first.xml"
     },
     {
-        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main_light.xml",
-        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\activity_main_light.xml"
+        "merged": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\content_main.xml",
+        "source": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\src\\main\\res\\layout\\content_main.xml"
     },
     {
-        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_second.xml",
-        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\fragment_second.xml"
+        "merged": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_screen.xml",
+        "source": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
     {
-        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_graph.xml",
+        "source": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\src\\main\\res\\layout\\activity_graph.xml"
     },
     {
-        "merged": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_graph_light.xml",
-        "source": "C:\\Users\\manas\\StudioProjects\\Calculator\\app\\src\\main\\res\\layout\\activity_graph_light.xml"
+        "merged": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_unit_converter.xml",
+        "source": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\src\\main\\res\\layout\\activity_unit_converter.xml"
+    },
+    {
+        "merged": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_plotting_graph.xml",
+        "source": "D:\\Manash\\Clubs\\COPS\\Calculator\\app\\src\\main\\res\\layout\\activity_plotting_graph.xml"
     }
 ]
