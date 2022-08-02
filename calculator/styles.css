@@ -1,0 +1,75 @@
+#btn{
+    padding: 15;
+    font-size: 30;
+    width: 100%;
+    background-color: rgb(214, 234, 252);
+    border: 0px;
+}
+#btn1{
+    padding: 15;
+    font-size: 30;
+    width: 100%;
+    background-color: rgb(214, 234, 252);
+    border: 0px;
+}
+#scrn{
+    padding: 20px;
+    font-size: large;
+    background-color: rgb(99, 99, 99);
+    color: white;
+    text-align: right;
+}
+table{
+    padding: 60px;
+    border: 2px solid;
+    background-color: rgb(32, 108, 128);
+    margin-top: 40px;
+}
+body{
+    background-color: rgb(229, 242, 254);
+}
+#his{
+    font-size: x-large;
+}
+header{
+    background-color: rgb(32, 108, 128);
+    display: inline-block;
+    padding: 20px;
+    color: aliceblue;
+    margin: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    font-size: 50px;
+}
+@media only screen and (max-width: 1000px) {
+    table{
+        margin: 0px;
+        margin-top: 40px;
+    }
+    #btn{
+        padding: 25;
+        font-size: 55;
+        width: 100%;
+        background-color: rgb(214, 234, 252);
+        border: 0px;
+        
+    }
+    #btn1{
+        padding: 25;
+        font-size: 55;
+        width: 100%;
+        background-color: rgb(214, 234, 252);
+        border: 0px;
+        
+    }
+    #scrn{
+        padding: 30px;
+        font-size: xx-large;
+        background-color: rgb(99, 99, 99);
+        color: white;
+    }
+    #his{
+        font-size: xx-large;
+        s="";
+    }
+}
