@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>calculator</title>
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+
+    <body>
+        <center>
+            <header>Calculator</header>
+            <table class="center">
+            <tr>
+                <td colspan="3"><input type="text" id="scrn"></td>
+                <td><input type="button" value="=" onclick="calculate()" id="btn" /></td>
+                <td><input type="button" value="AC" onclick="clearAll()" id="btn" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="display('7')" id="btn" /></td>
+                <td><input type="button" value="8" onclick="display('8')" id="btn" /></td>
+                <td><input type="button" value="9" onclick="display('9')" id="btn" /></td>
+                <td><input type="button" value="+" onclick="display('+')" id="btn" /></td>
+                <td><input type="button" value="*" onclick="display('*')" id="btn" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="display('4')" id="btn" /></td>
+                <td><input type="button" value="5" onclick="display('5')" id="btn" /></td>
+                <td><input type="button" value="6" onclick="display('6')" id="btn" /></td>
+                <td><input type="button" value="-" onclick="display('-')" id="btn" /></td>
+                <td><input type="button" value="/" onclick="display('/')" id="btn" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="display('1')" id="btn" /></td>
+                <td><input type="button" value="2" onclick="display('2')" id="btn" /></td>
+                <td><input type="button" value="3" onclick="display('3')" id="btn" /></td>
+                <td><input type="button" value="C" onclick="cut()" id="btn" /></td>
+                <td><input type="button" value="%" onclick="display('%')" id="btn" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="(" onclick="display('(')" id="btn" /></td>
+                <td><input type="button" value="0" onclick="display('0')" id="btn" /></td>
+                <td><input type="button" value=")" onclick="display(')')" id="btn" /></td>
+                <td><input type="button" value="^" onclick="display('**')" id="btn" /></td>
+                <td><input type="button" value="," onclick="display(',')" id="btn" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="log" onclick="display('Math.log(')" id="btn" /></td>
+                <td><input type="button" value="sqrt" onclick="display('Math.sqrt(')" id="btn" /></td>
+                <td><input type="button" value=" ! " onclick="display('!')" id="btn" /></td>
+                <td><input type="button" value="  pi  " onclick="display('Math.PI')" id="btn" /></td>
+                <td><input type="button" value=" E " onclick="display('Math.E')" id="btn" /></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="sin" onclick="display('sin(')" id="btn" /></td>
+                <td><input type="button" value="cos" onclick="display('cos(')" id="btn"  /></td>
+                <td><input type="button" value="tan" onclick="display('tan(')" id="btn" /></td>
+                <td><input type="button" value="deg" onclick="change()" id="btn1" /></td>
+                <td><input type="button" value="his" onclick="history()" id="btn" /></td>
+            </tr>
+        </table>
+        <br>
+        <h1>History:</h1>
+        <textarea id="his" name="history" rows="8" cols="50"></textarea>
+        </center>
+        <script src="script.js"></script>
+    </body>
+</html>
