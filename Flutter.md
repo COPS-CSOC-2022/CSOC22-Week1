@@ -71,3 +71,6 @@ Submission has to be done by sharing your github repo link and the .apk file of 
 - Make a Pull request
 
 ## Submissions
+
+[Repo Link](https://github.com/PR4NJ41/MeraCalc)
+[APK link](https://drive.google.com/file/d/1DZBcO6i9-HMXt_IO7K6XccubKahj2M4F/view?usp=drivesdk)
